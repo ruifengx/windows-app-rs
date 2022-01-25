@@ -11,13 +11,13 @@
 #[doc(hidden)]
 pub struct ISceneBoundingBox(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISceneBoundingBox {
-    type Vtable = ISceneBoundingBox_abi;
+    type Vtable = ISceneBoundingBoxVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x39fb48e0_216a_5608_9186_6ba9f98b5c67);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISceneBoundingBox_abi(
+pub struct ISceneBoundingBoxVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -63,13 +63,13 @@ pub struct ISceneBoundingBox_abi(
 #[doc(hidden)]
 pub struct ISceneComponent(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISceneComponent {
-    type Vtable = ISceneComponent_abi;
+    type Vtable = ISceneComponentVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xf73361cb_8027_50e2_98ee_b2e3ea050a54);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISceneComponent_abi(
+pub struct ISceneComponentVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -99,13 +99,13 @@ pub struct ISceneComponent_abi(
 #[doc(hidden)]
 pub struct ISceneComponentCollection(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISceneComponentCollection {
-    type Vtable = ISceneComponentCollection_abi;
+    type Vtable = ISceneComponentCollectionVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xe4b21c71_87e2_5aeb_85be_884e8302273e);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISceneComponentCollection_abi(
+pub struct ISceneComponentCollectionVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -131,13 +131,13 @@ pub struct ISceneComponentCollection_abi(
 #[doc(hidden)]
 pub struct ISceneComponentFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISceneComponentFactory {
-    type Vtable = ISceneComponentFactory_abi;
+    type Vtable = ISceneComponentFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x254088b0_babf_503d_9a66_0d86af5f7303);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISceneComponentFactory_abi(
+pub struct ISceneComponentFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -163,13 +163,13 @@ pub struct ISceneComponentFactory_abi(
 #[doc(hidden)]
 pub struct ISceneMaterial(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISceneMaterial {
-    type Vtable = ISceneMaterial_abi;
+    type Vtable = ISceneMaterialVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x042142a7_bf6b_57ad_badc_f581f38edb48);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISceneMaterial_abi(
+pub struct ISceneMaterialVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -195,13 +195,13 @@ pub struct ISceneMaterial_abi(
 #[doc(hidden)]
 pub struct ISceneMaterialFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISceneMaterialFactory {
-    type Vtable = ISceneMaterialFactory_abi;
+    type Vtable = ISceneMaterialFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x25747893_8748_5f60_969f_318fa0b735ca);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISceneMaterialFactory_abi(
+pub struct ISceneMaterialFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -227,13 +227,13 @@ pub struct ISceneMaterialFactory_abi(
 #[doc(hidden)]
 pub struct ISceneMaterialInput(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISceneMaterialInput {
-    type Vtable = ISceneMaterialInput_abi;
+    type Vtable = ISceneMaterialInputVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x446bdade_719b_5db4_b699_f226d0062a2e);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISceneMaterialInput_abi(
+pub struct ISceneMaterialInputVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -259,13 +259,13 @@ pub struct ISceneMaterialInput_abi(
 #[doc(hidden)]
 pub struct ISceneMaterialInputFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISceneMaterialInputFactory {
-    type Vtable = ISceneMaterialInputFactory_abi;
+    type Vtable = ISceneMaterialInputFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xb4dabd1d_58c0_5710_928a_bc49b0735694);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISceneMaterialInputFactory_abi(
+pub struct ISceneMaterialInputFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -291,13 +291,13 @@ pub struct ISceneMaterialInputFactory_abi(
 #[doc(hidden)]
 pub struct ISceneMesh(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISceneMesh {
-    type Vtable = ISceneMesh_abi;
+    type Vtable = ISceneMeshVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x5cf846aa_f53f_555e_a3ad_f5bc52ca32fb);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISceneMesh_abi(
+pub struct ISceneMeshVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -347,13 +347,13 @@ pub struct ISceneMesh_abi(
 #[doc(hidden)]
 pub struct ISceneMeshMaterialAttributeMap(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISceneMeshMaterialAttributeMap {
-    type Vtable = ISceneMeshMaterialAttributeMap_abi;
+    type Vtable = ISceneMeshMaterialAttributeMapVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x2360c457_edae_5660_bedc_89096582ed70);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISceneMeshMaterialAttributeMap_abi(
+pub struct ISceneMeshMaterialAttributeMapVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -379,13 +379,13 @@ pub struct ISceneMeshMaterialAttributeMap_abi(
 #[doc(hidden)]
 pub struct ISceneMeshRendererComponent(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISceneMeshRendererComponent {
-    type Vtable = ISceneMeshRendererComponent_abi;
+    type Vtable = ISceneMeshRendererComponentVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xd2be85a0_70a8_5c62_84d8_8ba55e4c64a9);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISceneMeshRendererComponent_abi(
+pub struct ISceneMeshRendererComponentVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -435,13 +435,13 @@ pub struct ISceneMeshRendererComponent_abi(
 #[doc(hidden)]
 pub struct ISceneMeshRendererComponentStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISceneMeshRendererComponentStatics {
-    type Vtable = ISceneMeshRendererComponentStatics_abi;
+    type Vtable = ISceneMeshRendererComponentStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc54f8c5a_a104_5cfa_89dc_13edaa6e3d88);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISceneMeshRendererComponentStatics_abi(
+pub struct ISceneMeshRendererComponentStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -474,13 +474,13 @@ pub struct ISceneMeshRendererComponentStatics_abi(
 #[doc(hidden)]
 pub struct ISceneMeshStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISceneMeshStatics {
-    type Vtable = ISceneMeshStatics_abi;
+    type Vtable = ISceneMeshStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x29c52125_964b_5315_80f9_3893713290f5);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISceneMeshStatics_abi(
+pub struct ISceneMeshStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -513,13 +513,13 @@ pub struct ISceneMeshStatics_abi(
 #[doc(hidden)]
 pub struct ISceneMetallicRoughnessMaterial(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISceneMetallicRoughnessMaterial {
-    type Vtable = ISceneMetallicRoughnessMaterial_abi;
+    type Vtable = ISceneMetallicRoughnessMaterialVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x0a4afcf4_7bae_5702_9b85_8bc849f39987);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISceneMetallicRoughnessMaterial_abi(
+pub struct ISceneMetallicRoughnessMaterialVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -585,13 +585,13 @@ pub struct ISceneMetallicRoughnessMaterial_abi(
 #[doc(hidden)]
 pub struct ISceneMetallicRoughnessMaterialStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISceneMetallicRoughnessMaterialStatics {
-    type Vtable = ISceneMetallicRoughnessMaterialStatics_abi;
+    type Vtable = ISceneMetallicRoughnessMaterialStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xdffd2043_ab3c_57a0_8e13_6f09725e970f);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISceneMetallicRoughnessMaterialStatics_abi(
+pub struct ISceneMetallicRoughnessMaterialStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -624,13 +624,13 @@ pub struct ISceneMetallicRoughnessMaterialStatics_abi(
 #[doc(hidden)]
 pub struct ISceneModelTransform(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISceneModelTransform {
-    type Vtable = ISceneModelTransform_abi;
+    type Vtable = ISceneModelTransformVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x3f05555f_0f67_576e_9d8a_93c1f250c29f);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISceneModelTransform_abi(
+pub struct ISceneModelTransformVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -704,13 +704,13 @@ pub struct ISceneModelTransform_abi(
 #[doc(hidden)]
 pub struct ISceneNode(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISceneNode {
-    type Vtable = ISceneNode_abi;
+    type Vtable = ISceneNodeVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xa1bce140_79c2_59e6_9b68_63b1bab0e2a6);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISceneNode_abi(
+pub struct ISceneNodeVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -761,13 +761,13 @@ pub struct ISceneNode_abi(
 #[doc(hidden)]
 pub struct ISceneNodeCollection(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISceneNodeCollection {
-    type Vtable = ISceneNodeCollection_abi;
+    type Vtable = ISceneNodeCollectionVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xf219b68e_5666_5c6c_aa4e_08db07fd6bcf);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISceneNodeCollection_abi(
+pub struct ISceneNodeCollectionVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -793,13 +793,13 @@ pub struct ISceneNodeCollection_abi(
 #[doc(hidden)]
 pub struct ISceneNodeStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISceneNodeStatics {
-    type Vtable = ISceneNodeStatics_abi;
+    type Vtable = ISceneNodeStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x801c4394_4198_5da1_ac39_6e8a44b5ce57);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISceneNodeStatics_abi(
+pub struct ISceneNodeStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -832,13 +832,13 @@ pub struct ISceneNodeStatics_abi(
 #[doc(hidden)]
 pub struct ISceneObject(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISceneObject {
-    type Vtable = ISceneObject_abi;
+    type Vtable = ISceneObjectVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x4333e514_4fc7_521e_8bca_11c51fbcaf1e);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISceneObject_abi(
+pub struct ISceneObjectVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -864,13 +864,13 @@ pub struct ISceneObject_abi(
 #[doc(hidden)]
 pub struct ISceneObjectFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISceneObjectFactory {
-    type Vtable = ISceneObjectFactory_abi;
+    type Vtable = ISceneObjectFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xee797f7d_77db_5c4c_b6f5_c1930fad85c5);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISceneObjectFactory_abi(
+pub struct ISceneObjectFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -896,13 +896,13 @@ pub struct ISceneObjectFactory_abi(
 #[doc(hidden)]
 pub struct IScenePbrMaterial(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IScenePbrMaterial {
-    type Vtable = IScenePbrMaterial_abi;
+    type Vtable = IScenePbrMaterialVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x295d0725_56fe_5954_8057_3f4ca7515b36);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IScenePbrMaterial_abi(
+pub struct IScenePbrMaterialVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1000,13 +1000,13 @@ pub struct IScenePbrMaterial_abi(
 #[doc(hidden)]
 pub struct IScenePbrMaterialFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IScenePbrMaterialFactory {
-    type Vtable = IScenePbrMaterialFactory_abi;
+    type Vtable = IScenePbrMaterialFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x9e34d32a_e30c_51f5_84ac_6467950605ca);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IScenePbrMaterialFactory_abi(
+pub struct IScenePbrMaterialFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1032,13 +1032,13 @@ pub struct IScenePbrMaterialFactory_abi(
 #[doc(hidden)]
 pub struct ISceneRendererComponent(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISceneRendererComponent {
-    type Vtable = ISceneRendererComponent_abi;
+    type Vtable = ISceneRendererComponentVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x6bab8030_89c1_5dbc_a48e_1805ddf9cdd1);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISceneRendererComponent_abi(
+pub struct ISceneRendererComponentVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1064,13 +1064,13 @@ pub struct ISceneRendererComponent_abi(
 #[doc(hidden)]
 pub struct ISceneRendererComponentFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISceneRendererComponentFactory {
-    type Vtable = ISceneRendererComponentFactory_abi;
+    type Vtable = ISceneRendererComponentFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x3ccac1d6_6a0f_582e_bb1a_10ebc1e405ca);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISceneRendererComponentFactory_abi(
+pub struct ISceneRendererComponentFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1096,13 +1096,13 @@ pub struct ISceneRendererComponentFactory_abi(
 #[doc(hidden)]
 pub struct ISceneSurfaceMaterialInput(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISceneSurfaceMaterialInput {
-    type Vtable = ISceneSurfaceMaterialInput_abi;
+    type Vtable = ISceneSurfaceMaterialInputVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xb9854b4f_286c_50cd_a734_491a251d5fd3);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISceneSurfaceMaterialInput_abi(
+pub struct ISceneSurfaceMaterialInputVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1160,13 +1160,13 @@ pub struct ISceneSurfaceMaterialInput_abi(
 #[doc(hidden)]
 pub struct ISceneSurfaceMaterialInputStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISceneSurfaceMaterialInputStatics {
-    type Vtable = ISceneSurfaceMaterialInputStatics_abi;
+    type Vtable = ISceneSurfaceMaterialInputStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x8e1ba937_ad60_51bc_8256_ca62c4b2ae92);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISceneSurfaceMaterialInputStatics_abi(
+pub struct ISceneSurfaceMaterialInputStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1199,13 +1199,13 @@ pub struct ISceneSurfaceMaterialInputStatics_abi(
 #[doc(hidden)]
 pub struct ISceneVisual(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISceneVisual {
-    type Vtable = ISceneVisual_abi;
+    type Vtable = ISceneVisualVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x0144d7ad_6a7d_59cb_a0f9_74a04e85352c);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISceneVisual_abi(
+pub struct ISceneVisualVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1243,13 +1243,13 @@ pub struct ISceneVisual_abi(
 #[doc(hidden)]
 pub struct ISceneVisualStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISceneVisualStatics {
-    type Vtable = ISceneVisualStatics_abi;
+    type Vtable = ISceneVisualStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x7b8da6d1_5bd8_5095_9264_e5572653ea07);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISceneVisualStatics_abi(
+pub struct ISceneVisualStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1613,7 +1613,7 @@ unsafe impl ::windows::core::RuntimeType for SceneBoundingBox {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.Scenes.SceneBoundingBox;{39fb48e0-216a-5608-9186-6ba9f98b5c67})" ) ;
 }
 unsafe impl ::windows::core::Interface for SceneBoundingBox {
-    type Vtable = ISceneBoundingBox_abi;
+    type Vtable = ISceneBoundingBoxVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x39fb48e0_216a_5608_9186_6ba9f98b5c67);
 }
@@ -1981,7 +1981,7 @@ unsafe impl ::windows::core::RuntimeType for SceneComponent {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.Scenes.SceneComponent;{f73361cb-8027-50e2-98ee-b2e3ea050a54})" ) ;
 }
 unsafe impl ::windows::core::Interface for SceneComponent {
-    type Vtable = ISceneComponent_abi;
+    type Vtable = ISceneComponentVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xf73361cb_8027_50e2_98ee_b2e3ea050a54);
 }
@@ -2502,7 +2502,7 @@ unsafe impl ::windows::core::RuntimeType for SceneComponentCollection {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.Scenes.SceneComponentCollection;pinterface({913337e9-11a1-4345-a3a2-4e7f956e222d};rc(Microsoft.UI.Composition.Scenes.SceneComponent;{f73361cb-8027-50e2-98ee-b2e3ea050a54})))" ) ;
 }
 unsafe impl ::windows::core::Interface for SceneComponentCollection {
-    type Vtable = ::windows::Foundation::Collections::IVector_abi<SceneComponent>;
+    type Vtable = ::windows::Foundation::Collections::IVectorVtbl<SceneComponent>;
     const IID : :: windows :: core :: GUID = :: windows :: core :: GUID :: from_signature ( < ::windows::Foundation::Collections:: IVector :: < SceneComponent > as :: windows :: core :: RuntimeType > :: SIGNATURE ) ;
 }
 impl ::windows::core::RuntimeName for SceneComponentCollection {
@@ -2989,7 +2989,7 @@ unsafe impl ::windows::core::RuntimeType for SceneMaterial {
     );
 }
 unsafe impl ::windows::core::Interface for SceneMaterial {
-    type Vtable = ISceneMaterial_abi;
+    type Vtable = ISceneMaterialVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x042142a7_bf6b_57ad_badc_f581f38edb48);
 }
@@ -3346,7 +3346,7 @@ unsafe impl ::windows::core::RuntimeType for SceneMaterialInput {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.Scenes.SceneMaterialInput;{446bdade-719b-5db4-b699-f226d0062a2e})" ) ;
 }
 unsafe impl ::windows::core::Interface for SceneMaterialInput {
-    type Vtable = ISceneMaterialInput_abi;
+    type Vtable = ISceneMaterialInputVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x446bdade_719b_5db4_b699_f226d0062a2e);
 }
@@ -3785,7 +3785,7 @@ unsafe impl ::windows::core::RuntimeType for SceneMesh {
     );
 }
 unsafe impl ::windows::core::Interface for SceneMesh {
-    type Vtable = ISceneMesh_abi;
+    type Vtable = ISceneMeshVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x5cf846aa_f53f_555e_a3ad_f5bc52ca32fb);
 }
@@ -4307,7 +4307,7 @@ unsafe impl ::windows::core::RuntimeType for SceneMeshMaterialAttributeMap {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.Scenes.SceneMeshMaterialAttributeMap;{2360c457-edae-5660-bedc-89096582ed70})" ) ;
 }
 unsafe impl ::windows::core::Interface for SceneMeshMaterialAttributeMap {
-    type Vtable = ISceneMeshMaterialAttributeMap_abi;
+    type Vtable = ISceneMeshMaterialAttributeMapVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x2360c457_edae_5660_bedc_89096582ed70);
 }
@@ -4940,7 +4940,7 @@ unsafe impl ::windows::core::RuntimeType for SceneMeshRendererComponent {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.Scenes.SceneMeshRendererComponent;{d2be85a0-70a8-5c62-84d8-8ba55e4c64a9})" ) ;
 }
 unsafe impl ::windows::core::Interface for SceneMeshRendererComponent {
-    type Vtable = ISceneMeshRendererComponent_abi;
+    type Vtable = ISceneMeshRendererComponentVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xd2be85a0_70a8_5c62_84d8_8ba55e4c64a9);
 }
@@ -5684,7 +5684,7 @@ unsafe impl ::windows::core::RuntimeType for SceneMetallicRoughnessMaterial {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.Scenes.SceneMetallicRoughnessMaterial;{0a4afcf4-7bae-5702-9b85-8bc849f39987})" ) ;
 }
 unsafe impl ::windows::core::Interface for SceneMetallicRoughnessMaterial {
-    type Vtable = ISceneMetallicRoughnessMaterial_abi;
+    type Vtable = ISceneMetallicRoughnessMaterialVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x0a4afcf4_7bae_5702_9b85_8bc849f39987);
 }
@@ -6255,7 +6255,7 @@ unsafe impl ::windows::core::RuntimeType for SceneModelTransform {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.Scenes.SceneModelTransform;{3f05555f-0f67-576e-9d8a-93c1f250c29f})" ) ;
 }
 unsafe impl ::windows::core::Interface for SceneModelTransform {
-    type Vtable = ISceneModelTransform_abi;
+    type Vtable = ISceneModelTransformVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x3f05555f_0f67_576e_9d8a_93c1f250c29f);
 }
@@ -6698,7 +6698,7 @@ unsafe impl ::windows::core::RuntimeType for SceneNode {
     );
 }
 unsafe impl ::windows::core::Interface for SceneNode {
-    type Vtable = ISceneNode_abi;
+    type Vtable = ISceneNodeVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xa1bce140_79c2_59e6_9b68_63b1bab0e2a6);
 }
@@ -7226,7 +7226,7 @@ unsafe impl ::windows::core::RuntimeType for SceneNodeCollection {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.Scenes.SceneNodeCollection;pinterface({913337e9-11a1-4345-a3a2-4e7f956e222d};rc(Microsoft.UI.Composition.Scenes.SceneNode;{a1bce140-79c2-59e6-9b68-63b1bab0e2a6})))" ) ;
 }
 unsafe impl ::windows::core::Interface for SceneNodeCollection {
-    type Vtable = ::windows::Foundation::Collections::IVector_abi<SceneNode>;
+    type Vtable = ::windows::Foundation::Collections::IVectorVtbl<SceneNode>;
     const IID : :: windows :: core :: GUID = :: windows :: core :: GUID :: from_signature ( < ::windows::Foundation::Collections:: IVector :: < SceneNode > as :: windows :: core :: RuntimeType > :: SIGNATURE ) ;
 }
 impl ::windows::core::RuntimeName for SceneNodeCollection {
@@ -7668,7 +7668,7 @@ unsafe impl ::windows::core::RuntimeType for SceneObject {
     );
 }
 unsafe impl ::windows::core::Interface for SceneObject {
-    type Vtable = ISceneObject_abi;
+    type Vtable = ISceneObjectVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x4333e514_4fc7_521e_8bca_11c51fbcaf1e);
 }
@@ -8194,7 +8194,7 @@ unsafe impl ::windows::core::RuntimeType for ScenePbrMaterial {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.Scenes.ScenePbrMaterial;{295d0725-56fe-5954-8057-3f4ca7515b36})" ) ;
 }
 unsafe impl ::windows::core::Interface for ScenePbrMaterial {
-    type Vtable = IScenePbrMaterial_abi;
+    type Vtable = IScenePbrMaterialVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x295d0725_56fe_5954_8057_3f4ca7515b36);
 }
@@ -8584,7 +8584,7 @@ unsafe impl ::windows::core::RuntimeType for SceneRendererComponent {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.Scenes.SceneRendererComponent;{6bab8030-89c1-5dbc-a48e-1805ddf9cdd1})" ) ;
 }
 unsafe impl ::windows::core::Interface for SceneRendererComponent {
-    type Vtable = ISceneRendererComponent_abi;
+    type Vtable = ISceneRendererComponentVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x6bab8030_89c1_5dbc_a48e_1805ddf9cdd1);
 }
@@ -9078,7 +9078,7 @@ unsafe impl ::windows::core::RuntimeType for SceneSurfaceMaterialInput {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.Scenes.SceneSurfaceMaterialInput;{b9854b4f-286c-50cd-a734-491a251d5fd3})" ) ;
 }
 unsafe impl ::windows::core::Interface for SceneSurfaceMaterialInput {
-    type Vtable = ISceneSurfaceMaterialInput_abi;
+    type Vtable = ISceneSurfaceMaterialInputVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xb9854b4f_286c_50cd_a734_491a251d5fd3);
 }
@@ -10039,7 +10039,7 @@ unsafe impl ::windows::core::RuntimeType for SceneVisual {
     );
 }
 unsafe impl ::windows::core::Interface for SceneVisual {
-    type Vtable = ISceneVisual_abi;
+    type Vtable = ISceneVisualVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x0144d7ad_6a7d_59cb_a0f9_74a04e85352c);
 }

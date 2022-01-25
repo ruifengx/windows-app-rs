@@ -16,7 +16,7 @@
 )]
 pub struct IComponentConnector(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IComponentConnector {
-    type Vtable = IComponentConnector_abi;
+    type Vtable = IComponentConnectorVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xad401812_b091_51d0_b915_2d682cd2af10);
 }
@@ -103,7 +103,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IComponentConnector_abi(
+pub struct IComponentConnectorVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -145,7 +145,7 @@ pub struct IComponentConnector_abi(
 )]
 pub struct IDataTemplateComponent(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IDataTemplateComponent {
-    type Vtable = IDataTemplateComponent_abi;
+    type Vtable = IDataTemplateComponentVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x1743ddf7_38ba_58c9_a2a6_b0ae28713bee);
 }
@@ -227,7 +227,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IDataTemplateComponent_abi(
+pub struct IDataTemplateComponentVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -261,13 +261,13 @@ pub struct IDataTemplateComponent_abi(
 #[doc(hidden)]
 pub struct IMarkupExtension(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IMarkupExtension {
-    type Vtable = IMarkupExtension_abi;
+    type Vtable = IMarkupExtensionVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc355371e_091d_5136_af4a_baf5e00616bd);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IMarkupExtension_abi(
+pub struct IMarkupExtensionVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -293,13 +293,13 @@ pub struct IMarkupExtension_abi(
 #[doc(hidden)]
 pub struct IMarkupExtensionFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IMarkupExtensionFactory {
-    type Vtable = IMarkupExtensionFactory_abi;
+    type Vtable = IMarkupExtensionFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x20651afa_5f3a_5f0c_adb1_b6551f53a6a0);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IMarkupExtensionFactory_abi(
+pub struct IMarkupExtensionFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -331,13 +331,13 @@ pub struct IMarkupExtensionFactory_abi(
 #[doc(hidden)]
 pub struct IMarkupExtensionOverrides(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IMarkupExtensionOverrides {
-    type Vtable = IMarkupExtensionOverrides_abi;
+    type Vtable = IMarkupExtensionOverridesVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xa12aa575_5d31_5b68_a30f_8495412a351d);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IMarkupExtensionOverrides_abi(
+pub struct IMarkupExtensionOverridesVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -377,7 +377,7 @@ pub struct IMarkupExtensionOverrides_abi(
 )]
 pub struct IProvideValueTarget(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IProvideValueTarget {
-    type Vtable = IProvideValueTarget_abi;
+    type Vtable = IProvideValueTargetVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x3f01ff68_3efd_591d_a506_de13fcaabd83);
 }
@@ -451,7 +451,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IProvideValueTarget_abi(
+pub struct IProvideValueTargetVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -485,13 +485,13 @@ pub struct IProvideValueTarget_abi(
 #[doc(hidden)]
 pub struct IProvideValueTargetProperty(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IProvideValueTargetProperty {
-    type Vtable = IProvideValueTargetProperty_abi;
+    type Vtable = IProvideValueTargetPropertyVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xce777b1f_b42e_59d1_870d_12fdf0629133);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IProvideValueTargetProperty_abi(
+pub struct IProvideValueTargetPropertyVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -534,7 +534,7 @@ pub struct IProvideValueTargetProperty_abi(
 )]
 pub struct IRootObjectProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IRootObjectProvider {
-    type Vtable = IRootObjectProvider_abi;
+    type Vtable = IRootObjectProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x13d63599_352f_5eb8_81c1_bc62fb12d6da);
 }
@@ -597,7 +597,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IRootObjectProvider_abi(
+pub struct IRootObjectProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -632,7 +632,7 @@ pub struct IRootObjectProvider_abi(
 )]
 pub struct IUriContext(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IUriContext {
-    type Vtable = IUriContext_abi;
+    type Vtable = IUriContextVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xfb8605f6_8f05_52ee_a01c_3a9e118a6ea2);
 }
@@ -695,7 +695,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IUriContext_abi(
+pub struct IUriContextVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -725,13 +725,13 @@ pub struct IUriContext_abi(
 #[doc(hidden)]
 pub struct IXamlBinaryWriter(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IXamlBinaryWriter {
-    type Vtable = IXamlBinaryWriter_abi;
+    type Vtable = IXamlBinaryWriterVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x8fb45e3b_e689_55bf_aa11_d83b1c1cdda1);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IXamlBinaryWriter_abi(
+pub struct IXamlBinaryWriterVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -757,13 +757,13 @@ pub struct IXamlBinaryWriter_abi(
 #[doc(hidden)]
 pub struct IXamlBinaryWriterStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IXamlBinaryWriterStatics {
-    type Vtable = IXamlBinaryWriterStatics_abi;
+    type Vtable = IXamlBinaryWriterStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x774907fc_c846_517f_abcc_c3f7e8c3ffc9);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IXamlBinaryWriterStatics_abi(
+pub struct IXamlBinaryWriterStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -801,7 +801,7 @@ pub struct IXamlBinaryWriterStatics_abi(
 )]
 pub struct IXamlBindScopeDiagnostics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IXamlBindScopeDiagnostics {
-    type Vtable = IXamlBindScopeDiagnostics_abi;
+    type Vtable = IXamlBindScopeDiagnosticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x3ea84e4e_fdfe_55a8_a561_edf5697846d7);
 }
@@ -870,7 +870,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IXamlBindScopeDiagnostics_abi(
+pub struct IXamlBindScopeDiagnosticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -901,13 +901,13 @@ pub struct IXamlBindScopeDiagnostics_abi(
 #[doc(hidden)]
 pub struct IXamlBindingHelper(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IXamlBindingHelper {
-    type Vtable = IXamlBindingHelper_abi;
+    type Vtable = IXamlBindingHelperVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x607a9bf2_5a6d_5c89_a756_bb44f24f28f8);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IXamlBindingHelper_abi(
+pub struct IXamlBindingHelperVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -933,13 +933,13 @@ pub struct IXamlBindingHelper_abi(
 #[doc(hidden)]
 pub struct IXamlBindingHelperStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IXamlBindingHelperStatics {
-    type Vtable = IXamlBindingHelperStatics_abi;
+    type Vtable = IXamlBindingHelperStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x93c7dad3_f9c2_5372_84dc_9e9c4661d083);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IXamlBindingHelperStatics_abi(
+pub struct IXamlBindingHelperStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1201,13 +1201,13 @@ pub struct IXamlBindingHelperStatics_abi(
 #[doc(hidden)]
 pub struct IXamlMarkupHelper(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IXamlMarkupHelper {
-    type Vtable = IXamlMarkupHelper_abi;
+    type Vtable = IXamlMarkupHelperVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xcd677310_3b06_5a13_b31a_401849570858);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IXamlMarkupHelper_abi(
+pub struct IXamlMarkupHelperVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1233,13 +1233,13 @@ pub struct IXamlMarkupHelper_abi(
 #[doc(hidden)]
 pub struct IXamlMarkupHelperStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IXamlMarkupHelperStatics {
-    type Vtable = IXamlMarkupHelperStatics_abi;
+    type Vtable = IXamlMarkupHelperStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xd9a0f6e3_c6cc_5cb6_8999_85788701f339);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IXamlMarkupHelperStatics_abi(
+pub struct IXamlMarkupHelperStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1276,7 +1276,7 @@ pub struct IXamlMarkupHelperStatics_abi(
 )]
 pub struct IXamlMember(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IXamlMember {
-    type Vtable = IXamlMember_abi;
+    type Vtable = IXamlMemberVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xbf3a2913_5c63_50ec_8660_61809be7b9b9);
 }
@@ -1429,7 +1429,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IXamlMember_abi(
+pub struct IXamlMemberVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1494,7 +1494,7 @@ pub struct IXamlMember_abi(
 )]
 pub struct IXamlMetadataProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IXamlMetadataProvider {
-    type Vtable = IXamlMetadataProvider_abi;
+    type Vtable = IXamlMetadataProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xa96251f0_2214_5d53_8746_ce99a2593cd7);
 }
@@ -1598,7 +1598,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IXamlMetadataProvider_abi(
+pub struct IXamlMetadataProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1639,13 +1639,13 @@ pub struct IXamlMetadataProvider_abi(
 #[doc(hidden)]
 pub struct IXamlReader(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IXamlReader {
-    type Vtable = IXamlReader_abi;
+    type Vtable = IXamlReaderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x54ce54c8_38c6_50d9_ac98_4b03eddbde9f);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IXamlReader_abi(
+pub struct IXamlReaderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1671,13 +1671,13 @@ pub struct IXamlReader_abi(
 #[doc(hidden)]
 pub struct IXamlReaderStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IXamlReaderStatics {
-    type Vtable = IXamlReaderStatics_abi;
+    type Vtable = IXamlReaderStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x82a4cd9e_435e_5aeb_8c4f_300cece45cae);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IXamlReaderStatics_abi(
+pub struct IXamlReaderStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1718,7 +1718,7 @@ pub struct IXamlReaderStatics_abi(
 )]
 pub struct IXamlType(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IXamlType {
-    type Vtable = IXamlType_abi;
+    type Vtable = IXamlTypeVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xd24219df_7ec9_57f1_a27b_6af251d9c5bc);
 }
@@ -2008,7 +2008,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IXamlType_abi(
+pub struct IXamlTypeVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2117,7 +2117,7 @@ pub struct IXamlType_abi(
 )]
 pub struct IXamlTypeResolver(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IXamlTypeResolver {
-    type Vtable = IXamlTypeResolver_abi;
+    type Vtable = IXamlTypeResolverVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x3fa15615_cacf_547f_b1ed_89dae8c67452);
 }
@@ -2185,7 +2185,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IXamlTypeResolver_abi(
+pub struct IXamlTypeResolverVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2250,7 +2250,7 @@ unsafe impl ::windows::core::RuntimeType for MarkupExtension {
     );
 }
 unsafe impl ::windows::core::Interface for MarkupExtension {
-    type Vtable = IMarkupExtension_abi;
+    type Vtable = IMarkupExtensionVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc355371e_091d_5136_af4a_baf5e00616bd);
 }
@@ -2364,7 +2364,7 @@ unsafe impl ::windows::core::RuntimeType for ProvideValueTargetProperty {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Markup.ProvideValueTargetProperty;{ce777b1f-b42e-59d1-870d-12fdf0629133})" ) ;
 }
 unsafe impl ::windows::core::Interface for ProvideValueTargetProperty {
-    type Vtable = IProvideValueTargetProperty_abi;
+    type Vtable = IProvideValueTargetPropertyVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xce777b1f_b42e_59d1_870d_12fdf0629133);
 }
@@ -2479,7 +2479,7 @@ unsafe impl ::windows::core::RuntimeType for XamlBinaryWriter {
     );
 }
 unsafe impl ::windows::core::Interface for XamlBinaryWriter {
-    type Vtable = IXamlBinaryWriter_abi;
+    type Vtable = IXamlBinaryWriterVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x8fb45e3b_e689_55bf_aa11_d83b1c1cdda1);
 }
@@ -3064,7 +3064,7 @@ unsafe impl ::windows::core::RuntimeType for XamlBindingHelper {
     );
 }
 unsafe impl ::windows::core::Interface for XamlBindingHelper {
-    type Vtable = IXamlBindingHelper_abi;
+    type Vtable = IXamlBindingHelperVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x607a9bf2_5a6d_5c89_a756_bb44f24f28f8);
 }
@@ -3153,7 +3153,7 @@ unsafe impl ::windows::core::RuntimeType for XamlMarkupHelper {
     );
 }
 unsafe impl ::windows::core::Interface for XamlMarkupHelper {
-    type Vtable = IXamlMarkupHelper_abi;
+    type Vtable = IXamlMarkupHelperVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xcd677310_3b06_5a13_b31a_401849570858);
 }
@@ -3254,7 +3254,7 @@ unsafe impl ::windows::core::RuntimeType for XamlReader {
     );
 }
 unsafe impl ::windows::core::Interface for XamlReader {
-    type Vtable = IXamlReader_abi;
+    type Vtable = IXamlReaderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x54ce54c8_38c6_50d9_ac98_4b03eddbde9f);
 }

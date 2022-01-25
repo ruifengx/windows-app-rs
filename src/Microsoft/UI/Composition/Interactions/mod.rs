@@ -295,7 +295,7 @@ unsafe impl ::windows::core::RuntimeType for CompositionConditionalValue {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.Interactions.CompositionConditionalValue;{3743dda0-fbe2-5ecf-9e80-4638a011f707})" ) ;
 }
 unsafe impl ::windows::core::Interface for CompositionConditionalValue {
-    type Vtable = ICompositionConditionalValue_abi;
+    type Vtable = ICompositionConditionalValueVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x3743dda0_fbe2_5ecf_9e80_4638a011f707);
 }
@@ -702,7 +702,7 @@ unsafe impl ::windows::core::RuntimeType for CompositionInteractionSourceCollect
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.Interactions.CompositionInteractionSourceCollection;{9aa1b86b-b002-5e2e-bb2b-0e2c547445e1})" ) ;
 }
 unsafe impl ::windows::core::Interface for CompositionInteractionSourceCollection {
-    type Vtable = ICompositionInteractionSourceCollection_abi;
+    type Vtable = ICompositionInteractionSourceCollectionVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x9aa1b86b_b002_5e2e_bb2b_0e2c547445e1);
 }
@@ -922,13 +922,13 @@ impl ::core::iter::IntoIterator for &CompositionInteractionSourceCollection {
 #[doc(hidden)]
 pub struct ICompositionConditionalValue(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICompositionConditionalValue {
-    type Vtable = ICompositionConditionalValue_abi;
+    type Vtable = ICompositionConditionalValueVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x3743dda0_fbe2_5ecf_9e80_4638a011f707);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICompositionConditionalValue_abi(
+pub struct ICompositionConditionalValueVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -970,13 +970,13 @@ pub struct ICompositionConditionalValue_abi(
 #[doc(hidden)]
 pub struct ICompositionConditionalValueStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICompositionConditionalValueStatics {
-    type Vtable = ICompositionConditionalValueStatics_abi;
+    type Vtable = ICompositionConditionalValueStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xdf133c1f_a185_536c_b54b_8f369212a581);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICompositionConditionalValueStatics_abi(
+pub struct ICompositionConditionalValueStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1014,7 +1014,7 @@ pub struct ICompositionConditionalValueStatics_abi(
 )]
 pub struct ICompositionInteractionSource(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICompositionInteractionSource {
-    type Vtable = ICompositionInteractionSource_abi;
+    type Vtable = ICompositionInteractionSourceVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x711c72c0_c406_4a12_859b_b44f651af046);
 }
@@ -1073,7 +1073,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICompositionInteractionSource_abi(
+pub struct ICompositionInteractionSourceVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1099,13 +1099,13 @@ pub struct ICompositionInteractionSource_abi(
 #[doc(hidden)]
 pub struct ICompositionInteractionSourceCollection(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICompositionInteractionSourceCollection {
-    type Vtable = ICompositionInteractionSourceCollection_abi;
+    type Vtable = ICompositionInteractionSourceCollectionVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x9aa1b86b_b002_5e2e_bb2b_0e2c547445e1);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICompositionInteractionSourceCollection_abi(
+pub struct ICompositionInteractionSourceCollectionVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1144,13 +1144,13 @@ pub struct ICompositionInteractionSourceCollection_abi(
 #[doc(hidden)]
 pub struct IInteractionSourceConfiguration(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionSourceConfiguration {
-    type Vtable = IInteractionSourceConfiguration_abi;
+    type Vtable = IInteractionSourceConfigurationVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x099e0124_dadf_5bc6_a895_90387657550f);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionSourceConfiguration_abi(
+pub struct IInteractionSourceConfigurationVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1200,13 +1200,13 @@ pub struct IInteractionSourceConfiguration_abi(
 #[doc(hidden)]
 pub struct IInteractionTracker(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionTracker {
-    type Vtable = IInteractionTracker_abi;
+    type Vtable = IInteractionTrackerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x02d8ec1f_8f04_505e_bd1e_47b2a204de51);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionTracker_abi(
+pub struct IInteractionTrackerVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1382,13 +1382,13 @@ pub struct IInteractionTracker_abi(
 #[doc(hidden)]
 pub struct IInteractionTracker2(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionTracker2 {
-    type Vtable = IInteractionTracker2_abi;
+    type Vtable = IInteractionTracker2Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x396d7fb1_2fad_5508_8591_4ff0dc5a7484);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionTracker2_abi(
+pub struct IInteractionTracker2Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1426,13 +1426,13 @@ pub struct IInteractionTracker2_abi(
 #[doc(hidden)]
 pub struct IInteractionTracker3(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionTracker3 {
-    type Vtable = IInteractionTracker3_abi;
+    type Vtable = IInteractionTracker3Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x239752cf_266c_5acb_acc3_b3e3ecaf4d3f);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionTracker3_abi(
+pub struct IInteractionTracker3Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1462,13 +1462,13 @@ pub struct IInteractionTracker3_abi(
 #[doc(hidden)]
 pub struct IInteractionTracker4(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionTracker4 {
-    type Vtable = IInteractionTracker4_abi;
+    type Vtable = IInteractionTracker4Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xa9a9ce02_53c9_5690_a575_f340b7c2fdf2);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionTracker4_abi(
+pub struct IInteractionTracker4Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1510,13 +1510,13 @@ pub struct IInteractionTracker4_abi(
 #[doc(hidden)]
 pub struct IInteractionTracker5(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionTracker5 {
-    type Vtable = IInteractionTracker5_abi;
+    type Vtable = IInteractionTracker5Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xdbfcd333_c3bf_5057_a45e_25edf06ebd8f);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionTracker5_abi(
+pub struct IInteractionTracker5Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1549,13 +1549,13 @@ pub struct IInteractionTracker5_abi(
 #[doc(hidden)]
 pub struct IInteractionTrackerCustomAnimationStateEnteredArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionTrackerCustomAnimationStateEnteredArgs {
-    type Vtable = IInteractionTrackerCustomAnimationStateEnteredArgs_abi;
+    type Vtable = IInteractionTrackerCustomAnimationStateEnteredArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x7464035c_cfce_56da_9472_420f276bd0a5);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionTrackerCustomAnimationStateEnteredArgs_abi(
+pub struct IInteractionTrackerCustomAnimationStateEnteredArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1585,13 +1585,13 @@ pub struct IInteractionTrackerCustomAnimationStateEnteredArgs_abi(
 #[doc(hidden)]
 pub struct IInteractionTrackerCustomAnimationStateEnteredArgs2(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionTrackerCustomAnimationStateEnteredArgs2 {
-    type Vtable = IInteractionTrackerCustomAnimationStateEnteredArgs2_abi;
+    type Vtable = IInteractionTrackerCustomAnimationStateEnteredArgs2Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x06b99fbc_d6a8_5ae3_88b8_e91621becbd6);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionTrackerCustomAnimationStateEnteredArgs2_abi(
+pub struct IInteractionTrackerCustomAnimationStateEnteredArgs2Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1621,13 +1621,13 @@ pub struct IInteractionTrackerCustomAnimationStateEnteredArgs2_abi(
 #[doc(hidden)]
 pub struct IInteractionTrackerIdleStateEnteredArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionTrackerIdleStateEnteredArgs {
-    type Vtable = IInteractionTrackerIdleStateEnteredArgs_abi;
+    type Vtable = IInteractionTrackerIdleStateEnteredArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x199094ab_15fd_539c_97b8_964a8196f777);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionTrackerIdleStateEnteredArgs_abi(
+pub struct IInteractionTrackerIdleStateEnteredArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1657,13 +1657,13 @@ pub struct IInteractionTrackerIdleStateEnteredArgs_abi(
 #[doc(hidden)]
 pub struct IInteractionTrackerIdleStateEnteredArgs2(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionTrackerIdleStateEnteredArgs2 {
-    type Vtable = IInteractionTrackerIdleStateEnteredArgs2_abi;
+    type Vtable = IInteractionTrackerIdleStateEnteredArgs2Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x4eb213c0_931c_5164_8965_11c0186d3390);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionTrackerIdleStateEnteredArgs2_abi(
+pub struct IInteractionTrackerIdleStateEnteredArgs2Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1693,13 +1693,13 @@ pub struct IInteractionTrackerIdleStateEnteredArgs2_abi(
 #[doc(hidden)]
 pub struct IInteractionTrackerInertiaModifier(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionTrackerInertiaModifier {
-    type Vtable = IInteractionTrackerInertiaModifier_abi;
+    type Vtable = IInteractionTrackerInertiaModifierVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x4d3a0c6b_c508_5029_a47a_cbf64636f010);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionTrackerInertiaModifier_abi(
+pub struct IInteractionTrackerInertiaModifierVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1725,13 +1725,13 @@ pub struct IInteractionTrackerInertiaModifier_abi(
 #[doc(hidden)]
 pub struct IInteractionTrackerInertiaModifierFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionTrackerInertiaModifierFactory {
-    type Vtable = IInteractionTrackerInertiaModifierFactory_abi;
+    type Vtable = IInteractionTrackerInertiaModifierFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x6dee5b33_0b5a_57b1_8537_93d4fd038f9f);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionTrackerInertiaModifierFactory_abi(
+pub struct IInteractionTrackerInertiaModifierFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1757,13 +1757,13 @@ pub struct IInteractionTrackerInertiaModifierFactory_abi(
 #[doc(hidden)]
 pub struct IInteractionTrackerInertiaMotion(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionTrackerInertiaMotion {
-    type Vtable = IInteractionTrackerInertiaMotion_abi;
+    type Vtable = IInteractionTrackerInertiaMotionVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x91f662c0_3141_5b5e_862f_cfc60bee8cd6);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionTrackerInertiaMotion_abi(
+pub struct IInteractionTrackerInertiaMotionVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1805,13 +1805,13 @@ pub struct IInteractionTrackerInertiaMotion_abi(
 #[doc(hidden)]
 pub struct IInteractionTrackerInertiaMotionStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionTrackerInertiaMotionStatics {
-    type Vtable = IInteractionTrackerInertiaMotionStatics_abi;
+    type Vtable = IInteractionTrackerInertiaMotionStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xb0185a4f_0059_52c6_a660_9aed0c44ff7d);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionTrackerInertiaMotionStatics_abi(
+pub struct IInteractionTrackerInertiaMotionStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1844,13 +1844,13 @@ pub struct IInteractionTrackerInertiaMotionStatics_abi(
 #[doc(hidden)]
 pub struct IInteractionTrackerInertiaNaturalMotion(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionTrackerInertiaNaturalMotion {
-    type Vtable = IInteractionTrackerInertiaNaturalMotion_abi;
+    type Vtable = IInteractionTrackerInertiaNaturalMotionVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x8c7482e0_185d_56b1_b67f_fca4fcd13cd2);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionTrackerInertiaNaturalMotion_abi(
+pub struct IInteractionTrackerInertiaNaturalMotionVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1892,13 +1892,13 @@ pub struct IInteractionTrackerInertiaNaturalMotion_abi(
 #[doc(hidden)]
 pub struct IInteractionTrackerInertiaNaturalMotionStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionTrackerInertiaNaturalMotionStatics {
-    type Vtable = IInteractionTrackerInertiaNaturalMotionStatics_abi;
+    type Vtable = IInteractionTrackerInertiaNaturalMotionStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x860ec143_f165_5298_abf2_47369dd07f10);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionTrackerInertiaNaturalMotionStatics_abi(
+pub struct IInteractionTrackerInertiaNaturalMotionStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1931,13 +1931,13 @@ pub struct IInteractionTrackerInertiaNaturalMotionStatics_abi(
 #[doc(hidden)]
 pub struct IInteractionTrackerInertiaRestingValue(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionTrackerInertiaRestingValue {
-    type Vtable = IInteractionTrackerInertiaRestingValue_abi;
+    type Vtable = IInteractionTrackerInertiaRestingValueVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x1a2b20cd_3371_53ff_a560_f4847b467d73);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionTrackerInertiaRestingValue_abi(
+pub struct IInteractionTrackerInertiaRestingValueVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1979,13 +1979,13 @@ pub struct IInteractionTrackerInertiaRestingValue_abi(
 #[doc(hidden)]
 pub struct IInteractionTrackerInertiaRestingValueStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionTrackerInertiaRestingValueStatics {
-    type Vtable = IInteractionTrackerInertiaRestingValueStatics_abi;
+    type Vtable = IInteractionTrackerInertiaRestingValueStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xcf0f0414_7fdf_5284_aeef_28b71b62aa4f);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionTrackerInertiaRestingValueStatics_abi(
+pub struct IInteractionTrackerInertiaRestingValueStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2018,13 +2018,13 @@ pub struct IInteractionTrackerInertiaRestingValueStatics_abi(
 #[doc(hidden)]
 pub struct IInteractionTrackerInertiaStateEnteredArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionTrackerInertiaStateEnteredArgs {
-    type Vtable = IInteractionTrackerInertiaStateEnteredArgs_abi;
+    type Vtable = IInteractionTrackerInertiaStateEnteredArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x5b76c949_a4d0_5c9d_9292_7013ae9656c7);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionTrackerInertiaStateEnteredArgs_abi(
+pub struct IInteractionTrackerInertiaStateEnteredArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2078,13 +2078,13 @@ pub struct IInteractionTrackerInertiaStateEnteredArgs_abi(
 #[doc(hidden)]
 pub struct IInteractionTrackerInertiaStateEnteredArgs2(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionTrackerInertiaStateEnteredArgs2 {
-    type Vtable = IInteractionTrackerInertiaStateEnteredArgs2_abi;
+    type Vtable = IInteractionTrackerInertiaStateEnteredArgs2Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc42d7e8f_7199_57a9_8aec_8727552b13e6);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionTrackerInertiaStateEnteredArgs2_abi(
+pub struct IInteractionTrackerInertiaStateEnteredArgs2Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2114,13 +2114,13 @@ pub struct IInteractionTrackerInertiaStateEnteredArgs2_abi(
 #[doc(hidden)]
 pub struct IInteractionTrackerInertiaStateEnteredArgs3(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionTrackerInertiaStateEnteredArgs3 {
-    type Vtable = IInteractionTrackerInertiaStateEnteredArgs3_abi;
+    type Vtable = IInteractionTrackerInertiaStateEnteredArgs3Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xce726ca0_1c04_531b_9951_4aec996952e4);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionTrackerInertiaStateEnteredArgs3_abi(
+pub struct IInteractionTrackerInertiaStateEnteredArgs3Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2150,13 +2150,13 @@ pub struct IInteractionTrackerInertiaStateEnteredArgs3_abi(
 #[doc(hidden)]
 pub struct IInteractionTrackerInteractingStateEnteredArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionTrackerInteractingStateEnteredArgs {
-    type Vtable = IInteractionTrackerInteractingStateEnteredArgs_abi;
+    type Vtable = IInteractionTrackerInteractingStateEnteredArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x70d29b84_0931_5f17_a8a1_82f8f8782532);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionTrackerInteractingStateEnteredArgs_abi(
+pub struct IInteractionTrackerInteractingStateEnteredArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2186,13 +2186,13 @@ pub struct IInteractionTrackerInteractingStateEnteredArgs_abi(
 #[doc(hidden)]
 pub struct IInteractionTrackerInteractingStateEnteredArgs2(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionTrackerInteractingStateEnteredArgs2 {
-    type Vtable = IInteractionTrackerInteractingStateEnteredArgs2_abi;
+    type Vtable = IInteractionTrackerInteractingStateEnteredArgs2Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x2f1ff38d_2f51_5ceb_8d09_bda1519f9342);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionTrackerInteractingStateEnteredArgs2_abi(
+pub struct IInteractionTrackerInteractingStateEnteredArgs2Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2227,7 +2227,7 @@ pub struct IInteractionTrackerInteractingStateEnteredArgs2_abi(
 )]
 pub struct IInteractionTrackerOwner(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionTrackerOwner {
-    type Vtable = IInteractionTrackerOwner_abi;
+    type Vtable = IInteractionTrackerOwnerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x8869779d_1d2a_5816_836a_68a910507d87);
 }
@@ -2405,7 +2405,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionTrackerOwner_abi(
+pub struct IInteractionTrackerOwnerVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2473,13 +2473,13 @@ pub struct IInteractionTrackerOwner_abi(
 #[doc(hidden)]
 pub struct IInteractionTrackerRequestIgnoredArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionTrackerRequestIgnoredArgs {
-    type Vtable = IInteractionTrackerRequestIgnoredArgs_abi;
+    type Vtable = IInteractionTrackerRequestIgnoredArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc276205e_f7a5_5ba2_ad45_d12c3c339149);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionTrackerRequestIgnoredArgs_abi(
+pub struct IInteractionTrackerRequestIgnoredArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2509,13 +2509,13 @@ pub struct IInteractionTrackerRequestIgnoredArgs_abi(
 #[doc(hidden)]
 pub struct IInteractionTrackerStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionTrackerStatics {
-    type Vtable = IInteractionTrackerStatics_abi;
+    type Vtable = IInteractionTrackerStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x7ac9867a_e16e_56ef_9809_f6e404240f50);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionTrackerStatics_abi(
+pub struct IInteractionTrackerStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2556,13 +2556,13 @@ pub struct IInteractionTrackerStatics_abi(
 #[doc(hidden)]
 pub struct IInteractionTrackerStatics2(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionTrackerStatics2 {
-    type Vtable = IInteractionTrackerStatics2_abi;
+    type Vtable = IInteractionTrackerStatics2Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x25658e4c_b99f_5108_aab7_1cc44f11508b);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionTrackerStatics2_abi(
+pub struct IInteractionTrackerStatics2Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2604,13 +2604,13 @@ pub struct IInteractionTrackerStatics2_abi(
 #[doc(hidden)]
 pub struct IInteractionTrackerValuesChangedArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionTrackerValuesChangedArgs {
-    type Vtable = IInteractionTrackerValuesChangedArgs_abi;
+    type Vtable = IInteractionTrackerValuesChangedArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x9b495bed_1cf7_55c1_82b9_8022cbf3c766);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionTrackerValuesChangedArgs_abi(
+pub struct IInteractionTrackerValuesChangedArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2648,13 +2648,13 @@ pub struct IInteractionTrackerValuesChangedArgs_abi(
 #[doc(hidden)]
 pub struct IInteractionTrackerVector2InertiaModifier(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionTrackerVector2InertiaModifier {
-    type Vtable = IInteractionTrackerVector2InertiaModifier_abi;
+    type Vtable = IInteractionTrackerVector2InertiaModifierVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x4b8ed310_cb61_5f0a_b99a_940cdd2c42b1);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionTrackerVector2InertiaModifier_abi(
+pub struct IInteractionTrackerVector2InertiaModifierVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2680,13 +2680,13 @@ pub struct IInteractionTrackerVector2InertiaModifier_abi(
 #[doc(hidden)]
 pub struct IInteractionTrackerVector2InertiaModifierFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionTrackerVector2InertiaModifierFactory {
-    type Vtable = IInteractionTrackerVector2InertiaModifierFactory_abi;
+    type Vtable = IInteractionTrackerVector2InertiaModifierFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x1b3fd240_ba66_5296_b801_62a2a3606613);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionTrackerVector2InertiaModifierFactory_abi(
+pub struct IInteractionTrackerVector2InertiaModifierFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2712,13 +2712,13 @@ pub struct IInteractionTrackerVector2InertiaModifierFactory_abi(
 #[doc(hidden)]
 pub struct IInteractionTrackerVector2InertiaNaturalMotion(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionTrackerVector2InertiaNaturalMotion {
-    type Vtable = IInteractionTrackerVector2InertiaNaturalMotion_abi;
+    type Vtable = IInteractionTrackerVector2InertiaNaturalMotionVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x097ba1a6_e077_52d1_86d3_38e3f6619ddf);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionTrackerVector2InertiaNaturalMotion_abi(
+pub struct IInteractionTrackerVector2InertiaNaturalMotionVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2760,13 +2760,13 @@ pub struct IInteractionTrackerVector2InertiaNaturalMotion_abi(
 #[doc(hidden)]
 pub struct IInteractionTrackerVector2InertiaNaturalMotionStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInteractionTrackerVector2InertiaNaturalMotionStatics {
-    type Vtable = IInteractionTrackerVector2InertiaNaturalMotionStatics_abi;
+    type Vtable = IInteractionTrackerVector2InertiaNaturalMotionStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xcc24ab87_9131_5286_b3ce_1ef97e0974e6);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInteractionTrackerVector2InertiaNaturalMotionStatics_abi(
+pub struct IInteractionTrackerVector2InertiaNaturalMotionStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2799,13 +2799,13 @@ pub struct IInteractionTrackerVector2InertiaNaturalMotionStatics_abi(
 #[doc(hidden)]
 pub struct IVisualInteractionSource(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IVisualInteractionSource {
-    type Vtable = IVisualInteractionSource_abi;
+    type Vtable = IVisualInteractionSourceVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xea595c95_b9cb_5cd4_bb9c_4934ff329063);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IVisualInteractionSource_abi(
+pub struct IVisualInteractionSourceVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2913,13 +2913,13 @@ pub struct IVisualInteractionSource_abi(
 #[doc(hidden)]
 pub struct IVisualInteractionSource2(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IVisualInteractionSource2 {
-    type Vtable = IVisualInteractionSource2_abi;
+    type Vtable = IVisualInteractionSource2Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xff1132ba_dc0d_519e_be49_be301e52306a);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IVisualInteractionSource2_abi(
+pub struct IVisualInteractionSource2Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2999,13 +2999,13 @@ pub struct IVisualInteractionSource2_abi(
 #[doc(hidden)]
 pub struct IVisualInteractionSource3(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IVisualInteractionSource3 {
-    type Vtable = IVisualInteractionSource3_abi;
+    type Vtable = IVisualInteractionSource3Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xd523bd66_a05d_5417_8e07_84ae3caf9752);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IVisualInteractionSource3_abi(
+pub struct IVisualInteractionSource3Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -3035,13 +3035,13 @@ pub struct IVisualInteractionSource3_abi(
 #[doc(hidden)]
 pub struct IVisualInteractionSourceObjectFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IVisualInteractionSourceObjectFactory {
-    type Vtable = IVisualInteractionSourceObjectFactory_abi;
+    type Vtable = IVisualInteractionSourceObjectFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xfeb73102_238c_52aa_8e03_b68d5ecc44b3);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IVisualInteractionSourceObjectFactory_abi(
+pub struct IVisualInteractionSourceObjectFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -3067,13 +3067,13 @@ pub struct IVisualInteractionSourceObjectFactory_abi(
 #[doc(hidden)]
 pub struct IVisualInteractionSourceStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IVisualInteractionSourceStatics {
-    type Vtable = IVisualInteractionSourceStatics_abi;
+    type Vtable = IVisualInteractionSourceStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x5fc9c763_e2e5_530e_87cd_b93118ade8a3);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IVisualInteractionSourceStatics_abi(
+pub struct IVisualInteractionSourceStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -3106,13 +3106,13 @@ pub struct IVisualInteractionSourceStatics_abi(
 #[doc(hidden)]
 pub struct IVisualInteractionSourceStatics2(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IVisualInteractionSourceStatics2 {
-    type Vtable = IVisualInteractionSourceStatics2_abi;
+    type Vtable = IVisualInteractionSourceStatics2Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xa6b494fe_12a1_5a73_b87e_4c4ef58eac6c);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IVisualInteractionSourceStatics2_abi(
+pub struct IVisualInteractionSourceStatics2Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -3509,7 +3509,7 @@ unsafe impl ::windows::core::RuntimeType for InteractionSourceConfiguration {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.Interactions.InteractionSourceConfiguration;{099e0124-dadf-5bc6-a895-90387657550f})" ) ;
 }
 unsafe impl ::windows::core::Interface for InteractionSourceConfiguration {
-    type Vtable = IInteractionSourceConfiguration_abi;
+    type Vtable = IInteractionSourceConfigurationVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x099e0124_dadf_5bc6_a895_90387657550f);
 }
@@ -4635,7 +4635,7 @@ unsafe impl ::windows::core::RuntimeType for InteractionTracker {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.Interactions.InteractionTracker;{02d8ec1f-8f04-505e-bd1e-47b2a204de51})" ) ;
 }
 unsafe impl ::windows::core::Interface for InteractionTracker {
-    type Vtable = IInteractionTracker_abi;
+    type Vtable = IInteractionTrackerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x02d8ec1f_8f04_505e_bd1e_47b2a204de51);
 }
@@ -4824,7 +4824,7 @@ unsafe impl ::windows::core::RuntimeType for InteractionTrackerCustomAnimationSt
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.Interactions.InteractionTrackerCustomAnimationStateEnteredArgs;{7464035c-cfce-56da-9472-420f276bd0a5})" ) ;
 }
 unsafe impl ::windows::core::Interface for InteractionTrackerCustomAnimationStateEnteredArgs {
-    type Vtable = IInteractionTrackerCustomAnimationStateEnteredArgs_abi;
+    type Vtable = IInteractionTrackerCustomAnimationStateEnteredArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x7464035c_cfce_56da_9472_420f276bd0a5);
 }
@@ -4927,7 +4927,7 @@ unsafe impl ::windows::core::RuntimeType for InteractionTrackerIdleStateEnteredA
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.Interactions.InteractionTrackerIdleStateEnteredArgs;{199094ab-15fd-539c-97b8-964a8196f777})" ) ;
 }
 unsafe impl ::windows::core::Interface for InteractionTrackerIdleStateEnteredArgs {
-    type Vtable = IInteractionTrackerIdleStateEnteredArgs_abi;
+    type Vtable = IInteractionTrackerIdleStateEnteredArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x199094ab_15fd_539c_97b8_964a8196f777);
 }
@@ -5203,7 +5203,7 @@ unsafe impl ::windows::core::RuntimeType for InteractionTrackerInertiaModifier {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaModifier;{4d3a0c6b-c508-5029-a47a-cbf64636f010})" ) ;
 }
 unsafe impl ::windows::core::Interface for InteractionTrackerInertiaModifier {
-    type Vtable = IInteractionTrackerInertiaModifier_abi;
+    type Vtable = IInteractionTrackerInertiaModifierVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x4d3a0c6b_c508_5029_a47a_cbf64636f010);
 }
@@ -5637,7 +5637,7 @@ unsafe impl ::windows::core::RuntimeType for InteractionTrackerInertiaMotion {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaMotion;{91f662c0-3141-5b5e-862f-cfc60bee8cd6})" ) ;
 }
 unsafe impl ::windows::core::Interface for InteractionTrackerInertiaMotion {
-    type Vtable = IInteractionTrackerInertiaMotion_abi;
+    type Vtable = IInteractionTrackerInertiaMotionVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x91f662c0_3141_5b5e_862f_cfc60bee8cd6);
 }
@@ -6104,7 +6104,7 @@ unsafe impl ::windows::core::RuntimeType for InteractionTrackerInertiaNaturalMot
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaNaturalMotion;{8c7482e0-185d-56b1-b67f-fca4fcd13cd2})" ) ;
 }
 unsafe impl ::windows::core::Interface for InteractionTrackerInertiaNaturalMotion {
-    type Vtable = IInteractionTrackerInertiaNaturalMotion_abi;
+    type Vtable = IInteractionTrackerInertiaNaturalMotionVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x8c7482e0_185d_56b1_b67f_fca4fcd13cd2);
 }
@@ -6579,7 +6579,7 @@ unsafe impl ::windows::core::RuntimeType for InteractionTrackerInertiaRestingVal
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaRestingValue;{1a2b20cd-3371-53ff-a560-f4847b467d73})" ) ;
 }
 unsafe impl ::windows::core::Interface for InteractionTrackerInertiaRestingValue {
-    type Vtable = IInteractionTrackerInertiaRestingValue_abi;
+    type Vtable = IInteractionTrackerInertiaRestingValueVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x1a2b20cd_3371_53ff_a560_f4847b467d73);
 }
@@ -6884,7 +6884,7 @@ unsafe impl ::windows::core::RuntimeType for InteractionTrackerInertiaStateEnter
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaStateEnteredArgs;{5b76c949-a4d0-5c9d-9292-7013ae9656c7})" ) ;
 }
 unsafe impl ::windows::core::Interface for InteractionTrackerInertiaStateEnteredArgs {
-    type Vtable = IInteractionTrackerInertiaStateEnteredArgs_abi;
+    type Vtable = IInteractionTrackerInertiaStateEnteredArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x5b76c949_a4d0_5c9d_9292_7013ae9656c7);
 }
@@ -6988,7 +6988,7 @@ unsafe impl ::windows::core::RuntimeType for InteractionTrackerInteractingStateE
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.Interactions.InteractionTrackerInteractingStateEnteredArgs;{70d29b84-0931-5f17-a8a1-82f8f8782532})" ) ;
 }
 unsafe impl ::windows::core::Interface for InteractionTrackerInteractingStateEnteredArgs {
-    type Vtable = IInteractionTrackerInteractingStateEnteredArgs_abi;
+    type Vtable = IInteractionTrackerInteractingStateEnteredArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x70d29b84_0931_5f17_a8a1_82f8f8782532);
 }
@@ -7111,7 +7111,7 @@ unsafe impl ::windows::core::RuntimeType for InteractionTrackerRequestIgnoredArg
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.Interactions.InteractionTrackerRequestIgnoredArgs;{c276205e-f7a5-5ba2-ad45-d12c3c339149})" ) ;
 }
 unsafe impl ::windows::core::Interface for InteractionTrackerRequestIgnoredArgs {
-    type Vtable = IInteractionTrackerRequestIgnoredArgs_abi;
+    type Vtable = IInteractionTrackerRequestIgnoredArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc276205e_f7a5_5ba2_ad45_d12c3c339149);
 }
@@ -7218,7 +7218,7 @@ unsafe impl ::windows::core::RuntimeType for InteractionTrackerValuesChangedArgs
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.Interactions.InteractionTrackerValuesChangedArgs;{9b495bed-1cf7-55c1-82b9-8022cbf3c766})" ) ;
 }
 unsafe impl ::windows::core::Interface for InteractionTrackerValuesChangedArgs {
-    type Vtable = IInteractionTrackerValuesChangedArgs_abi;
+    type Vtable = IInteractionTrackerValuesChangedArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x9b495bed_1cf7_55c1_82b9_8022cbf3c766);
 }
@@ -7490,7 +7490,7 @@ unsafe impl ::windows::core::RuntimeType for InteractionTrackerVector2InertiaMod
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.Interactions.InteractionTrackerVector2InertiaModifier;{4b8ed310-cb61-5f0a-b99a-940cdd2c42b1})" ) ;
 }
 unsafe impl ::windows::core::Interface for InteractionTrackerVector2InertiaModifier {
-    type Vtable = IInteractionTrackerVector2InertiaModifier_abi;
+    type Vtable = IInteractionTrackerVector2InertiaModifierVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x4b8ed310_cb61_5f0a_b99a_940cdd2c42b1);
 }
@@ -7939,7 +7939,7 @@ unsafe impl ::windows::core::RuntimeType for InteractionTrackerVector2InertiaNat
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.Interactions.InteractionTrackerVector2InertiaNaturalMotion;{097ba1a6-e077-52d1-86d3-38e3f6619ddf})" ) ;
 }
 unsafe impl ::windows::core::Interface for InteractionTrackerVector2InertiaNaturalMotion {
-    type Vtable = IInteractionTrackerVector2InertiaNaturalMotion_abi;
+    type Vtable = IInteractionTrackerVector2InertiaNaturalMotionVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x097ba1a6_e077_52d1_86d3_38e3f6619ddf);
 }
@@ -8801,7 +8801,7 @@ unsafe impl ::windows::core::RuntimeType for VisualInteractionSource {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.Interactions.VisualInteractionSource;{ea595c95-b9cb-5cd4-bb9c-4934ff329063})" ) ;
 }
 unsafe impl ::windows::core::Interface for VisualInteractionSource {
-    type Vtable = IVisualInteractionSource_abi;
+    type Vtable = IVisualInteractionSourceVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xea595c95_b9cb_5cd4_bb9c_4934ff329063);
 }

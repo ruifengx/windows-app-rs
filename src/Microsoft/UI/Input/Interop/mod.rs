@@ -11,13 +11,13 @@
 #[doc(hidden)]
 pub struct IPenDeviceInteropStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IPenDeviceInteropStatics {
-    type Vtable = IPenDeviceInteropStatics_abi;
+    type Vtable = IPenDeviceInteropStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc2a59f2a_e077_5d30_a1bd_cf84dd09ee39);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IPenDeviceInteropStatics_abi(
+pub struct IPenDeviceInteropStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,

@@ -78,7 +78,7 @@ unsafe impl ::windows::core::RuntimeType for CustomXamlResourceLoader {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Resources.CustomXamlResourceLoader;{2832c2e5-2ace-5993-a173-3c9c3b992b2e})" ) ;
 }
 unsafe impl ::windows::core::Interface for CustomXamlResourceLoader {
-    type Vtable = ICustomXamlResourceLoader_abi;
+    type Vtable = ICustomXamlResourceLoaderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x2832c2e5_2ace_5993_a173_3c9c3b992b2e);
 }
@@ -137,13 +137,13 @@ unsafe impl ::core::marker::Sync for CustomXamlResourceLoader {}
 #[doc(hidden)]
 pub struct ICustomXamlResourceLoader(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICustomXamlResourceLoader {
-    type Vtable = ICustomXamlResourceLoader_abi;
+    type Vtable = ICustomXamlResourceLoaderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x2832c2e5_2ace_5993_a173_3c9c3b992b2e);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICustomXamlResourceLoader_abi(
+pub struct ICustomXamlResourceLoaderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -169,13 +169,13 @@ pub struct ICustomXamlResourceLoader_abi(
 #[doc(hidden)]
 pub struct ICustomXamlResourceLoaderFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICustomXamlResourceLoaderFactory {
-    type Vtable = ICustomXamlResourceLoaderFactory_abi;
+    type Vtable = ICustomXamlResourceLoaderFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x174d49a6_e1e2_5f7b_a618_a8a953d1b5a0);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICustomXamlResourceLoaderFactory_abi(
+pub struct ICustomXamlResourceLoaderFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -207,13 +207,13 @@ pub struct ICustomXamlResourceLoaderFactory_abi(
 #[doc(hidden)]
 pub struct ICustomXamlResourceLoaderOverrides(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICustomXamlResourceLoaderOverrides {
-    type Vtable = ICustomXamlResourceLoaderOverrides_abi;
+    type Vtable = ICustomXamlResourceLoaderOverridesVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x84bb504c_6730_586a_bd04_9198264b2dc7);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICustomXamlResourceLoaderOverrides_abi(
+pub struct ICustomXamlResourceLoaderOverridesVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -247,13 +247,13 @@ pub struct ICustomXamlResourceLoaderOverrides_abi(
 #[doc(hidden)]
 pub struct ICustomXamlResourceLoaderStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICustomXamlResourceLoaderStatics {
-    type Vtable = ICustomXamlResourceLoaderStatics_abi;
+    type Vtable = ICustomXamlResourceLoaderStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xe08a5a92_b1a2_539a_9d4a_7994e4468cd7);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICustomXamlResourceLoaderStatics_abi(
+pub struct ICustomXamlResourceLoaderStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,

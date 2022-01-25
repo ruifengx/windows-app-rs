@@ -16,7 +16,7 @@
 )]
 pub struct IAnnotationProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IAnnotationProvider {
-    type Vtable = IAnnotationProvider_abi;
+    type Vtable = IAnnotationProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x546ab18e_986d_5deb_8f2a_2d9303a43006);
 }
@@ -126,7 +126,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IAnnotationProvider_abi(
+pub struct IAnnotationProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -177,7 +177,7 @@ pub struct IAnnotationProvider_abi(
 )]
 pub struct ICustomNavigationProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICustomNavigationProvider {
-    type Vtable = ICustomNavigationProvider_abi;
+    type Vtable = ICustomNavigationProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xcad51322_faa9_5a2b_90f0_b762c46178b3);
 }
@@ -251,7 +251,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICustomNavigationProvider_abi(
+pub struct ICustomNavigationProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -289,7 +289,7 @@ pub struct ICustomNavigationProvider_abi(
 )]
 pub struct IDockProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IDockProvider {
-    type Vtable = IDockProvider_abi;
+    type Vtable = IDockProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x9882b971_70ea_5c6d_a818_7a7ab68c6f3b);
 }
@@ -365,7 +365,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IDockProvider_abi(
+pub struct IDockProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -404,7 +404,7 @@ pub struct IDockProvider_abi(
 )]
 pub struct IDragProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IDragProvider {
-    type Vtable = IDragProvider_abi;
+    type Vtable = IDragProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc60bb643_a356_5132_a258_ffba6c7480f2);
 }
@@ -509,7 +509,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IDragProvider_abi(
+pub struct IDragProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -558,7 +558,7 @@ pub struct IDragProvider_abi(
 )]
 pub struct IDropTargetProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IDropTargetProvider {
-    type Vtable = IDropTargetProvider_abi;
+    type Vtable = IDropTargetProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x9b2a9f3d_bbb1_510d_99e8_0e0ae14a6e3b);
 }
@@ -637,7 +637,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IDropTargetProvider_abi(
+pub struct IDropTargetProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -677,7 +677,7 @@ pub struct IDropTargetProvider_abi(
 )]
 pub struct IExpandCollapseProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IExpandCollapseProvider {
-    type Vtable = IExpandCollapseProvider_abi;
+    type Vtable = IExpandCollapseProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x6cef349c_b181_5d0b_b297_c3b0166120c3);
 }
@@ -754,7 +754,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IExpandCollapseProvider_abi(
+pub struct IExpandCollapseProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -791,7 +791,7 @@ pub struct IExpandCollapseProvider_abi(
 )]
 pub struct IGridItemProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IGridItemProvider {
-    type Vtable = IGridItemProvider_abi;
+    type Vtable = IGridItemProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xd2557a0e_6909_5170_a680_60728df339b4);
 }
@@ -898,7 +898,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IGridItemProvider_abi(
+pub struct IGridItemProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -949,7 +949,7 @@ pub struct IGridItemProvider_abi(
 )]
 pub struct IGridProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IGridProvider {
-    type Vtable = IGridProvider_abi;
+    type Vtable = IGridProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x50992d5e_d225_56e9_a25a_78c372e81955);
 }
@@ -1040,7 +1040,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IGridProvider_abi(
+pub struct IGridProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1080,13 +1080,13 @@ pub struct IGridProvider_abi(
 #[doc(hidden)]
 pub struct IIRawElementProviderSimple(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IIRawElementProviderSimple {
-    type Vtable = IIRawElementProviderSimple_abi;
+    type Vtable = IIRawElementProviderSimpleVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xf90bc239_ade2_55c9_a838_a3b0579763c5);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IIRawElementProviderSimple_abi(
+pub struct IIRawElementProviderSimpleVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1117,7 +1117,7 @@ pub struct IIRawElementProviderSimple_abi(
 )]
 pub struct IInvokeProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IInvokeProvider {
-    type Vtable = IInvokeProvider_abi;
+    type Vtable = IInvokeProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x02481105_3378_544d_b4e1_a1b368afbc02);
 }
@@ -1175,7 +1175,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IInvokeProvider_abi(
+pub struct IInvokeProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1207,7 +1207,7 @@ pub struct IInvokeProvider_abi(
 )]
 pub struct IItemContainerProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IItemContainerProvider {
-    type Vtable = IItemContainerProvider_abi;
+    type Vtable = IItemContainerProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xad297363_694e_5885_997d_a2d6dff415a7);
 }
@@ -1285,7 +1285,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IItemContainerProvider_abi(
+pub struct IItemContainerProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1323,7 +1323,7 @@ pub struct IItemContainerProvider_abi(
 )]
 pub struct IMultipleViewProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IMultipleViewProvider {
-    type Vtable = IMultipleViewProvider_abi;
+    type Vtable = IMultipleViewProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x60be5484_3d8f_51fd_beab_423422ee1e03);
 }
@@ -1420,7 +1420,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IMultipleViewProvider_abi(
+pub struct IMultipleViewProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1469,7 +1469,7 @@ pub struct IMultipleViewProvider_abi(
 )]
 pub struct IObjectModelProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IObjectModelProvider {
-    type Vtable = IObjectModelProvider_abi;
+    type Vtable = IObjectModelProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x92953ed0_4bd8_5624_8e3d_78d45fde9cf2);
 }
@@ -1536,7 +1536,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IObjectModelProvider_abi(
+pub struct IObjectModelProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1571,7 +1571,7 @@ pub struct IObjectModelProvider_abi(
 )]
 pub struct IRangeValueProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IRangeValueProvider {
-    type Vtable = IRangeValueProvider_abi;
+    type Vtable = IRangeValueProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x729ae414_1e8f_5020_82bb_bb574d145fd8);
 }
@@ -1696,7 +1696,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IRangeValueProvider_abi(
+pub struct IRangeValueProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1920,7 +1920,7 @@ unsafe impl ::windows::core::RuntimeType for IRawElementProviderSimple {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple;{f90bc239-ade2-55c9-a838-a3b0579763c5})" ) ;
 }
 unsafe impl ::windows::core::Interface for IRawElementProviderSimple {
-    type Vtable = IIRawElementProviderSimple_abi;
+    type Vtable = IIRawElementProviderSimpleVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xf90bc239_ade2_55c9_a838_a3b0579763c5);
 }
@@ -2014,7 +2014,7 @@ unsafe impl ::core::marker::Sync for IRawElementProviderSimple {}
 )]
 pub struct IScrollItemProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IScrollItemProvider {
-    type Vtable = IScrollItemProvider_abi;
+    type Vtable = IScrollItemProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x8a6fb8eb_e5f1_58eb_8e72_8b95f236fc47);
 }
@@ -2072,7 +2072,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IScrollItemProvider_abi(
+pub struct IScrollItemProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2104,7 +2104,7 @@ pub struct IScrollItemProvider_abi(
 )]
 pub struct IScrollProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IScrollProvider {
-    type Vtable = IScrollProvider_abi;
+    type Vtable = IScrollProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x7e2e5af3_ff50_5365_bcfe_ef424b2fd590);
 }
@@ -2252,7 +2252,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IScrollProvider_abi(
+pub struct IScrollProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2317,7 +2317,7 @@ pub struct IScrollProvider_abi(
 )]
 pub struct ISelectionItemProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISelectionItemProvider {
-    type Vtable = ISelectionItemProvider_abi;
+    type Vtable = ISelectionItemProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc9dfdd81_d4ac_5d31_be7f_24fab16060e4);
 }
@@ -2411,7 +2411,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISelectionItemProvider_abi(
+pub struct ISelectionItemProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2453,7 +2453,7 @@ pub struct ISelectionItemProvider_abi(
 )]
 pub struct ISelectionProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISelectionProvider {
-    type Vtable = ISelectionProvider_abi;
+    type Vtable = ISelectionProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x80d56d4e_0052_541f_9411_9d1778b3bfca);
 }
@@ -2542,7 +2542,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISelectionProvider_abi(
+pub struct ISelectionProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2586,7 +2586,7 @@ pub struct ISelectionProvider_abi(
 )]
 pub struct ISpreadsheetItemProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISpreadsheetItemProvider {
-    type Vtable = ISpreadsheetItemProvider_abi;
+    type Vtable = ISpreadsheetItemProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x51c1ce89_b21f_592c_8768_0accdefd5738);
 }
@@ -2685,7 +2685,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISpreadsheetItemProvider_abi(
+pub struct ISpreadsheetItemProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2730,7 +2730,7 @@ pub struct ISpreadsheetItemProvider_abi(
 )]
 pub struct ISpreadsheetProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISpreadsheetProvider {
-    type Vtable = ISpreadsheetProvider_abi;
+    type Vtable = ISpreadsheetProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x1ff41bac_d9e3_5e48_b5f8_9eab0fb2d9d8);
 }
@@ -2799,7 +2799,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISpreadsheetProvider_abi(
+pub struct ISpreadsheetProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2835,7 +2835,7 @@ pub struct ISpreadsheetProvider_abi(
 )]
 pub struct IStylesProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IStylesProvider {
-    type Vtable = IStylesProvider_abi;
+    type Vtable = IStylesProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xd8895839_0048_54de_9c1f_152de6665e80);
 }
@@ -2968,7 +2968,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IStylesProvider_abi(
+pub struct IStylesProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -3027,7 +3027,7 @@ pub struct IStylesProvider_abi(
 )]
 pub struct ISynchronizedInputProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISynchronizedInputProvider {
-    type Vtable = ISynchronizedInputProvider_abi;
+    type Vtable = ISynchronizedInputProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc5615613_936d_5289_a190_e82057e0ff5a);
 }
@@ -3104,7 +3104,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISynchronizedInputProvider_abi(
+pub struct ISynchronizedInputProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -3140,7 +3140,7 @@ pub struct ISynchronizedInputProvider_abi(
 )]
 pub struct ITableItemProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITableItemProvider {
-    type Vtable = ITableItemProvider_abi;
+    type Vtable = ITableItemProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x6ce6f038_54d4_5553_a4ad_03cbcf358197);
 }
@@ -3222,7 +3222,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITableItemProvider_abi(
+pub struct ITableItemProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -3263,7 +3263,7 @@ pub struct ITableItemProvider_abi(
 )]
 pub struct ITableProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITableProvider {
-    type Vtable = ITableProvider_abi;
+    type Vtable = ITableProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x9aba6724_b22d_5db8_8abb_81f911f18af2);
 }
@@ -3356,7 +3356,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITableProvider_abi(
+pub struct ITableProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -3401,7 +3401,7 @@ pub struct ITableProvider_abi(
 )]
 pub struct ITextChildProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITextChildProvider {
-    type Vtable = ITextChildProvider_abi;
+    type Vtable = ITextChildProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x7c72e55f_f75d_5522_aeb5_c1f82c32933b);
 }
@@ -3476,7 +3476,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITextChildProvider_abi(
+pub struct ITextChildProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -3517,7 +3517,7 @@ pub struct ITextChildProvider_abi(
 )]
 pub struct ITextEditProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITextEditProvider {
-    type Vtable = ITextEditProvider_abi;
+    type Vtable = ITextEditProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x7f09bbe8_bea7_5dd3_ba6b_28dbb402fad4);
 }
@@ -3705,7 +3705,7 @@ impl<'a> ::windows::core::IntoParam<'a, ITextProvider> for &ITextEditProvider {
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITextEditProvider_abi(
+pub struct ITextEditProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -3748,7 +3748,7 @@ pub struct ITextEditProvider_abi(
 )]
 pub struct ITextProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITextProvider {
-    type Vtable = ITextProvider_abi;
+    type Vtable = ITextProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x37e7dce6_fe7a_56a7_a47a_9462872c67ef);
 }
@@ -3888,7 +3888,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITextProvider_abi(
+pub struct ITextProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -3957,7 +3957,7 @@ pub struct ITextProvider_abi(
 )]
 pub struct ITextProvider2(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITextProvider2 {
-    type Vtable = ITextProvider2_abi;
+    type Vtable = ITextProvider2Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x6844f012_c7e6_5763_ba04_5b6db910cd34);
 }
@@ -4156,7 +4156,7 @@ impl<'a> ::windows::core::IntoParam<'a, ITextProvider> for &ITextProvider2 {
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITextProvider2_abi(
+pub struct ITextProvider2Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -4201,7 +4201,7 @@ pub struct ITextProvider2_abi(
 )]
 pub struct ITextRangeProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITextRangeProvider {
-    type Vtable = ITextRangeProvider_abi;
+    type Vtable = ITextRangeProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x84210361_6ce2_5084_bf3b_28afa6e9851f);
 }
@@ -4503,7 +4503,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITextRangeProvider_abi(
+pub struct ITextRangeProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -4636,7 +4636,7 @@ pub struct ITextRangeProvider_abi(
 )]
 pub struct ITextRangeProvider2(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITextRangeProvider2 {
-    type Vtable = ITextRangeProvider2_abi;
+    type Vtable = ITextRangeProvider2Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x34d4a80e_36bb_5362_a53b_490428a8b367);
 }
@@ -4968,7 +4968,7 @@ impl<'a> ::windows::core::IntoParam<'a, ITextRangeProvider> for &ITextRangeProvi
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITextRangeProvider2_abi(
+pub struct ITextRangeProvider2Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5000,7 +5000,7 @@ pub struct ITextRangeProvider2_abi(
 )]
 pub struct IToggleProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IToggleProvider {
-    type Vtable = IToggleProvider_abi;
+    type Vtable = IToggleProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x021080c2_30a9_52ef_bc32_2b79847b6ba7);
 }
@@ -5069,7 +5069,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IToggleProvider_abi(
+pub struct IToggleProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5105,7 +5105,7 @@ pub struct IToggleProvider_abi(
 )]
 pub struct ITransformProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITransformProvider {
-    type Vtable = ITransformProvider_abi;
+    type Vtable = ITransformProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x6fd76988_8f52_5ef2_a826_9c8c4951c911);
 }
@@ -5218,7 +5218,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITransformProvider_abi(
+pub struct ITransformProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5275,7 +5275,7 @@ pub struct ITransformProvider_abi(
 )]
 pub struct ITransformProvider2(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITransformProvider2 {
-    type Vtable = ITransformProvider2_abi;
+    type Vtable = ITransformProvider2Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x7d91d02d_8401_5cf8_bbc4_47391a524215);
 }
@@ -5473,7 +5473,7 @@ impl<'a> ::windows::core::IntoParam<'a, ITransformProvider> for &ITransformProvi
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITransformProvider2_abi(
+pub struct ITransformProvider2Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5528,7 +5528,7 @@ pub struct ITransformProvider2_abi(
 )]
 pub struct IValueProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IValueProvider {
-    type Vtable = IValueProvider_abi;
+    type Vtable = IValueProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x984f11cf_4611_588e_b52e_b96a12322c71);
 }
@@ -5616,7 +5616,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IValueProvider_abi(
+pub struct IValueProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5659,7 +5659,7 @@ pub struct IValueProvider_abi(
 )]
 pub struct IVirtualizedItemProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IVirtualizedItemProvider {
-    type Vtable = IVirtualizedItemProvider_abi;
+    type Vtable = IVirtualizedItemProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x098f858a_2e63_5985_ab87_f8ebdb1c5740);
 }
@@ -5723,7 +5723,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IVirtualizedItemProvider_abi(
+pub struct IVirtualizedItemProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5755,7 +5755,7 @@ pub struct IVirtualizedItemProvider_abi(
 )]
 pub struct IWindowProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IWindowProvider {
-    type Vtable = IWindowProvider_abi;
+    type Vtable = IWindowProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x83f1df99_9ddf_575e_a651_2ee657fd16e0);
 }
@@ -5898,7 +5898,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IWindowProvider_abi(
+pub struct IWindowProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,

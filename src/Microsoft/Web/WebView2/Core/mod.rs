@@ -1338,7 +1338,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2 {
     );
 }
 unsafe impl ::windows::core::Interface for CoreWebView2 {
-    type Vtable = ICoreWebView2_abi;
+    type Vtable = ICoreWebView2Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x3a3f559a_e5e9_5338_bb67_4eb0504a4f14);
 }
@@ -1463,7 +1463,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2AcceleratorKeyPressedEv
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2AcceleratorKeyPressedEventArgs;{41a56100-92a5-59d1-9e71-9222e33ae38b})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2AcceleratorKeyPressedEventArgs {
-    type Vtable = ICoreWebView2AcceleratorKeyPressedEventArgs_abi;
+    type Vtable = ICoreWebView2AcceleratorKeyPressedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x41a56100_92a5_59d1_9e71_9222e33ae38b);
 }
@@ -1627,7 +1627,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2BrowserProcessExitedEve
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2BrowserProcessExitedEventArgs;{79963f77-1484-5a46-b91f-dfc5c1a0ce14})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2BrowserProcessExitedEventArgs {
-    type Vtable = ICoreWebView2BrowserProcessExitedEventArgs_abi;
+    type Vtable = ICoreWebView2BrowserProcessExitedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x79963f77_1484_5a46_b91f_dfc5c1a0ce14);
 }
@@ -1862,7 +1862,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2ClientCertificate {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificate;{091b39f2-68df-52b4-8fb0-fd3561af41f2})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2ClientCertificate {
-    type Vtable = ICoreWebView2ClientCertificate_abi;
+    type Vtable = ICoreWebView2ClientCertificateVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x091b39f2_68df_52b4_8fb0_fd3561af41f2);
 }
@@ -2107,7 +2107,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2ClientCertificateReques
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificateRequestedEventArgs;{93287b55-31f9-55a0-b68b-d9841d7e1bf4})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2ClientCertificateRequestedEventArgs {
-    type Vtable = ICoreWebView2ClientCertificateRequestedEventArgs_abi;
+    type Vtable = ICoreWebView2ClientCertificateRequestedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x93287b55_31f9_55a0_b68b_d9841d7e1bf4);
 }
@@ -2177,13 +2177,13 @@ unsafe impl ::core::marker::Sync for CoreWebView2ClientCertificateRequestedEvent
 #[doc(hidden)]
 pub struct CoreWebView2ClientCertificate_Manual(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for CoreWebView2ClientCertificate_Manual {
-    type Vtable = CoreWebView2ClientCertificate_Manual_abi;
+    type Vtable = CoreWebView2ClientCertificate_ManualVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xfaefefc2_20c3_5d86_8a74_f6d87d6ff8fa);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct CoreWebView2ClientCertificate_Manual_abi(
+pub struct CoreWebView2ClientCertificate_ManualVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2794,7 +2794,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2CompositionController {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2CompositionController;{4fb8b7b3-4a2e-5787-94b9-cc48c4d364d7})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2CompositionController {
-    type Vtable = ICoreWebView2CompositionController_abi;
+    type Vtable = ICoreWebView2CompositionControllerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x4fb8b7b3_4a2e_5787_94b9_cc48c4d364d7);
 }
@@ -2913,7 +2913,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2ContentLoadingEventArgs
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2ContentLoadingEventArgs;{6cf95373-946c-5dae-9b3e-0fe23d5aa29f})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2ContentLoadingEventArgs {
-    type Vtable = ICoreWebView2ContentLoadingEventArgs_abi;
+    type Vtable = ICoreWebView2ContentLoadingEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x6cf95373_946c_5dae_9b3e_0fe23d5aa29f);
 }
@@ -3440,7 +3440,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2Controller {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2Controller;{a588121c-53bf-590e-80e5-29d729cbd743})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2Controller {
-    type Vtable = ICoreWebView2Controller_abi;
+    type Vtable = ICoreWebView2ControllerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xa588121c_53bf_590e_80e5_29d729cbd743);
 }
@@ -3568,7 +3568,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2ControllerWindowReferen
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2ControllerWindowReference;{0feddad4-48a3-5cc4-9f61-e7adfd1e9c76})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2ControllerWindowReference {
-    type Vtable = ICoreWebView2ControllerWindowReference_abi;
+    type Vtable = ICoreWebView2ControllerWindowReferenceVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x0feddad4_48a3_5cc4_9f61_e7adfd1e9c76);
 }
@@ -3790,7 +3790,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2Cookie {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2Cookie;{52f670fe-8ca2-5aad-aedb-25f7903b7038})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2Cookie {
-    type Vtable = ICoreWebView2Cookie_abi;
+    type Vtable = ICoreWebView2CookieVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x52f670fe_8ca2_5aad_aedb_25f7903b7038);
 }
@@ -3968,7 +3968,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2CookieManager {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2CookieManager;{4098f516-adca-5563-aaa5-d7affd847aa3})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2CookieManager {
-    type Vtable = ICoreWebView2CookieManager_abi;
+    type Vtable = ICoreWebView2CookieManagerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x4098f516_adca_5563_aaa5_d7affd847aa3);
 }
@@ -4079,7 +4079,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2DOMContentLoadedEventAr
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2DOMContentLoadedEventArgs;{c474d0a3-24ac-59fc-b78b-da7562a6a052})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2DOMContentLoadedEventArgs {
-    type Vtable = ICoreWebView2DOMContentLoadedEventArgs_abi;
+    type Vtable = ICoreWebView2DOMContentLoadedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc474d0a3_24ac_59fc_b78b_da7562a6a052);
 }
@@ -4166,7 +4166,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2DevToolsProtocolEventRe
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2DevToolsProtocolEventReceivedEventArgs;{b6a4b41d-fd18-59fa-923a-c57555d960ce})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2DevToolsProtocolEventReceivedEventArgs {
-    type Vtable = ICoreWebView2DevToolsProtocolEventReceivedEventArgs_abi;
+    type Vtable = ICoreWebView2DevToolsProtocolEventReceivedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xb6a4b41d_fd18_59fa_923a_c57555d960ce);
 }
@@ -4286,7 +4286,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2DevToolsProtocolEventRe
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2DevToolsProtocolEventReceiver;{b2a2be79-65fc-5537-8715-3d92bf31090b})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2DevToolsProtocolEventReceiver {
-    type Vtable = ICoreWebView2DevToolsProtocolEventReceiver_abi;
+    type Vtable = ICoreWebView2DevToolsProtocolEventReceiverVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xb2a2be79_65fc_5537_8715_3d92bf31090b);
 }
@@ -4706,7 +4706,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2DownloadOperation {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2DownloadOperation;{afe73e6b-e760-5a06-9bf6-1e743c13cd2d})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2DownloadOperation {
-    type Vtable = ICoreWebView2DownloadOperation_abi;
+    type Vtable = ICoreWebView2DownloadOperationVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xafe73e6b_e760_5a06_9bf6_1e743c13cd2d);
 }
@@ -4863,7 +4863,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2DownloadStartingEventAr
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2DownloadStartingEventArgs;{45d982ba-9256-5b35-b023-26a438599110})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2DownloadStartingEventArgs {
-    type Vtable = ICoreWebView2DownloadStartingEventArgs_abi;
+    type Vtable = ICoreWebView2DownloadStartingEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x45d982ba_9256_5b35_b023_26a438599110);
 }
@@ -5273,7 +5273,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2Environment {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2Environment;{d8cc7831-b783-556b-b9ce-899c1e95d585})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2Environment {
-    type Vtable = ICoreWebView2Environment_abi;
+    type Vtable = ICoreWebView2EnvironmentVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xd8cc7831_b783_556b_b9ce_899c1e95d585);
 }
@@ -5457,7 +5457,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2EnvironmentOptions {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions;{25d6dc39-0062-5735-8b09-a6f535f19e97})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2EnvironmentOptions {
-    type Vtable = ICoreWebView2EnvironmentOptions_abi;
+    type Vtable = ICoreWebView2EnvironmentOptionsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x25d6dc39_0062_5735_8b09_a6f535f19e97);
 }
@@ -5649,7 +5649,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2Frame {
     );
 }
 unsafe impl ::windows::core::Interface for CoreWebView2Frame {
-    type Vtable = ICoreWebView2Frame_abi;
+    type Vtable = ICoreWebView2FrameVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x02ffcbf9_19e7_5bb8_8273_346420fb1503);
 }
@@ -5723,7 +5723,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2FrameCreatedEventArgs {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2FrameCreatedEventArgs;{527b01b8-fc6d-5543-8dce-96cdfdb32c81})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2FrameCreatedEventArgs {
-    type Vtable = ICoreWebView2FrameCreatedEventArgs_abi;
+    type Vtable = ICoreWebView2FrameCreatedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x527b01b8_fc6d_5543_8dce_96cdfdb32c81);
 }
@@ -5818,7 +5818,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2FrameInfo {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2FrameInfo;{f9b82e06-73f3-513b-bc2c-445ddedba976})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2FrameInfo {
-    type Vtable = ICoreWebView2FrameInfo_abi;
+    type Vtable = ICoreWebView2FrameInfoVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xf9b82e06_73f3_513b_bc2c_445ddedba976);
 }
@@ -6005,7 +6005,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2HttpHeadersCollectionIt
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2HttpHeadersCollectionIterator;{adf264ee-d980-5f48-a60e-8705de046608})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2HttpHeadersCollectionIterator {
-    type Vtable = ICoreWebView2HttpHeadersCollectionIterator_abi;
+    type Vtable = ICoreWebView2HttpHeadersCollectionIteratorVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xadf264ee_d980_5f48_a60e_8705de046608);
 }
@@ -6282,7 +6282,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2HttpRequestHeaders {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2HttpRequestHeaders;{dc2226c7-3515-55bb-bcb2-57b78f86b91d})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2HttpRequestHeaders {
-    type Vtable = ICoreWebView2HttpRequestHeaders_abi;
+    type Vtable = ICoreWebView2HttpRequestHeadersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xdc2226c7_3515_55bb_bcb2_57b78f86b91d);
 }
@@ -6557,7 +6557,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2HttpResponseHeaders {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2HttpResponseHeaders;{f3d383e9-747f-5574-8662-9a6b920cecd4})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2HttpResponseHeaders {
-    type Vtable = ICoreWebView2HttpResponseHeaders_abi;
+    type Vtable = ICoreWebView2HttpResponseHeadersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xf3d383e9_747f_5574_8662_9a6b920cecd4);
 }
@@ -6943,7 +6943,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2MoveFocusRequestedEvent
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2MoveFocusRequestedEventArgs;{2e29103b-ecdd-5c1d-b288-3f066d608919})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2MoveFocusRequestedEventArgs {
-    type Vtable = ICoreWebView2MoveFocusRequestedEventArgs_abi;
+    type Vtable = ICoreWebView2MoveFocusRequestedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x2e29103b_ecdd_5c1d_b288_3f066d608919);
 }
@@ -7052,7 +7052,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2NavigationCompletedEven
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs;{4865e238-036a-5664-95a3-447ec44cf498})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2NavigationCompletedEventArgs {
-    type Vtable = ICoreWebView2NavigationCompletedEventArgs_abi;
+    type Vtable = ICoreWebView2NavigationCompletedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x4865e238_036a_5664_95a3_447ec44cf498);
 }
@@ -7204,7 +7204,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2NavigationStartingEvent
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs;{548d23d3-fea3-5616-bd05-ae08066c86d3})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2NavigationStartingEventArgs {
-    type Vtable = ICoreWebView2NavigationStartingEventArgs_abi;
+    type Vtable = ICoreWebView2NavigationStartingEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x548d23d3_fea3_5616_bd05_ae08066c86d3);
 }
@@ -7380,7 +7380,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2NewWindowRequestedEvent
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2NewWindowRequestedEventArgs;{e6e013ba-aec8-532e-9ac9-1590af7b25ec})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2NewWindowRequestedEventArgs {
-    type Vtable = ICoreWebView2NewWindowRequestedEventArgs_abi;
+    type Vtable = ICoreWebView2NewWindowRequestedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xe6e013ba_aec8_532e_9ac9_1590af7b25ec);
 }
@@ -7554,7 +7554,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2PermissionRequestedEven
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2PermissionRequestedEventArgs;{118bdd9b-cef1-5910-929e-c1a321328239})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2PermissionRequestedEventArgs {
-    type Vtable = ICoreWebView2PermissionRequestedEventArgs_abi;
+    type Vtable = ICoreWebView2PermissionRequestedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x118bdd9b_cef1_5910_929e_c1a321328239);
 }
@@ -8323,7 +8323,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2PointerInfo {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo;{c3860e0d-c018-5a84-bc06-9f8f7b275dff})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2PointerInfo {
-    type Vtable = ICoreWebView2PointerInfo_abi;
+    type Vtable = ICoreWebView2PointerInfoVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc3860e0d_c018_5a84_bc06_9f8f7b275dff);
 }
@@ -8669,7 +8669,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2PrintSettings {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2PrintSettings;{9c75c8c0-ef3d-58a8-9a8c-18eed9fd0f16})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2PrintSettings {
-    type Vtable = ICoreWebView2PrintSettings_abi;
+    type Vtable = ICoreWebView2PrintSettingsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x9c75c8c0_ef3d_58a8_9a8c_18eed9fd0f16);
 }
@@ -8800,7 +8800,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2ProcessFailedEventArgs 
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2ProcessFailedEventArgs;{25a8f8c9-d944-539d-afa3-24172b48ef47})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2ProcessFailedEventArgs {
-    type Vtable = ICoreWebView2ProcessFailedEventArgs_abi;
+    type Vtable = ICoreWebView2ProcessFailedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x25a8f8c9_d944_539d_afa3_24172b48ef47);
 }
@@ -9073,7 +9073,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2ScriptDialogOpeningEven
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2ScriptDialogOpeningEventArgs;{a4315212-c7eb-568a-86e4-c61e31ba6cda})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2ScriptDialogOpeningEventArgs {
-    type Vtable = ICoreWebView2ScriptDialogOpeningEventArgs_abi;
+    type Vtable = ICoreWebView2ScriptDialogOpeningEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xa4315212_c7eb_568a_86e4_c61e31ba6cda);
 }
@@ -9457,7 +9457,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2Settings {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2Settings;{003b325e-74cd-52dd-8024-ebb8be38e48e})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2Settings {
-    type Vtable = ICoreWebView2Settings_abi;
+    type Vtable = ICoreWebView2SettingsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x003b325e_74cd_52dd_8024_ebb8be38e48e);
 }
@@ -9533,7 +9533,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2SourceChangedEventArgs 
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2SourceChangedEventArgs;{ca437b2c-6a18-5552-b749-b198f8cc34d9})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2SourceChangedEventArgs {
-    type Vtable = ICoreWebView2SourceChangedEventArgs_abi;
+    type Vtable = ICoreWebView2SourceChangedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xca437b2c_6a18_5552_b749_b198f8cc34d9);
 }
@@ -9688,7 +9688,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2WebMessageReceivedEvent
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2WebMessageReceivedEventArgs;{eb066159-b725-5d5b-adc8-f5d7b9290304})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2WebMessageReceivedEventArgs {
-    type Vtable = ICoreWebView2WebMessageReceivedEventArgs_abi;
+    type Vtable = ICoreWebView2WebMessageReceivedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xeb066159_b725_5d5b_adc8_f5d7b9290304);
 }
@@ -9901,7 +9901,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2WebResourceRequest {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest;{5c742259-67d2-5df2-8382-0f201b4d7197})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2WebResourceRequest {
-    type Vtable = ICoreWebView2WebResourceRequest_abi;
+    type Vtable = ICoreWebView2WebResourceRequestVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x5c742259_67d2_5df2_8382_0f201b4d7197);
 }
@@ -10032,7 +10032,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2WebResourceRequestedEve
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequestedEventArgs;{577f1fc4-c943-54a9-9700-bd469b48bd41})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2WebResourceRequestedEventArgs {
-    type Vtable = ICoreWebView2WebResourceRequestedEventArgs_abi;
+    type Vtable = ICoreWebView2WebResourceRequestedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x577f1fc4_c943_54a9_9700_bd469b48bd41);
 }
@@ -10195,7 +10195,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2WebResourceResponse {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2WebResourceResponse;{14621923-e485-5f44-8f5d-bd4243bc398f})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2WebResourceResponse {
-    type Vtable = ICoreWebView2WebResourceResponse_abi;
+    type Vtable = ICoreWebView2WebResourceResponseVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x14621923_e485_5f44_8f5d_bd4243bc398f);
 }
@@ -10288,7 +10288,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2WebResourceResponseRece
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2WebResourceResponseReceivedEventArgs;{12424671-9711-54f4-bcdf-5f307add6ec2})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2WebResourceResponseReceivedEventArgs {
-    type Vtable = ICoreWebView2WebResourceResponseReceivedEventArgs_abi;
+    type Vtable = ICoreWebView2WebResourceResponseReceivedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x12424671_9711_54f4_bcdf_5f307add6ec2);
 }
@@ -10419,7 +10419,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2WebResourceResponseView
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2WebResourceResponseView;{33ee060b-b578-5698-b541-fef87fe7fe72})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2WebResourceResponseView {
-    type Vtable = ICoreWebView2WebResourceResponseView_abi;
+    type Vtable = ICoreWebView2WebResourceResponseViewVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x33ee060b_b578_5698_b541_fef87fe7fe72);
 }
@@ -10600,7 +10600,7 @@ unsafe impl ::windows::core::RuntimeType for CoreWebView2WindowFeatures {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures;{ee8686d6-056f-5e06-824f-4e2a24c1c1d6})" ) ;
 }
 unsafe impl ::windows::core::Interface for CoreWebView2WindowFeatures {
-    type Vtable = ICoreWebView2WindowFeatures_abi;
+    type Vtable = ICoreWebView2WindowFeaturesVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xee8686d6_056f_5e06_824f_4e2a24c1c1d6);
 }
@@ -10659,13 +10659,13 @@ unsafe impl ::core::marker::Sync for CoreWebView2WindowFeatures {}
 #[doc(hidden)]
 pub struct ICoreWebView2(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2 {
-    type Vtable = ICoreWebView2_abi;
+    type Vtable = ICoreWebView2Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x3a3f559a_e5e9_5338_bb67_4eb0504a4f14);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2_abi(
+pub struct ICoreWebView2Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -10934,13 +10934,13 @@ pub struct ICoreWebView2_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2AcceleratorKeyPressedEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2AcceleratorKeyPressedEventArgs {
-    type Vtable = ICoreWebView2AcceleratorKeyPressedEventArgs_abi;
+    type Vtable = ICoreWebView2AcceleratorKeyPressedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x41a56100_92a5_59d1_9e71_9222e33ae38b);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2AcceleratorKeyPressedEventArgs_abi(
+pub struct ICoreWebView2AcceleratorKeyPressedEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -10990,13 +10990,13 @@ pub struct ICoreWebView2AcceleratorKeyPressedEventArgs_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2BrowserProcessExitedEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2BrowserProcessExitedEventArgs {
-    type Vtable = ICoreWebView2BrowserProcessExitedEventArgs_abi;
+    type Vtable = ICoreWebView2BrowserProcessExitedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x79963f77_1484_5a46_b91f_dfc5c1a0ce14);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2BrowserProcessExitedEventArgs_abi(
+pub struct ICoreWebView2BrowserProcessExitedEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11030,13 +11030,13 @@ pub struct ICoreWebView2BrowserProcessExitedEventArgs_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2ClientCertificate(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2ClientCertificate {
-    type Vtable = ICoreWebView2ClientCertificate_abi;
+    type Vtable = ICoreWebView2ClientCertificateVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x091b39f2_68df_52b4_8fb0_fd3561af41f2);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2ClientCertificate_abi(
+pub struct ICoreWebView2ClientCertificateVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11098,13 +11098,13 @@ pub struct ICoreWebView2ClientCertificate_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2ClientCertificateRequestedEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2ClientCertificateRequestedEventArgs {
-    type Vtable = ICoreWebView2ClientCertificateRequestedEventArgs_abi;
+    type Vtable = ICoreWebView2ClientCertificateRequestedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x93287b55_31f9_55a0_b68b_d9841d7e1bf4);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2ClientCertificateRequestedEventArgs_abi(
+pub struct ICoreWebView2ClientCertificateRequestedEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11178,13 +11178,13 @@ pub struct ICoreWebView2ClientCertificateRequestedEventArgs_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2CompositionController(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2CompositionController {
-    type Vtable = ICoreWebView2CompositionController_abi;
+    type Vtable = ICoreWebView2CompositionControllerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x4fb8b7b3_4a2e_5787_94b9_cc48c4d364d7);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2CompositionController_abi(
+pub struct ICoreWebView2CompositionControllerVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11243,13 +11243,13 @@ pub struct ICoreWebView2CompositionController_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2CompositionController2(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2CompositionController2 {
-    type Vtable = ICoreWebView2CompositionController2_abi;
+    type Vtable = ICoreWebView2CompositionController2Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x8cef61b9_fa55_547d_aae6_7bcaed4249a2);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2CompositionController2_abi(
+pub struct ICoreWebView2CompositionController2Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11275,13 +11275,13 @@ pub struct ICoreWebView2CompositionController2_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2CompositionControllerStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2CompositionControllerStatics {
-    type Vtable = ICoreWebView2CompositionControllerStatics_abi;
+    type Vtable = ICoreWebView2CompositionControllerStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x4df0ab1f_7f2a_573b_b81a_b9b531224736);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2CompositionControllerStatics_abi(
+pub struct ICoreWebView2CompositionControllerStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11307,13 +11307,13 @@ pub struct ICoreWebView2CompositionControllerStatics_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2ContentLoadingEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2ContentLoadingEventArgs {
-    type Vtable = ICoreWebView2ContentLoadingEventArgs_abi;
+    type Vtable = ICoreWebView2ContentLoadingEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x6cf95373_946c_5dae_9b3e_0fe23d5aa29f);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2ContentLoadingEventArgs_abi(
+pub struct ICoreWebView2ContentLoadingEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11347,13 +11347,13 @@ pub struct ICoreWebView2ContentLoadingEventArgs_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2Controller(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2Controller {
-    type Vtable = ICoreWebView2Controller_abi;
+    type Vtable = ICoreWebView2ControllerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xa588121c_53bf_590e_80e5_29d729cbd743);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2Controller_abi(
+pub struct ICoreWebView2ControllerVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11471,13 +11471,13 @@ pub struct ICoreWebView2Controller_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2Controller2(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2Controller2 {
-    type Vtable = ICoreWebView2Controller2_abi;
+    type Vtable = ICoreWebView2Controller2Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x0069c40b_2e8a_513f_9d9d_e0c2b64f7200);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2Controller2_abi(
+pub struct ICoreWebView2Controller2Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11511,13 +11511,13 @@ pub struct ICoreWebView2Controller2_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2Controller3(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2Controller3 {
-    type Vtable = ICoreWebView2Controller3_abi;
+    type Vtable = ICoreWebView2Controller3Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xe5bae214_791a_5d13_9b76_a257d9fda2ac);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2Controller3_abi(
+pub struct ICoreWebView2Controller3Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11576,13 +11576,13 @@ pub struct ICoreWebView2Controller3_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2ControllerFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2ControllerFactory {
-    type Vtable = ICoreWebView2ControllerFactory_abi;
+    type Vtable = ICoreWebView2ControllerFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x270b2c5b_c3a9_53d8_a5ca_262ea9ea62e8);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2ControllerFactory_abi(
+pub struct ICoreWebView2ControllerFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11608,13 +11608,13 @@ pub struct ICoreWebView2ControllerFactory_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2ControllerWindowReference(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2ControllerWindowReference {
-    type Vtable = ICoreWebView2ControllerWindowReference_abi;
+    type Vtable = ICoreWebView2ControllerWindowReferenceVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x0feddad4_48a3_5cc4_9f61_e7adfd1e9c76);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2ControllerWindowReference_abi(
+pub struct ICoreWebView2ControllerWindowReferenceVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11648,13 +11648,13 @@ pub struct ICoreWebView2ControllerWindowReference_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2ControllerWindowReferenceStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2ControllerWindowReferenceStatics {
-    type Vtable = ICoreWebView2ControllerWindowReferenceStatics_abi;
+    type Vtable = ICoreWebView2ControllerWindowReferenceStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xddf6ebf1_ebc6_5a34_9008_661c3a2eb767);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2ControllerWindowReferenceStatics_abi(
+pub struct ICoreWebView2ControllerWindowReferenceStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11690,13 +11690,13 @@ pub struct ICoreWebView2ControllerWindowReferenceStatics_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2Cookie(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2Cookie {
-    type Vtable = ICoreWebView2Cookie_abi;
+    type Vtable = ICoreWebView2CookieVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x52f670fe_8ca2_5aad_aedb_25f7903b7038);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2Cookie_abi(
+pub struct ICoreWebView2CookieVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11778,13 +11778,13 @@ pub struct ICoreWebView2Cookie_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2CookieManager(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2CookieManager {
-    type Vtable = ICoreWebView2CookieManager_abi;
+    type Vtable = ICoreWebView2CookieManagerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x4098f516_adca_5563_aaa5_d7affd847aa3);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2CookieManager_abi(
+pub struct ICoreWebView2CookieManagerVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11843,13 +11843,13 @@ pub struct ICoreWebView2CookieManager_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2DOMContentLoadedEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2DOMContentLoadedEventArgs {
-    type Vtable = ICoreWebView2DOMContentLoadedEventArgs_abi;
+    type Vtable = ICoreWebView2DOMContentLoadedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc474d0a3_24ac_59fc_b78b_da7562a6a052);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2DOMContentLoadedEventArgs_abi(
+pub struct ICoreWebView2DOMContentLoadedEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11879,13 +11879,13 @@ pub struct ICoreWebView2DOMContentLoadedEventArgs_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2DevToolsProtocolEventReceivedEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2DevToolsProtocolEventReceivedEventArgs {
-    type Vtable = ICoreWebView2DevToolsProtocolEventReceivedEventArgs_abi;
+    type Vtable = ICoreWebView2DevToolsProtocolEventReceivedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xb6a4b41d_fd18_59fa_923a_c57555d960ce);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2DevToolsProtocolEventReceivedEventArgs_abi(
+pub struct ICoreWebView2DevToolsProtocolEventReceivedEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11915,13 +11915,13 @@ pub struct ICoreWebView2DevToolsProtocolEventReceivedEventArgs_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2DevToolsProtocolEventReceiver(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2DevToolsProtocolEventReceiver {
-    type Vtable = ICoreWebView2DevToolsProtocolEventReceiver_abi;
+    type Vtable = ICoreWebView2DevToolsProtocolEventReceiverVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xb2a2be79_65fc_5537_8715_3d92bf31090b);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2DevToolsProtocolEventReceiver_abi(
+pub struct ICoreWebView2DevToolsProtocolEventReceiverVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11961,7 +11961,7 @@ pub struct ICoreWebView2DevToolsProtocolEventReceiver_abi(
 )]
 pub struct ICoreWebView2DispatchAdapter(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2DispatchAdapter {
-    type Vtable = ICoreWebView2DispatchAdapter_abi;
+    type Vtable = ICoreWebView2DispatchAdapterVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x7888a42d_18f3_5966_80cb_8cc25351bd0a);
 }
@@ -12087,7 +12087,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2DispatchAdapter_abi(
+pub struct ICoreWebView2DispatchAdapterVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12131,13 +12131,13 @@ pub struct ICoreWebView2DispatchAdapter_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2DownloadOperation(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2DownloadOperation {
-    type Vtable = ICoreWebView2DownloadOperation_abi;
+    type Vtable = ICoreWebView2DownloadOperationVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xafe73e6b_e760_5a06_9bf6_1e743c13cd2d);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2DownloadOperation_abi(
+pub struct ICoreWebView2DownloadOperationVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12233,13 +12233,13 @@ pub struct ICoreWebView2DownloadOperation_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2DownloadStartingEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2DownloadStartingEventArgs {
-    type Vtable = ICoreWebView2DownloadStartingEventArgs_abi;
+    type Vtable = ICoreWebView2DownloadStartingEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x45d982ba_9256_5b35_b023_26a438599110);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2DownloadStartingEventArgs_abi(
+pub struct ICoreWebView2DownloadStartingEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12297,13 +12297,13 @@ pub struct ICoreWebView2DownloadStartingEventArgs_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2Environment(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2Environment {
-    type Vtable = ICoreWebView2Environment_abi;
+    type Vtable = ICoreWebView2EnvironmentVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xd8cc7831_b783_556b_b9ce_899c1e95d585);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2Environment_abi(
+pub struct ICoreWebView2EnvironmentVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12355,13 +12355,13 @@ pub struct ICoreWebView2Environment_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2Environment2(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2Environment2 {
-    type Vtable = ICoreWebView2Environment2_abi;
+    type Vtable = ICoreWebView2Environment2Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x0b634668_1017_5fc7_9921_f1f51866a8c0);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2Environment2_abi(
+pub struct ICoreWebView2Environment2Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12395,13 +12395,13 @@ pub struct ICoreWebView2Environment2_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2Environment3(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2Environment3 {
-    type Vtable = ICoreWebView2Environment3_abi;
+    type Vtable = ICoreWebView2Environment3Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x5e33f46c_c0b9_5126_8840_17f9c11b3a8a);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2Environment3_abi(
+pub struct ICoreWebView2Environment3Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12436,13 +12436,13 @@ pub struct ICoreWebView2Environment3_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2Environment4(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2Environment4 {
-    type Vtable = ICoreWebView2Environment4_abi;
+    type Vtable = ICoreWebView2Environment4Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x6db697da_eebd_5818_8790_1fe57ef319e2);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2Environment4_abi(
+pub struct ICoreWebView2Environment4Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12468,13 +12468,13 @@ pub struct ICoreWebView2Environment4_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2Environment5(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2Environment5 {
-    type Vtable = ICoreWebView2Environment5_abi;
+    type Vtable = ICoreWebView2Environment5Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xf33399af_e4d3_59dc_ac38_8397aadcedb1);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2Environment5_abi(
+pub struct ICoreWebView2Environment5Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12509,13 +12509,13 @@ pub struct ICoreWebView2Environment5_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2Environment6(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2Environment6 {
-    type Vtable = ICoreWebView2Environment6_abi;
+    type Vtable = ICoreWebView2Environment6Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x965d538f_5958_5d98_8972_f622021df402);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2Environment6_abi(
+pub struct ICoreWebView2Environment6Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12545,13 +12545,13 @@ pub struct ICoreWebView2Environment6_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2EnvironmentOptions(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2EnvironmentOptions {
-    type Vtable = ICoreWebView2EnvironmentOptions_abi;
+    type Vtable = ICoreWebView2EnvironmentOptionsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x25d6dc39_0062_5735_8b09_a6f535f19e97);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2EnvironmentOptions_abi(
+pub struct ICoreWebView2EnvironmentOptionsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12609,13 +12609,13 @@ pub struct ICoreWebView2EnvironmentOptions_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2EnvironmentOptions_Manual(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2EnvironmentOptions_Manual {
-    type Vtable = ICoreWebView2EnvironmentOptions_Manual_abi;
+    type Vtable = ICoreWebView2EnvironmentOptions_ManualVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x1f104443_ea93_5a37_b791_34e6a31172ed);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2EnvironmentOptions_Manual_abi(
+pub struct ICoreWebView2EnvironmentOptions_ManualVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12641,13 +12641,13 @@ pub struct ICoreWebView2EnvironmentOptions_Manual_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2EnvironmentStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2EnvironmentStatics {
-    type Vtable = ICoreWebView2EnvironmentStatics_abi;
+    type Vtable = ICoreWebView2EnvironmentStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x0e33f804_f20b_5635_8491_162aaa27517b);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2EnvironmentStatics_abi(
+pub struct ICoreWebView2EnvironmentStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12699,13 +12699,13 @@ pub struct ICoreWebView2EnvironmentStatics_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2Frame(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2Frame {
-    type Vtable = ICoreWebView2Frame_abi;
+    type Vtable = ICoreWebView2FrameVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x02ffcbf9_19e7_5bb8_8273_346420fb1503);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2Frame_abi(
+pub struct ICoreWebView2FrameVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12761,13 +12761,13 @@ pub struct ICoreWebView2Frame_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2FrameCreatedEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2FrameCreatedEventArgs {
-    type Vtable = ICoreWebView2FrameCreatedEventArgs_abi;
+    type Vtable = ICoreWebView2FrameCreatedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x527b01b8_fc6d_5543_8dce_96cdfdb32c81);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2FrameCreatedEventArgs_abi(
+pub struct ICoreWebView2FrameCreatedEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12797,13 +12797,13 @@ pub struct ICoreWebView2FrameCreatedEventArgs_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2FrameInfo(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2FrameInfo {
-    type Vtable = ICoreWebView2FrameInfo_abi;
+    type Vtable = ICoreWebView2FrameInfoVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xf9b82e06_73f3_513b_bc2c_445ddedba976);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2FrameInfo_abi(
+pub struct ICoreWebView2FrameInfoVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12837,13 +12837,13 @@ pub struct ICoreWebView2FrameInfo_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2HttpHeadersCollectionIterator(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2HttpHeadersCollectionIterator {
-    type Vtable = ICoreWebView2HttpHeadersCollectionIterator_abi;
+    type Vtable = ICoreWebView2HttpHeadersCollectionIteratorVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xadf264ee_d980_5f48_a60e_8705de046608);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2HttpHeadersCollectionIterator_abi(
+pub struct ICoreWebView2HttpHeadersCollectionIteratorVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12869,13 +12869,13 @@ pub struct ICoreWebView2HttpHeadersCollectionIterator_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2HttpRequestHeaders(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2HttpRequestHeaders {
-    type Vtable = ICoreWebView2HttpRequestHeaders_abi;
+    type Vtable = ICoreWebView2HttpRequestHeadersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xdc2226c7_3515_55bb_bcb2_57b78f86b91d);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2HttpRequestHeaders_abi(
+pub struct ICoreWebView2HttpRequestHeadersVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12925,13 +12925,13 @@ pub struct ICoreWebView2HttpRequestHeaders_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2HttpResponseHeaders(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2HttpResponseHeaders {
-    type Vtable = ICoreWebView2HttpResponseHeaders_abi;
+    type Vtable = ICoreWebView2HttpResponseHeadersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xf3d383e9_747f_5574_8662_9a6b920cecd4);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2HttpResponseHeaders_abi(
+pub struct ICoreWebView2HttpResponseHeadersVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12977,13 +12977,13 @@ pub struct ICoreWebView2HttpResponseHeaders_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2MoveFocusRequestedEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2MoveFocusRequestedEventArgs {
-    type Vtable = ICoreWebView2MoveFocusRequestedEventArgs_abi;
+    type Vtable = ICoreWebView2MoveFocusRequestedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x2e29103b_ecdd_5c1d_b288_3f066d608919);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2MoveFocusRequestedEventArgs_abi(
+pub struct ICoreWebView2MoveFocusRequestedEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -13021,13 +13021,13 @@ pub struct ICoreWebView2MoveFocusRequestedEventArgs_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2NavigationCompletedEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2NavigationCompletedEventArgs {
-    type Vtable = ICoreWebView2NavigationCompletedEventArgs_abi;
+    type Vtable = ICoreWebView2NavigationCompletedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x4865e238_036a_5664_95a3_447ec44cf498);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2NavigationCompletedEventArgs_abi(
+pub struct ICoreWebView2NavigationCompletedEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -13065,13 +13065,13 @@ pub struct ICoreWebView2NavigationCompletedEventArgs_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2NavigationStartingEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2NavigationStartingEventArgs {
-    type Vtable = ICoreWebView2NavigationStartingEventArgs_abi;
+    type Vtable = ICoreWebView2NavigationStartingEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x548d23d3_fea3_5616_bd05_ae08066c86d3);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2NavigationStartingEventArgs_abi(
+pub struct ICoreWebView2NavigationStartingEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -13125,13 +13125,13 @@ pub struct ICoreWebView2NavigationStartingEventArgs_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2NewWindowRequestedEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2NewWindowRequestedEventArgs {
-    type Vtable = ICoreWebView2NewWindowRequestedEventArgs_abi;
+    type Vtable = ICoreWebView2NewWindowRequestedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xe6e013ba_aec8_532e_9ac9_1590af7b25ec);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2NewWindowRequestedEventArgs_abi(
+pub struct ICoreWebView2NewWindowRequestedEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -13189,13 +13189,13 @@ pub struct ICoreWebView2NewWindowRequestedEventArgs_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2NewWindowRequestedEventArgs2(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2NewWindowRequestedEventArgs2 {
-    type Vtable = ICoreWebView2NewWindowRequestedEventArgs2_abi;
+    type Vtable = ICoreWebView2NewWindowRequestedEventArgs2Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xf4806259_e63a_5c0b_a02c_5f10e11094f4);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2NewWindowRequestedEventArgs2_abi(
+pub struct ICoreWebView2NewWindowRequestedEventArgs2Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -13225,13 +13225,13 @@ pub struct ICoreWebView2NewWindowRequestedEventArgs2_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2PermissionRequestedEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2PermissionRequestedEventArgs {
-    type Vtable = ICoreWebView2PermissionRequestedEventArgs_abi;
+    type Vtable = ICoreWebView2PermissionRequestedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x118bdd9b_cef1_5910_929e_c1a321328239);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2PermissionRequestedEventArgs_abi(
+pub struct ICoreWebView2PermissionRequestedEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -13281,13 +13281,13 @@ pub struct ICoreWebView2PermissionRequestedEventArgs_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2PointerInfo(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2PointerInfo {
-    type Vtable = ICoreWebView2PointerInfo_abi;
+    type Vtable = ICoreWebView2PointerInfoVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc3860e0d_c018_5a84_bc06_9f8f7b275dff);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2PointerInfo_abi(
+pub struct ICoreWebView2PointerInfoVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -13537,13 +13537,13 @@ pub struct ICoreWebView2PointerInfo_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2PrintSettings(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2PrintSettings {
-    type Vtable = ICoreWebView2PrintSettings_abi;
+    type Vtable = ICoreWebView2PrintSettingsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x9c75c8c0_ef3d_58a8_9a8c_18eed9fd0f16);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2PrintSettings_abi(
+pub struct ICoreWebView2PrintSettingsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -13673,13 +13673,13 @@ pub struct ICoreWebView2PrintSettings_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2ProcessFailedEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2ProcessFailedEventArgs {
-    type Vtable = ICoreWebView2ProcessFailedEventArgs_abi;
+    type Vtable = ICoreWebView2ProcessFailedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x25a8f8c9_d944_539d_afa3_24172b48ef47);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2ProcessFailedEventArgs_abi(
+pub struct ICoreWebView2ProcessFailedEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -13709,13 +13709,13 @@ pub struct ICoreWebView2ProcessFailedEventArgs_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2ProcessFailedEventArgs2(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2ProcessFailedEventArgs2 {
-    type Vtable = ICoreWebView2ProcessFailedEventArgs2_abi;
+    type Vtable = ICoreWebView2ProcessFailedEventArgs2Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc5d9c952_b456_5dc7_9f76_fde967484af5);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2ProcessFailedEventArgs2_abi(
+pub struct ICoreWebView2ProcessFailedEventArgs2Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -13757,13 +13757,13 @@ pub struct ICoreWebView2ProcessFailedEventArgs2_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2ScriptDialogOpeningEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2ScriptDialogOpeningEventArgs {
-    type Vtable = ICoreWebView2ScriptDialogOpeningEventArgs_abi;
+    type Vtable = ICoreWebView2ScriptDialogOpeningEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xa4315212_c7eb_568a_86e4_c61e31ba6cda);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2ScriptDialogOpeningEventArgs_abi(
+pub struct ICoreWebView2ScriptDialogOpeningEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -13818,13 +13818,13 @@ pub struct ICoreWebView2ScriptDialogOpeningEventArgs_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2Settings(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2Settings {
-    type Vtable = ICoreWebView2Settings_abi;
+    type Vtable = ICoreWebView2SettingsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x003b325e_74cd_52dd_8024_ebb8be38e48e);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2Settings_abi(
+pub struct ICoreWebView2SettingsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -13922,13 +13922,13 @@ pub struct ICoreWebView2Settings_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2Settings2(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2Settings2 {
-    type Vtable = ICoreWebView2Settings2_abi;
+    type Vtable = ICoreWebView2Settings2Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x377d3480_fdb2_56e7_bade_507d352887e9);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2Settings2_abi(
+pub struct ICoreWebView2Settings2Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -13962,13 +13962,13 @@ pub struct ICoreWebView2Settings2_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2Settings3(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2Settings3 {
-    type Vtable = ICoreWebView2Settings3_abi;
+    type Vtable = ICoreWebView2Settings3Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x52200f01_5309_5b2e_a03c_3d2677591940);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2Settings3_abi(
+pub struct ICoreWebView2Settings3Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -14002,13 +14002,13 @@ pub struct ICoreWebView2Settings3_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2Settings4(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2Settings4 {
-    type Vtable = ICoreWebView2Settings4_abi;
+    type Vtable = ICoreWebView2Settings4Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xd6a955f0_daef_5a6a_a6f6_c72f0ede7620);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2Settings4_abi(
+pub struct ICoreWebView2Settings4Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -14050,13 +14050,13 @@ pub struct ICoreWebView2Settings4_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2Settings5(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2Settings5 {
-    type Vtable = ICoreWebView2Settings5_abi;
+    type Vtable = ICoreWebView2Settings5Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xafc42b23_4839_5d73_acf7_e0335631abf5);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2Settings5_abi(
+pub struct ICoreWebView2Settings5Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -14090,13 +14090,13 @@ pub struct ICoreWebView2Settings5_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2Settings6(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2Settings6 {
-    type Vtable = ICoreWebView2Settings6_abi;
+    type Vtable = ICoreWebView2Settings6Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x3fe4ae85_0540_5bf1_b4d9_99ec57aa64f5);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2Settings6_abi(
+pub struct ICoreWebView2Settings6Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -14130,13 +14130,13 @@ pub struct ICoreWebView2Settings6_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2Settings_Manual(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2Settings_Manual {
-    type Vtable = ICoreWebView2Settings_Manual_abi;
+    type Vtable = ICoreWebView2Settings_ManualVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x0a538c87_e000_511c_87ca_ded3413d03da);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2Settings_Manual_abi(
+pub struct ICoreWebView2Settings_ManualVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -14170,13 +14170,13 @@ pub struct ICoreWebView2Settings_Manual_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2SourceChangedEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2SourceChangedEventArgs {
-    type Vtable = ICoreWebView2SourceChangedEventArgs_abi;
+    type Vtable = ICoreWebView2SourceChangedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xca437b2c_6a18_5552_b749_b198f8cc34d9);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2SourceChangedEventArgs_abi(
+pub struct ICoreWebView2SourceChangedEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -14206,13 +14206,13 @@ pub struct ICoreWebView2SourceChangedEventArgs_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2WebMessageReceivedEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2WebMessageReceivedEventArgs {
-    type Vtable = ICoreWebView2WebMessageReceivedEventArgs_abi;
+    type Vtable = ICoreWebView2WebMessageReceivedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xeb066159_b725_5d5b_adc8_f5d7b9290304);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2WebMessageReceivedEventArgs_abi(
+pub struct ICoreWebView2WebMessageReceivedEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -14250,13 +14250,13 @@ pub struct ICoreWebView2WebMessageReceivedEventArgs_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2WebResourceRequest(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2WebResourceRequest {
-    type Vtable = ICoreWebView2WebResourceRequest_abi;
+    type Vtable = ICoreWebView2WebResourceRequestVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x5c742259_67d2_5df2_8382_0f201b4d7197);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2WebResourceRequest_abi(
+pub struct ICoreWebView2WebResourceRequestVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -14310,13 +14310,13 @@ pub struct ICoreWebView2WebResourceRequest_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2WebResourceRequestedEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2WebResourceRequestedEventArgs {
-    type Vtable = ICoreWebView2WebResourceRequestedEventArgs_abi;
+    type Vtable = ICoreWebView2WebResourceRequestedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x577f1fc4_c943_54a9_9700_bd469b48bd41);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2WebResourceRequestedEventArgs_abi(
+pub struct ICoreWebView2WebResourceRequestedEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -14362,13 +14362,13 @@ pub struct ICoreWebView2WebResourceRequestedEventArgs_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2WebResourceResponse(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2WebResourceResponse {
-    type Vtable = ICoreWebView2WebResourceResponse_abi;
+    type Vtable = ICoreWebView2WebResourceResponseVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x14621923_e485_5f44_8f5d_bd4243bc398f);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2WebResourceResponse_abi(
+pub struct ICoreWebView2WebResourceResponseVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -14422,13 +14422,13 @@ pub struct ICoreWebView2WebResourceResponse_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2WebResourceResponseReceivedEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2WebResourceResponseReceivedEventArgs {
-    type Vtable = ICoreWebView2WebResourceResponseReceivedEventArgs_abi;
+    type Vtable = ICoreWebView2WebResourceResponseReceivedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x12424671_9711_54f4_bcdf_5f307add6ec2);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2WebResourceResponseReceivedEventArgs_abi(
+pub struct ICoreWebView2WebResourceResponseReceivedEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -14462,13 +14462,13 @@ pub struct ICoreWebView2WebResourceResponseReceivedEventArgs_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2WebResourceResponseView(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2WebResourceResponseView {
-    type Vtable = ICoreWebView2WebResourceResponseView_abi;
+    type Vtable = ICoreWebView2WebResourceResponseViewVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x33ee060b_b578_5698_b541_fef87fe7fe72);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2WebResourceResponseView_abi(
+pub struct ICoreWebView2WebResourceResponseViewVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -14510,13 +14510,13 @@ pub struct ICoreWebView2WebResourceResponseView_abi(
 #[doc(hidden)]
 pub struct ICoreWebView2WindowFeatures(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICoreWebView2WindowFeatures {
-    type Vtable = ICoreWebView2WindowFeatures_abi;
+    type Vtable = ICoreWebView2WindowFeaturesVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xee8686d6_056f_5e06_824f_4e2a24c1c1d6);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICoreWebView2WindowFeatures_abi(
+pub struct ICoreWebView2WindowFeaturesVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,

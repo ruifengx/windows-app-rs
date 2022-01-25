@@ -95,7 +95,7 @@ unsafe impl ::windows::core::RuntimeType for FrameNavigationOptions {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Navigation.FrameNavigationOptions;{390de593-14cf-5312-af99-6cd8d59ec5d5})" ) ;
 }
 unsafe impl ::windows::core::Interface for FrameNavigationOptions {
-    type Vtable = IFrameNavigationOptions_abi;
+    type Vtable = IFrameNavigationOptionsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x390de593_14cf_5312_af99_6cd8d59ec5d5);
 }
@@ -150,13 +150,13 @@ unsafe impl ::core::marker::Sync for FrameNavigationOptions {}
 #[doc(hidden)]
 pub struct IFrameNavigationOptions(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IFrameNavigationOptions {
-    type Vtable = IFrameNavigationOptions_abi;
+    type Vtable = IFrameNavigationOptionsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x390de593_14cf_5312_af99_6cd8d59ec5d5);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IFrameNavigationOptions_abi(
+pub struct IFrameNavigationOptionsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -202,13 +202,13 @@ pub struct IFrameNavigationOptions_abi(
 #[doc(hidden)]
 pub struct IFrameNavigationOptionsFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IFrameNavigationOptionsFactory {
-    type Vtable = IFrameNavigationOptionsFactory_abi;
+    type Vtable = IFrameNavigationOptionsFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xddf3f748_7127_5cee_9f79_ac281a234632);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IFrameNavigationOptionsFactory_abi(
+pub struct IFrameNavigationOptionsFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -242,13 +242,13 @@ pub struct IFrameNavigationOptionsFactory_abi(
 #[doc(hidden)]
 pub struct INavigatingCancelEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for INavigatingCancelEventArgs {
-    type Vtable = INavigatingCancelEventArgs_abi;
+    type Vtable = INavigatingCancelEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x172fde12_e06f_5df6_930e_5facf7b3fbe7);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct INavigatingCancelEventArgs_abi(
+pub struct INavigatingCancelEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -300,13 +300,13 @@ pub struct INavigatingCancelEventArgs_abi(
 #[doc(hidden)]
 pub struct INavigationEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for INavigationEventArgs {
-    type Vtable = INavigationEventArgs_abi;
+    type Vtable = INavigationEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x876b70b4_2923_5785_9cea_2e44aa0761bd);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct INavigationEventArgs_abi(
+pub struct INavigationEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -362,13 +362,13 @@ pub struct INavigationEventArgs_abi(
 #[doc(hidden)]
 pub struct INavigationFailedEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for INavigationFailedEventArgs {
-    type Vtable = INavigationFailedEventArgs_abi;
+    type Vtable = INavigationFailedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xf808f9a0_130c_5974_87f8_4433271a35a9);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct INavigationFailedEventArgs_abi(
+pub struct INavigationFailedEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -410,13 +410,13 @@ pub struct INavigationFailedEventArgs_abi(
 #[doc(hidden)]
 pub struct IPageStackEntry(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IPageStackEntry {
-    type Vtable = IPageStackEntry_abi;
+    type Vtable = IPageStackEntryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xd591f56e_4262_5c91_9d79_29165cd82100);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IPageStackEntry_abi(
+pub struct IPageStackEntryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -456,13 +456,13 @@ pub struct IPageStackEntry_abi(
 #[doc(hidden)]
 pub struct IPageStackEntryFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IPageStackEntryFactory {
-    type Vtable = IPageStackEntryFactory_abi;
+    type Vtable = IPageStackEntryFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x7e5a9469_6108_5e92_a499_5ee9f065a68a);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IPageStackEntryFactory_abi(
+pub struct IPageStackEntryFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -497,13 +497,13 @@ pub struct IPageStackEntryFactory_abi(
 #[doc(hidden)]
 pub struct IPageStackEntryStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IPageStackEntryStatics {
-    type Vtable = IPageStackEntryStatics_abi;
+    type Vtable = IPageStackEntryStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x2f1d4cb7_923b_59bb_bfc4_750933f28385);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IPageStackEntryStatics_abi(
+pub struct IPageStackEntryStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -587,14 +587,14 @@ unsafe impl ::windows::core::RuntimeType for NavigatedEventHandler {
 }
 #[cfg(feature = "UI_Xaml_Media_Animation")]
 unsafe impl ::windows::core::Interface for NavigatedEventHandler {
-    type Vtable = NavigatedEventHandler_abi;
+    type Vtable = NavigatedEventHandlerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x8631b517_6d8e_58ee_82fe_d4034d1bd7c1);
 }
 #[cfg(feature = "UI_Xaml_Media_Animation")]
 #[repr(C)]
 #[doc(hidden)]
-pub struct NavigatedEventHandler_abi(
+pub struct NavigatedEventHandlerVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -617,7 +617,7 @@ struct NavigatedEventHandler_box<
         ) -> ::windows::core::Result<()>
         + 'static,
 > {
-    vtable: *const NavigatedEventHandler_abi,
+    vtable: *const NavigatedEventHandlerVtbl,
     invoke: F,
     count: ::windows::core::RefCount,
 }
@@ -630,7 +630,7 @@ impl<
             + 'static,
     > NavigatedEventHandler_box<F>
 {
-    const VTABLE: NavigatedEventHandler_abi = NavigatedEventHandler_abi(
+    const VTABLE: NavigatedEventHandlerVtbl = NavigatedEventHandlerVtbl(
         Self::QueryInterface,
         Self::AddRef,
         Self::Release,
@@ -760,7 +760,7 @@ unsafe impl ::windows::core::RuntimeType for NavigatingCancelEventArgs {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Navigation.NavigatingCancelEventArgs;{172fde12-e06f-5df6-930e-5facf7b3fbe7})" ) ;
 }
 unsafe impl ::windows::core::Interface for NavigatingCancelEventArgs {
-    type Vtable = INavigatingCancelEventArgs_abi;
+    type Vtable = INavigatingCancelEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x172fde12_e06f_5df6_930e_5facf7b3fbe7);
 }
@@ -871,14 +871,14 @@ unsafe impl ::windows::core::RuntimeType for NavigatingCancelEventHandler {
 }
 #[cfg(feature = "UI_Xaml_Media_Animation")]
 unsafe impl ::windows::core::Interface for NavigatingCancelEventHandler {
-    type Vtable = NavigatingCancelEventHandler_abi;
+    type Vtable = NavigatingCancelEventHandlerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xfcae1401_ec94_565f_9f48_7c4b6272b3b1);
 }
 #[cfg(feature = "UI_Xaml_Media_Animation")]
 #[repr(C)]
 #[doc(hidden)]
-pub struct NavigatingCancelEventHandler_abi(
+pub struct NavigatingCancelEventHandlerVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -901,7 +901,7 @@ struct NavigatingCancelEventHandler_box<
         ) -> ::windows::core::Result<()>
         + 'static,
 > {
-    vtable: *const NavigatingCancelEventHandler_abi,
+    vtable: *const NavigatingCancelEventHandlerVtbl,
     invoke: F,
     count: ::windows::core::RefCount,
 }
@@ -914,7 +914,7 @@ impl<
             + 'static,
     > NavigatingCancelEventHandler_box<F>
 {
-    const VTABLE: NavigatingCancelEventHandler_abi = NavigatingCancelEventHandler_abi(
+    const VTABLE: NavigatingCancelEventHandlerVtbl = NavigatingCancelEventHandlerVtbl(
         Self::QueryInterface,
         Self::AddRef,
         Self::Release,
@@ -1092,7 +1092,7 @@ unsafe impl ::windows::core::RuntimeType for NavigationEventArgs {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Navigation.NavigationEventArgs;{876b70b4-2923-5785-9cea-2e44aa0761bd})" ) ;
 }
 unsafe impl ::windows::core::Interface for NavigationEventArgs {
-    type Vtable = INavigationEventArgs_abi;
+    type Vtable = INavigationEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x876b70b4_2923_5785_9cea_2e44aa0761bd);
 }
@@ -1198,7 +1198,7 @@ unsafe impl ::windows::core::RuntimeType for NavigationFailedEventArgs {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Navigation.NavigationFailedEventArgs;{f808f9a0-130c-5974-87f8-4433271a35a9})" ) ;
 }
 unsafe impl ::windows::core::Interface for NavigationFailedEventArgs {
-    type Vtable = INavigationFailedEventArgs_abi;
+    type Vtable = INavigationFailedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xf808f9a0_130c_5974_87f8_4433271a35a9);
 }
@@ -1304,13 +1304,13 @@ unsafe impl ::windows::core::RuntimeType for NavigationFailedEventHandler {
     );
 }
 unsafe impl ::windows::core::Interface for NavigationFailedEventHandler {
-    type Vtable = NavigationFailedEventHandler_abi;
+    type Vtable = NavigationFailedEventHandlerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x97ca2b56_d6eb_5fd2_a675_a339640eedba);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct NavigationFailedEventHandler_abi(
+pub struct NavigationFailedEventHandlerVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1332,7 +1332,7 @@ struct NavigationFailedEventHandler_box<
         ) -> ::windows::core::Result<()>
         + 'static,
 > {
-    vtable: *const NavigationFailedEventHandler_abi,
+    vtable: *const NavigationFailedEventHandlerVtbl,
     invoke: F,
     count: ::windows::core::RefCount,
 }
@@ -1344,7 +1344,7 @@ impl<
             + 'static,
     > NavigationFailedEventHandler_box<F>
 {
-    const VTABLE: NavigationFailedEventHandler_abi = NavigationFailedEventHandler_abi(
+    const VTABLE: NavigationFailedEventHandlerVtbl = NavigationFailedEventHandlerVtbl(
         Self::QueryInterface,
         Self::AddRef,
         Self::Release,
@@ -1480,14 +1480,14 @@ unsafe impl ::windows::core::RuntimeType for NavigationStoppedEventHandler {
 }
 #[cfg(feature = "UI_Xaml_Media_Animation")]
 unsafe impl ::windows::core::Interface for NavigationStoppedEventHandler {
-    type Vtable = NavigationStoppedEventHandler_abi;
+    type Vtable = NavigationStoppedEventHandlerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xb9e796a6_7ffe_5a63_aef4_cbc331663b66);
 }
 #[cfg(feature = "UI_Xaml_Media_Animation")]
 #[repr(C)]
 #[doc(hidden)]
-pub struct NavigationStoppedEventHandler_abi(
+pub struct NavigationStoppedEventHandlerVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1510,7 +1510,7 @@ struct NavigationStoppedEventHandler_box<
         ) -> ::windows::core::Result<()>
         + 'static,
 > {
-    vtable: *const NavigationStoppedEventHandler_abi,
+    vtable: *const NavigationStoppedEventHandlerVtbl,
     invoke: F,
     count: ::windows::core::RefCount,
 }
@@ -1523,7 +1523,7 @@ impl<
             + 'static,
     > NavigationStoppedEventHandler_box<F>
 {
-    const VTABLE: NavigationStoppedEventHandler_abi = NavigationStoppedEventHandler_abi(
+    const VTABLE: NavigationStoppedEventHandlerVtbl = NavigationStoppedEventHandlerVtbl(
         Self::QueryInterface,
         Self::AddRef,
         Self::Release,
@@ -1831,7 +1831,7 @@ unsafe impl ::windows::core::RuntimeType for PageStackEntry {
     );
 }
 unsafe impl ::windows::core::Interface for PageStackEntry {
-    type Vtable = IPageStackEntry_abi;
+    type Vtable = IPageStackEntryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xd591f56e_4262_5c91_9d79_29165cd82100);
 }

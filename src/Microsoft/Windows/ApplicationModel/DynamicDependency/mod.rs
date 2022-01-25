@@ -72,7 +72,7 @@ unsafe impl ::windows::core::RuntimeType for AddPackageDependencyOptions {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Windows.ApplicationModel.DynamicDependency.AddPackageDependencyOptions;{01b801fd-24e3-5e6b-9f1c-805ab410b604})" ) ;
 }
 unsafe impl ::windows::core::Interface for AddPackageDependencyOptions {
-    type Vtable = IAddPackageDependencyOptions_abi;
+    type Vtable = IAddPackageDependencyOptionsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x01b801fd_24e3_5e6b_9f1c_805ab410b604);
 }
@@ -249,7 +249,7 @@ unsafe impl ::windows::core::RuntimeType for CreatePackageDependencyOptions {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Windows.ApplicationModel.DynamicDependency.CreatePackageDependencyOptions;{cdbb820f-3c69-55dc-a017-b4132574c5d6})" ) ;
 }
 unsafe impl ::windows::core::Interface for CreatePackageDependencyOptions {
-    type Vtable = ICreatePackageDependencyOptions_abi;
+    type Vtable = ICreatePackageDependencyOptionsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xcdbb820f_3c69_55dc_a017_b4132574c5d6);
 }
@@ -311,13 +311,13 @@ unsafe impl ::core::marker::Sync for CreatePackageDependencyOptions {}
 #[doc(hidden)]
 pub struct IAddPackageDependencyOptions(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IAddPackageDependencyOptions {
-    type Vtable = IAddPackageDependencyOptions_abi;
+    type Vtable = IAddPackageDependencyOptionsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x01b801fd_24e3_5e6b_9f1c_805ab410b604);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IAddPackageDependencyOptions_abi(
+pub struct IAddPackageDependencyOptionsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -359,13 +359,13 @@ pub struct IAddPackageDependencyOptions_abi(
 #[doc(hidden)]
 pub struct ICreatePackageDependencyOptions(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICreatePackageDependencyOptions {
-    type Vtable = ICreatePackageDependencyOptions_abi;
+    type Vtable = ICreatePackageDependencyOptionsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xcdbb820f_3c69_55dc_a017_b4132574c5d6);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICreatePackageDependencyOptions_abi(
+pub struct ICreatePackageDependencyOptionsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -423,13 +423,13 @@ pub struct ICreatePackageDependencyOptions_abi(
 #[doc(hidden)]
 pub struct IPackageDependency(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IPackageDependency {
-    type Vtable = IPackageDependency_abi;
+    type Vtable = IPackageDependencyVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x32ae7b95_e358_5a48_9669_c97d85ad6556);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IPackageDependency_abi(
+pub struct IPackageDependencyVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -469,13 +469,13 @@ pub struct IPackageDependency_abi(
 #[doc(hidden)]
 pub struct IPackageDependencyContext(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IPackageDependencyContext {
-    type Vtable = IPackageDependencyContext_abi;
+    type Vtable = IPackageDependencyContextVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x9902c35a_a3f5_5645_af0f_cdf9fca00d5e);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IPackageDependencyContext_abi(
+pub struct IPackageDependencyContextVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -514,13 +514,13 @@ pub struct IPackageDependencyContext_abi(
 #[doc(hidden)]
 pub struct IPackageDependencyContextFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IPackageDependencyContextFactory {
-    type Vtable = IPackageDependencyContextFactory_abi;
+    type Vtable = IPackageDependencyContextFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x9914f24f_bebf_516b_adab_5c3e8bf323f8);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IPackageDependencyContextFactory_abi(
+pub struct IPackageDependencyContextFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -551,13 +551,13 @@ pub struct IPackageDependencyContextFactory_abi(
 #[doc(hidden)]
 pub struct IPackageDependencyRankStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IPackageDependencyRankStatics {
-    type Vtable = IPackageDependencyRankStatics_abi;
+    type Vtable = IPackageDependencyRankStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x260583bd_a4ab_53fd_a190_c446bfdb5384);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IPackageDependencyRankStatics_abi(
+pub struct IPackageDependencyRankStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -587,13 +587,13 @@ pub struct IPackageDependencyRankStatics_abi(
 #[doc(hidden)]
 pub struct IPackageDependencyStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IPackageDependencyStatics {
-    type Vtable = IPackageDependencyStatics_abi;
+    type Vtable = IPackageDependencyStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x17b656e1_1a58_5f3c_84a8_4430f6e749c2);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IPackageDependencyStatics_abi(
+pub struct IPackageDependencyStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -821,7 +821,7 @@ unsafe impl ::windows::core::RuntimeType for PackageDependency {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Windows.ApplicationModel.DynamicDependency.PackageDependency;{32ae7b95-e358-5a48-9669-c97d85ad6556})" ) ;
 }
 unsafe impl ::windows::core::Interface for PackageDependency {
-    type Vtable = IPackageDependency_abi;
+    type Vtable = IPackageDependencyVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x32ae7b95_e358_5a48_9669_c97d85ad6556);
 }
@@ -954,7 +954,7 @@ unsafe impl ::windows::core::RuntimeType for PackageDependencyContext {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Windows.ApplicationModel.DynamicDependency.PackageDependencyContext;{9902c35a-a3f5-5645-af0f-cdf9fca00d5e})" ) ;
 }
 unsafe impl ::windows::core::Interface for PackageDependencyContext {
-    type Vtable = IPackageDependencyContext_abi;
+    type Vtable = IPackageDependencyContextVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x9902c35a_a3f5_5645_af0f_cdf9fca00d5e);
 }

@@ -141,13 +141,13 @@ impl ::windows::core::DefaultType for EnergySaverStatus {
 #[doc(hidden)]
 pub struct IPowerManagerStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IPowerManagerStatics {
-    type Vtable = IPowerManagerStatics_abi;
+    type Vtable = IPowerManagerStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xfa3554cc_be1c_534c_bff8_72df78e9f4a4);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IPowerManagerStatics_abi(
+pub struct IPowerManagerStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,

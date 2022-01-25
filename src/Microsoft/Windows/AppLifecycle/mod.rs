@@ -175,7 +175,7 @@ unsafe impl ::windows::core::RuntimeType for AppActivationArguments {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Windows.AppLifecycle.AppActivationArguments;{14f99eaf-1580-5062-bdc8-d5d1c31138fb})" ) ;
 }
 unsafe impl ::windows::core::Interface for AppActivationArguments {
-    type Vtable = IAppActivationArguments_abi;
+    type Vtable = IAppActivationArgumentsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x14f99eaf_1580_5062_bdc8_d5d1c31138fb);
 }
@@ -389,7 +389,7 @@ unsafe impl ::windows::core::RuntimeType for AppInstance {
     );
 }
 unsafe impl ::windows::core::Interface for AppInstance {
-    type Vtable = IAppInstance_abi;
+    type Vtable = IAppInstanceVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x75766ae4_0239_5a26_b9da_d5bfc75a4866);
 }
@@ -516,13 +516,13 @@ impl ::windows::core::DefaultType for ExtendedActivationKind {
 #[doc(hidden)]
 pub struct IActivationRegistrationManagerStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IActivationRegistrationManagerStatics {
-    type Vtable = IActivationRegistrationManagerStatics_abi;
+    type Vtable = IActivationRegistrationManagerStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x5ac4e92e_017b_5d68_8198_f68636ab99d3);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IActivationRegistrationManagerStatics_abi(
+pub struct IActivationRegistrationManagerStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -585,13 +585,13 @@ pub struct IActivationRegistrationManagerStatics_abi(
 #[doc(hidden)]
 pub struct IAppActivationArguments(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IAppActivationArguments {
-    type Vtable = IAppActivationArguments_abi;
+    type Vtable = IAppActivationArgumentsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x14f99eaf_1580_5062_bdc8_d5d1c31138fb);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IAppActivationArguments_abi(
+pub struct IAppActivationArgumentsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -625,13 +625,13 @@ pub struct IAppActivationArguments_abi(
 #[doc(hidden)]
 pub struct IAppInstance(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IAppInstance {
-    type Vtable = IAppInstance_abi;
+    type Vtable = IAppInstanceVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x75766ae4_0239_5a26_b9da_d5bfc75a4866);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IAppInstance_abi(
+pub struct IAppInstanceVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -688,13 +688,13 @@ pub struct IAppInstance_abi(
 #[doc(hidden)]
 pub struct IAppInstanceStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IAppInstanceStatics {
-    type Vtable = IAppInstanceStatics_abi;
+    type Vtable = IAppInstanceStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x4f414b25_8330_5a9b_bbc1_8229d479649d);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IAppInstanceStatics_abi(
+pub struct IAppInstanceStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,

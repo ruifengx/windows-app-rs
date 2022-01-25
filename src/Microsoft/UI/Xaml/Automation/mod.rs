@@ -89,7 +89,7 @@ unsafe impl ::windows::core::RuntimeType for AnnotationPatternIdentifiers {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Automation.AnnotationPatternIdentifiers;{92d76915-0cd3-59cd-8ae0-c9004628ba1e})" ) ;
 }
 unsafe impl ::windows::core::Interface for AnnotationPatternIdentifiers {
-    type Vtable = IAnnotationPatternIdentifiers_abi;
+    type Vtable = IAnnotationPatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x92d76915_0cd3_59cd_8ae0_c9004628ba1e);
 }
@@ -621,7 +621,7 @@ unsafe impl ::windows::core::RuntimeType for AutomationAnnotation {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Automation.AutomationAnnotation;{c2cc46ad-1414-5f1b-808a-89e5d53d82fe})" ) ;
 }
 unsafe impl ::windows::core::Interface for AutomationAnnotation {
-    type Vtable = IAutomationAnnotation_abi;
+    type Vtable = IAutomationAnnotationVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc2cc46ad_1414_5f1b_808a_89e5d53d82fe);
 }
@@ -1206,7 +1206,7 @@ unsafe impl ::windows::core::RuntimeType for AutomationElementIdentifiers {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Automation.AutomationElementIdentifiers;{2fb51a33-b0cf-5a4c-9ed3-267eca7aeefc})" ) ;
 }
 unsafe impl ::windows::core::Interface for AutomationElementIdentifiers {
-    type Vtable = IAutomationElementIdentifiers_abi;
+    type Vtable = IAutomationElementIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x2fb51a33_b0cf_5a4c_9ed3_267eca7aeefc);
 }
@@ -2530,7 +2530,7 @@ unsafe impl ::windows::core::RuntimeType for AutomationProperties {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Automation.AutomationProperties;{525c6a71-dd8a-52a0-977b-db1b02f8e896})" ) ;
 }
 unsafe impl ::windows::core::Interface for AutomationProperties {
-    type Vtable = IAutomationProperties_abi;
+    type Vtable = IAutomationPropertiesVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x525c6a71_dd8a_52a0_977b_db1b02f8e896);
 }
@@ -2594,7 +2594,7 @@ unsafe impl ::windows::core::RuntimeType for AutomationProperty {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Automation.AutomationProperty;{5ca6b2c8-ff86-5a41-aa18-6948fae592cf})" ) ;
 }
 unsafe impl ::windows::core::Interface for AutomationProperty {
-    type Vtable = IAutomationProperty_abi;
+    type Vtable = IAutomationPropertyVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x5ca6b2c8_ff86_5a41_aa18_6948fae592cf);
 }
@@ -2813,7 +2813,7 @@ unsafe impl ::windows::core::RuntimeType for DockPatternIdentifiers {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Automation.DockPatternIdentifiers;{75574f99-d145-547e-972b-7d879f93c03e})" ) ;
 }
 unsafe impl ::windows::core::Interface for DockPatternIdentifiers {
-    type Vtable = IDockPatternIdentifiers_abi;
+    type Vtable = IDockPatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x75574f99_d145_547e_972b_7d879f93c03e);
 }
@@ -2964,7 +2964,7 @@ unsafe impl ::windows::core::RuntimeType for DragPatternIdentifiers {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Automation.DragPatternIdentifiers;{aa2fdfd5-fb45-5d2b-8d92-a8e7b07061c2})" ) ;
 }
 unsafe impl ::windows::core::Interface for DragPatternIdentifiers {
-    type Vtable = IDragPatternIdentifiers_abi;
+    type Vtable = IDragPatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xaa2fdfd5_fb45_5d2b_8d92_a8e7b07061c2);
 }
@@ -3061,7 +3061,7 @@ unsafe impl ::windows::core::RuntimeType for DropTargetPatternIdentifiers {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Automation.DropTargetPatternIdentifiers;{133e8ff3-1ddd-5cbb-b908-1484d7c04da7})" ) ;
 }
 unsafe impl ::windows::core::Interface for DropTargetPatternIdentifiers {
-    type Vtable = IDropTargetPatternIdentifiers_abi;
+    type Vtable = IDropTargetPatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x133e8ff3_1ddd_5cbb_b908_1484d7c04da7);
 }
@@ -3154,7 +3154,7 @@ unsafe impl ::windows::core::RuntimeType for ExpandCollapsePatternIdentifiers {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Automation.ExpandCollapsePatternIdentifiers;{cec15d9f-8630-569a-86a0-524bbea618ff})" ) ;
 }
 unsafe impl ::windows::core::Interface for ExpandCollapsePatternIdentifiers {
-    type Vtable = IExpandCollapsePatternIdentifiers_abi;
+    type Vtable = IExpandCollapsePatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xcec15d9f_8630_569a_86a0_524bbea618ff);
 }
@@ -3319,7 +3319,7 @@ unsafe impl ::windows::core::RuntimeType for GridItemPatternIdentifiers {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Automation.GridItemPatternIdentifiers;{93609087-1114-557d-b17b-f801e41cebbb})" ) ;
 }
 unsafe impl ::windows::core::Interface for GridItemPatternIdentifiers {
-    type Vtable = IGridItemPatternIdentifiers_abi;
+    type Vtable = IGridItemPatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x93609087_1114_557d_b17b_f801e41cebbb);
 }
@@ -3420,7 +3420,7 @@ unsafe impl ::windows::core::RuntimeType for GridPatternIdentifiers {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Automation.GridPatternIdentifiers;{e5e1e250-c37c-54a2-8c61-1d9ccd3bb39c})" ) ;
 }
 unsafe impl ::windows::core::Interface for GridPatternIdentifiers {
-    type Vtable = IGridPatternIdentifiers_abi;
+    type Vtable = IGridPatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xe5e1e250_c37c_54a2_8c61_1d9ccd3bb39c);
 }
@@ -3475,13 +3475,13 @@ unsafe impl ::core::marker::Sync for GridPatternIdentifiers {}
 #[doc(hidden)]
 pub struct IAnnotationPatternIdentifiers(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IAnnotationPatternIdentifiers {
-    type Vtable = IAnnotationPatternIdentifiers_abi;
+    type Vtable = IAnnotationPatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x92d76915_0cd3_59cd_8ae0_c9004628ba1e);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IAnnotationPatternIdentifiers_abi(
+pub struct IAnnotationPatternIdentifiersVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -3507,13 +3507,13 @@ pub struct IAnnotationPatternIdentifiers_abi(
 #[doc(hidden)]
 pub struct IAnnotationPatternIdentifiersStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IAnnotationPatternIdentifiersStatics {
-    type Vtable = IAnnotationPatternIdentifiersStatics_abi;
+    type Vtable = IAnnotationPatternIdentifiersStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x20a136e2_4a47_5de5_9e1e_ecfc6d92f52a);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IAnnotationPatternIdentifiersStatics_abi(
+pub struct IAnnotationPatternIdentifiersStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -3559,13 +3559,13 @@ pub struct IAnnotationPatternIdentifiersStatics_abi(
 #[doc(hidden)]
 pub struct IAutomationAnnotation(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IAutomationAnnotation {
-    type Vtable = IAutomationAnnotation_abi;
+    type Vtable = IAutomationAnnotationVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc2cc46ad_1414_5f1b_808a_89e5d53d82fe);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IAutomationAnnotation_abi(
+pub struct IAutomationAnnotationVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -3669,13 +3669,13 @@ pub struct IAutomationAnnotation_abi(
 #[doc(hidden)]
 pub struct IAutomationAnnotationFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IAutomationAnnotationFactory {
-    type Vtable = IAutomationAnnotationFactory_abi;
+    type Vtable = IAutomationAnnotationFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x95f82773_eac5_572e_87de_24d9514b9a89);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IAutomationAnnotationFactory_abi(
+pub struct IAutomationAnnotationFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -3774,13 +3774,13 @@ pub struct IAutomationAnnotationFactory_abi(
 #[doc(hidden)]
 pub struct IAutomationAnnotationStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IAutomationAnnotationStatics {
-    type Vtable = IAutomationAnnotationStatics_abi;
+    type Vtable = IAutomationAnnotationStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc5abdc1e_fc26_5444_a8b3_59b2c0a95578);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IAutomationAnnotationStatics_abi(
+pub struct IAutomationAnnotationStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -3818,13 +3818,13 @@ pub struct IAutomationAnnotationStatics_abi(
 #[doc(hidden)]
 pub struct IAutomationElementIdentifiers(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IAutomationElementIdentifiers {
-    type Vtable = IAutomationElementIdentifiers_abi;
+    type Vtable = IAutomationElementIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x2fb51a33_b0cf_5a4c_9ed3_267eca7aeefc);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IAutomationElementIdentifiers_abi(
+pub struct IAutomationElementIdentifiersVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -3850,13 +3850,13 @@ pub struct IAutomationElementIdentifiers_abi(
 #[doc(hidden)]
 pub struct IAutomationElementIdentifiersStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IAutomationElementIdentifiersStatics {
-    type Vtable = IAutomationElementIdentifiersStatics_abi;
+    type Vtable = IAutomationElementIdentifiersStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x72af6b8c_3e12_5e7a_a2ec_26dc193f9df9);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IAutomationElementIdentifiersStatics_abi(
+pub struct IAutomationElementIdentifiersStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -4038,13 +4038,13 @@ pub struct IAutomationElementIdentifiersStatics_abi(
 #[doc(hidden)]
 pub struct IAutomationProperties(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IAutomationProperties {
-    type Vtable = IAutomationProperties_abi;
+    type Vtable = IAutomationPropertiesVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x525c6a71_dd8a_52a0_977b_db1b02f8e896);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IAutomationProperties_abi(
+pub struct IAutomationPropertiesVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -4070,13 +4070,13 @@ pub struct IAutomationProperties_abi(
 #[doc(hidden)]
 pub struct IAutomationPropertiesStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IAutomationPropertiesStatics {
-    type Vtable = IAutomationPropertiesStatics_abi;
+    type Vtable = IAutomationPropertiesStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xb1e3e0f3_112f_5966_87dc_7862d4ad50e5);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IAutomationPropertiesStatics_abi(
+pub struct IAutomationPropertiesStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -4743,13 +4743,13 @@ pub struct IAutomationPropertiesStatics_abi(
 #[doc(hidden)]
 pub struct IAutomationProperty(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IAutomationProperty {
-    type Vtable = IAutomationProperty_abi;
+    type Vtable = IAutomationPropertyVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x5ca6b2c8_ff86_5a41_aa18_6948fae592cf);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IAutomationProperty_abi(
+pub struct IAutomationPropertyVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -4775,13 +4775,13 @@ pub struct IAutomationProperty_abi(
 #[doc(hidden)]
 pub struct IDockPatternIdentifiers(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IDockPatternIdentifiers {
-    type Vtable = IDockPatternIdentifiers_abi;
+    type Vtable = IDockPatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x75574f99_d145_547e_972b_7d879f93c03e);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IDockPatternIdentifiers_abi(
+pub struct IDockPatternIdentifiersVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -4807,13 +4807,13 @@ pub struct IDockPatternIdentifiers_abi(
 #[doc(hidden)]
 pub struct IDockPatternIdentifiersStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IDockPatternIdentifiersStatics {
-    type Vtable = IDockPatternIdentifiersStatics_abi;
+    type Vtable = IDockPatternIdentifiersStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x02d5a72c_f49d_53a9_b9fb_af2719d16ccf);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IDockPatternIdentifiersStatics_abi(
+pub struct IDockPatternIdentifiersStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -4843,13 +4843,13 @@ pub struct IDockPatternIdentifiersStatics_abi(
 #[doc(hidden)]
 pub struct IDragPatternIdentifiers(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IDragPatternIdentifiers {
-    type Vtable = IDragPatternIdentifiers_abi;
+    type Vtable = IDragPatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xaa2fdfd5_fb45_5d2b_8d92_a8e7b07061c2);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IDragPatternIdentifiers_abi(
+pub struct IDragPatternIdentifiersVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -4875,13 +4875,13 @@ pub struct IDragPatternIdentifiers_abi(
 #[doc(hidden)]
 pub struct IDragPatternIdentifiersStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IDragPatternIdentifiersStatics {
-    type Vtable = IDragPatternIdentifiersStatics_abi;
+    type Vtable = IDragPatternIdentifiersStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x482eee70_0bfc_5552_9e7d_8dffc526b2f7);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IDragPatternIdentifiersStatics_abi(
+pub struct IDragPatternIdentifiersStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -4923,13 +4923,13 @@ pub struct IDragPatternIdentifiersStatics_abi(
 #[doc(hidden)]
 pub struct IDropTargetPatternIdentifiers(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IDropTargetPatternIdentifiers {
-    type Vtable = IDropTargetPatternIdentifiers_abi;
+    type Vtable = IDropTargetPatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x133e8ff3_1ddd_5cbb_b908_1484d7c04da7);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IDropTargetPatternIdentifiers_abi(
+pub struct IDropTargetPatternIdentifiersVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -4955,13 +4955,13 @@ pub struct IDropTargetPatternIdentifiers_abi(
 #[doc(hidden)]
 pub struct IDropTargetPatternIdentifiersStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IDropTargetPatternIdentifiersStatics {
-    type Vtable = IDropTargetPatternIdentifiersStatics_abi;
+    type Vtable = IDropTargetPatternIdentifiersStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x6da6f0bd_b942_5283_be35_501ae87f88c7);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IDropTargetPatternIdentifiersStatics_abi(
+pub struct IDropTargetPatternIdentifiersStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -4995,13 +4995,13 @@ pub struct IDropTargetPatternIdentifiersStatics_abi(
 #[doc(hidden)]
 pub struct IExpandCollapsePatternIdentifiers(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IExpandCollapsePatternIdentifiers {
-    type Vtable = IExpandCollapsePatternIdentifiers_abi;
+    type Vtable = IExpandCollapsePatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xcec15d9f_8630_569a_86a0_524bbea618ff);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IExpandCollapsePatternIdentifiers_abi(
+pub struct IExpandCollapsePatternIdentifiersVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5027,13 +5027,13 @@ pub struct IExpandCollapsePatternIdentifiers_abi(
 #[doc(hidden)]
 pub struct IExpandCollapsePatternIdentifiersStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IExpandCollapsePatternIdentifiersStatics {
-    type Vtable = IExpandCollapsePatternIdentifiersStatics_abi;
+    type Vtable = IExpandCollapsePatternIdentifiersStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x283101f4_c40c_55bf_a23b_d62b73b6aa35);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IExpandCollapsePatternIdentifiersStatics_abi(
+pub struct IExpandCollapsePatternIdentifiersStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5063,13 +5063,13 @@ pub struct IExpandCollapsePatternIdentifiersStatics_abi(
 #[doc(hidden)]
 pub struct IGridItemPatternIdentifiers(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IGridItemPatternIdentifiers {
-    type Vtable = IGridItemPatternIdentifiers_abi;
+    type Vtable = IGridItemPatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x93609087_1114_557d_b17b_f801e41cebbb);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IGridItemPatternIdentifiers_abi(
+pub struct IGridItemPatternIdentifiersVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5095,13 +5095,13 @@ pub struct IGridItemPatternIdentifiers_abi(
 #[doc(hidden)]
 pub struct IGridItemPatternIdentifiersStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IGridItemPatternIdentifiersStatics {
-    type Vtable = IGridItemPatternIdentifiersStatics_abi;
+    type Vtable = IGridItemPatternIdentifiersStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x8072bc18_87d0_5a02_a0a1_f9aec968c0e7);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IGridItemPatternIdentifiersStatics_abi(
+pub struct IGridItemPatternIdentifiersStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5147,13 +5147,13 @@ pub struct IGridItemPatternIdentifiersStatics_abi(
 #[doc(hidden)]
 pub struct IGridPatternIdentifiers(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IGridPatternIdentifiers {
-    type Vtable = IGridPatternIdentifiers_abi;
+    type Vtable = IGridPatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xe5e1e250_c37c_54a2_8c61_1d9ccd3bb39c);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IGridPatternIdentifiers_abi(
+pub struct IGridPatternIdentifiersVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5179,13 +5179,13 @@ pub struct IGridPatternIdentifiers_abi(
 #[doc(hidden)]
 pub struct IGridPatternIdentifiersStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IGridPatternIdentifiersStatics {
-    type Vtable = IGridPatternIdentifiersStatics_abi;
+    type Vtable = IGridPatternIdentifiersStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xe861604c_101f_5a6d_a308_3714f510f744);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IGridPatternIdentifiersStatics_abi(
+pub struct IGridPatternIdentifiersStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5219,13 +5219,13 @@ pub struct IGridPatternIdentifiersStatics_abi(
 #[doc(hidden)]
 pub struct IMultipleViewPatternIdentifiers(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IMultipleViewPatternIdentifiers {
-    type Vtable = IMultipleViewPatternIdentifiers_abi;
+    type Vtable = IMultipleViewPatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x70e4c847_2b82_5ecf_b808_e9d453c1fe53);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IMultipleViewPatternIdentifiers_abi(
+pub struct IMultipleViewPatternIdentifiersVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5251,13 +5251,13 @@ pub struct IMultipleViewPatternIdentifiers_abi(
 #[doc(hidden)]
 pub struct IMultipleViewPatternIdentifiersStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IMultipleViewPatternIdentifiersStatics {
-    type Vtable = IMultipleViewPatternIdentifiersStatics_abi;
+    type Vtable = IMultipleViewPatternIdentifiersStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xac71daef_d094_5c90_94af_1fa474ab45fe);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IMultipleViewPatternIdentifiersStatics_abi(
+pub struct IMultipleViewPatternIdentifiersStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5291,13 +5291,13 @@ pub struct IMultipleViewPatternIdentifiersStatics_abi(
 #[doc(hidden)]
 pub struct IRangeValuePatternIdentifiers(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IRangeValuePatternIdentifiers {
-    type Vtable = IRangeValuePatternIdentifiers_abi;
+    type Vtable = IRangeValuePatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc114db37_6a75_5ef1_a542_d3b13f92cbfe);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IRangeValuePatternIdentifiers_abi(
+pub struct IRangeValuePatternIdentifiersVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5323,13 +5323,13 @@ pub struct IRangeValuePatternIdentifiers_abi(
 #[doc(hidden)]
 pub struct IRangeValuePatternIdentifiersStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IRangeValuePatternIdentifiersStatics {
-    type Vtable = IRangeValuePatternIdentifiersStatics_abi;
+    type Vtable = IRangeValuePatternIdentifiersStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x0aaa9ad7_f9b8_52a1_bc96_2a97fe389ed0);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IRangeValuePatternIdentifiersStatics_abi(
+pub struct IRangeValuePatternIdentifiersStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5379,13 +5379,13 @@ pub struct IRangeValuePatternIdentifiersStatics_abi(
 #[doc(hidden)]
 pub struct IScrollPatternIdentifiers(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IScrollPatternIdentifiers {
-    type Vtable = IScrollPatternIdentifiers_abi;
+    type Vtable = IScrollPatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x04f1a4b8_edc7_55f2_96df_a9c7e809372e);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IScrollPatternIdentifiers_abi(
+pub struct IScrollPatternIdentifiersVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5411,13 +5411,13 @@ pub struct IScrollPatternIdentifiers_abi(
 #[doc(hidden)]
 pub struct IScrollPatternIdentifiersStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IScrollPatternIdentifiersStatics {
-    type Vtable = IScrollPatternIdentifiersStatics_abi;
+    type Vtable = IScrollPatternIdentifiersStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x0f94f2f0_e0d2_5a24_b415_8d1506ce47aa);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IScrollPatternIdentifiersStatics_abi(
+pub struct IScrollPatternIdentifiersStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5471,13 +5471,13 @@ pub struct IScrollPatternIdentifiersStatics_abi(
 #[doc(hidden)]
 pub struct ISelectionItemPatternIdentifiers(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISelectionItemPatternIdentifiers {
-    type Vtable = ISelectionItemPatternIdentifiers_abi;
+    type Vtable = ISelectionItemPatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xce3a549d_a2cb_594d_a2a4_44778c09cca5);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISelectionItemPatternIdentifiers_abi(
+pub struct ISelectionItemPatternIdentifiersVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5503,13 +5503,13 @@ pub struct ISelectionItemPatternIdentifiers_abi(
 #[doc(hidden)]
 pub struct ISelectionItemPatternIdentifiersStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISelectionItemPatternIdentifiersStatics {
-    type Vtable = ISelectionItemPatternIdentifiersStatics_abi;
+    type Vtable = ISelectionItemPatternIdentifiersStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x2b8ead7c_4e03_5b84_9e34_8b7384cbd862);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISelectionItemPatternIdentifiersStatics_abi(
+pub struct ISelectionItemPatternIdentifiersStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5543,13 +5543,13 @@ pub struct ISelectionItemPatternIdentifiersStatics_abi(
 #[doc(hidden)]
 pub struct ISelectionPatternIdentifiers(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISelectionPatternIdentifiers {
-    type Vtable = ISelectionPatternIdentifiers_abi;
+    type Vtable = ISelectionPatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x401743d2_1fba_5d05_b89f_631676453237);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISelectionPatternIdentifiers_abi(
+pub struct ISelectionPatternIdentifiersVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5575,13 +5575,13 @@ pub struct ISelectionPatternIdentifiers_abi(
 #[doc(hidden)]
 pub struct ISelectionPatternIdentifiersStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISelectionPatternIdentifiersStatics {
-    type Vtable = ISelectionPatternIdentifiersStatics_abi;
+    type Vtable = ISelectionPatternIdentifiersStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xf3ed111b_b20a_5e5e_a232_07f607fd5c07);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISelectionPatternIdentifiersStatics_abi(
+pub struct ISelectionPatternIdentifiersStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5619,13 +5619,13 @@ pub struct ISelectionPatternIdentifiersStatics_abi(
 #[doc(hidden)]
 pub struct ISpreadsheetItemPatternIdentifiers(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISpreadsheetItemPatternIdentifiers {
-    type Vtable = ISpreadsheetItemPatternIdentifiers_abi;
+    type Vtable = ISpreadsheetItemPatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xdca2ec46_8564_5c9c_ba90_2c08455f697b);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISpreadsheetItemPatternIdentifiers_abi(
+pub struct ISpreadsheetItemPatternIdentifiersVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5651,13 +5651,13 @@ pub struct ISpreadsheetItemPatternIdentifiers_abi(
 #[doc(hidden)]
 pub struct ISpreadsheetItemPatternIdentifiersStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISpreadsheetItemPatternIdentifiersStatics {
-    type Vtable = ISpreadsheetItemPatternIdentifiersStatics_abi;
+    type Vtable = ISpreadsheetItemPatternIdentifiersStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x7eb10f80_8d3a_59ad_a2b9_05d8cecf18db);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISpreadsheetItemPatternIdentifiersStatics_abi(
+pub struct ISpreadsheetItemPatternIdentifiersStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5687,13 +5687,13 @@ pub struct ISpreadsheetItemPatternIdentifiersStatics_abi(
 #[doc(hidden)]
 pub struct IStylesPatternIdentifiers(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IStylesPatternIdentifiers {
-    type Vtable = IStylesPatternIdentifiers_abi;
+    type Vtable = IStylesPatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x13aeca5e_b496_5df5_aea5_330e1f0490eb);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IStylesPatternIdentifiers_abi(
+pub struct IStylesPatternIdentifiersVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5719,13 +5719,13 @@ pub struct IStylesPatternIdentifiers_abi(
 #[doc(hidden)]
 pub struct IStylesPatternIdentifiersStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IStylesPatternIdentifiersStatics {
-    type Vtable = IStylesPatternIdentifiersStatics_abi;
+    type Vtable = IStylesPatternIdentifiersStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xb232287a_bc4c_581e_a33c_3d6aee10d04b);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IStylesPatternIdentifiersStatics_abi(
+pub struct IStylesPatternIdentifiersStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5779,13 +5779,13 @@ pub struct IStylesPatternIdentifiersStatics_abi(
 #[doc(hidden)]
 pub struct ITableItemPatternIdentifiers(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITableItemPatternIdentifiers {
-    type Vtable = ITableItemPatternIdentifiers_abi;
+    type Vtable = ITableItemPatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xb4de5d03_a5b4_5ca1_8715_16c8c6a10fcc);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITableItemPatternIdentifiers_abi(
+pub struct ITableItemPatternIdentifiersVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5811,13 +5811,13 @@ pub struct ITableItemPatternIdentifiers_abi(
 #[doc(hidden)]
 pub struct ITableItemPatternIdentifiersStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITableItemPatternIdentifiersStatics {
-    type Vtable = ITableItemPatternIdentifiersStatics_abi;
+    type Vtable = ITableItemPatternIdentifiersStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x81d24bd7_66fb_53ef_9b32_d00f9c240a14);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITableItemPatternIdentifiersStatics_abi(
+pub struct ITableItemPatternIdentifiersStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5851,13 +5851,13 @@ pub struct ITableItemPatternIdentifiersStatics_abi(
 #[doc(hidden)]
 pub struct ITablePatternIdentifiers(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITablePatternIdentifiers {
-    type Vtable = ITablePatternIdentifiers_abi;
+    type Vtable = ITablePatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x3d7f9c0b_ff8f_50fa_bc01_2cc3c2e06e2c);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITablePatternIdentifiers_abi(
+pub struct ITablePatternIdentifiersVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5883,13 +5883,13 @@ pub struct ITablePatternIdentifiers_abi(
 #[doc(hidden)]
 pub struct ITablePatternIdentifiersStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITablePatternIdentifiersStatics {
-    type Vtable = ITablePatternIdentifiersStatics_abi;
+    type Vtable = ITablePatternIdentifiersStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x3660935e_bcbb_5848_8e9a_264854f7a19a);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITablePatternIdentifiersStatics_abi(
+pub struct ITablePatternIdentifiersStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5927,13 +5927,13 @@ pub struct ITablePatternIdentifiersStatics_abi(
 #[doc(hidden)]
 pub struct ITogglePatternIdentifiers(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITogglePatternIdentifiers {
-    type Vtable = ITogglePatternIdentifiers_abi;
+    type Vtable = ITogglePatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xa0d2df4c_ba59_51d9_9c01_034d7941c280);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITogglePatternIdentifiers_abi(
+pub struct ITogglePatternIdentifiersVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5959,13 +5959,13 @@ pub struct ITogglePatternIdentifiers_abi(
 #[doc(hidden)]
 pub struct ITogglePatternIdentifiersStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITogglePatternIdentifiersStatics {
-    type Vtable = ITogglePatternIdentifiersStatics_abi;
+    type Vtable = ITogglePatternIdentifiersStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x862920b5_dcb3_5691_a456_c2f15c476dfb);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITogglePatternIdentifiersStatics_abi(
+pub struct ITogglePatternIdentifiersStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5995,13 +5995,13 @@ pub struct ITogglePatternIdentifiersStatics_abi(
 #[doc(hidden)]
 pub struct ITransformPattern2Identifiers(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITransformPattern2Identifiers {
-    type Vtable = ITransformPattern2Identifiers_abi;
+    type Vtable = ITransformPattern2IdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x6ef7595c_db8c_51b0_878b_34b7ef12f4da);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITransformPattern2Identifiers_abi(
+pub struct ITransformPattern2IdentifiersVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -6027,13 +6027,13 @@ pub struct ITransformPattern2Identifiers_abi(
 #[doc(hidden)]
 pub struct ITransformPattern2IdentifiersStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITransformPattern2IdentifiersStatics {
-    type Vtable = ITransformPattern2IdentifiersStatics_abi;
+    type Vtable = ITransformPattern2IdentifiersStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xd9876ff5_89ed_5333_8111_ad25a28bee8b);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITransformPattern2IdentifiersStatics_abi(
+pub struct ITransformPattern2IdentifiersStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -6075,13 +6075,13 @@ pub struct ITransformPattern2IdentifiersStatics_abi(
 #[doc(hidden)]
 pub struct ITransformPatternIdentifiers(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITransformPatternIdentifiers {
-    type Vtable = ITransformPatternIdentifiers_abi;
+    type Vtable = ITransformPatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x2348187b_c50f_5a0e_bc05_305ac71b3b6b);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITransformPatternIdentifiers_abi(
+pub struct ITransformPatternIdentifiersVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -6107,13 +6107,13 @@ pub struct ITransformPatternIdentifiers_abi(
 #[doc(hidden)]
 pub struct ITransformPatternIdentifiersStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITransformPatternIdentifiersStatics {
-    type Vtable = ITransformPatternIdentifiersStatics_abi;
+    type Vtable = ITransformPatternIdentifiersStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xcb7d84e4_5429_5188_8aa0_5f96558a8790);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITransformPatternIdentifiersStatics_abi(
+pub struct ITransformPatternIdentifiersStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -6151,13 +6151,13 @@ pub struct ITransformPatternIdentifiersStatics_abi(
 #[doc(hidden)]
 pub struct IValuePatternIdentifiers(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IValuePatternIdentifiers {
-    type Vtable = IValuePatternIdentifiers_abi;
+    type Vtable = IValuePatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xfb493395_fb97_59d5_9323_4651ce964b55);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IValuePatternIdentifiers_abi(
+pub struct IValuePatternIdentifiersVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -6183,13 +6183,13 @@ pub struct IValuePatternIdentifiers_abi(
 #[doc(hidden)]
 pub struct IValuePatternIdentifiersStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IValuePatternIdentifiersStatics {
-    type Vtable = IValuePatternIdentifiersStatics_abi;
+    type Vtable = IValuePatternIdentifiersStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x2019faf5_ce64_59a7_bc13_0677c3146724);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IValuePatternIdentifiersStatics_abi(
+pub struct IValuePatternIdentifiersStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -6223,13 +6223,13 @@ pub struct IValuePatternIdentifiersStatics_abi(
 #[doc(hidden)]
 pub struct IWindowPatternIdentifiers(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IWindowPatternIdentifiers {
-    type Vtable = IWindowPatternIdentifiers_abi;
+    type Vtable = IWindowPatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xbec579e1_91be_5d8f_aaca_6ad8839872d2);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IWindowPatternIdentifiers_abi(
+pub struct IWindowPatternIdentifiersVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -6255,13 +6255,13 @@ pub struct IWindowPatternIdentifiers_abi(
 #[doc(hidden)]
 pub struct IWindowPatternIdentifiersStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IWindowPatternIdentifiersStatics {
-    type Vtable = IWindowPatternIdentifiersStatics_abi;
+    type Vtable = IWindowPatternIdentifiersStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x06762744_d3d7_5441_b879_373681d47f64);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IWindowPatternIdentifiersStatics_abi(
+pub struct IWindowPatternIdentifiersStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -6353,7 +6353,7 @@ unsafe impl ::windows::core::RuntimeType for MultipleViewPatternIdentifiers {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Automation.MultipleViewPatternIdentifiers;{70e4c847-2b82-5ecf-b808-e9d453c1fe53})" ) ;
 }
 unsafe impl ::windows::core::Interface for MultipleViewPatternIdentifiers {
-    type Vtable = IMultipleViewPatternIdentifiers_abi;
+    type Vtable = IMultipleViewPatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x70e4c847_2b82_5ecf_b808_e9d453c1fe53);
 }
@@ -6496,7 +6496,7 @@ unsafe impl ::windows::core::RuntimeType for RangeValuePatternIdentifiers {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Automation.RangeValuePatternIdentifiers;{c114db37-6a75-5ef1-a542-d3b13f92cbfe})" ) ;
 }
 unsafe impl ::windows::core::Interface for RangeValuePatternIdentifiers {
-    type Vtable = IRangeValuePatternIdentifiers_abi;
+    type Vtable = IRangeValuePatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc114db37_6a75_5ef1_a542_d3b13f92cbfe);
 }
@@ -6713,7 +6713,7 @@ unsafe impl ::windows::core::RuntimeType for ScrollPatternIdentifiers {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Automation.ScrollPatternIdentifiers;{04f1a4b8-edc7-55f2-96df-a9c7e809372e})" ) ;
 }
 unsafe impl ::windows::core::Interface for ScrollPatternIdentifiers {
-    type Vtable = IScrollPatternIdentifiers_abi;
+    type Vtable = IScrollPatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x04f1a4b8_edc7_55f2_96df_a9c7e809372e);
 }
@@ -6814,7 +6814,7 @@ unsafe impl ::windows::core::RuntimeType for SelectionItemPatternIdentifiers {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Automation.SelectionItemPatternIdentifiers;{ce3a549d-a2cb-594d-a2a4-44778c09cca5})" ) ;
 }
 unsafe impl ::windows::core::Interface for SelectionItemPatternIdentifiers {
-    type Vtable = ISelectionItemPatternIdentifiers_abi;
+    type Vtable = ISelectionItemPatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xce3a549d_a2cb_594d_a2a4_44778c09cca5);
 }
@@ -6927,7 +6927,7 @@ unsafe impl ::windows::core::RuntimeType for SelectionPatternIdentifiers {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Automation.SelectionPatternIdentifiers;{401743d2-1fba-5d05-b89f-631676453237})" ) ;
 }
 unsafe impl ::windows::core::Interface for SelectionPatternIdentifiers {
-    type Vtable = ISelectionPatternIdentifiers_abi;
+    type Vtable = ISelectionPatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x401743d2_1fba_5d05_b89f_631676453237);
 }
@@ -7018,7 +7018,7 @@ unsafe impl ::windows::core::RuntimeType for SpreadsheetItemPatternIdentifiers {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Automation.SpreadsheetItemPatternIdentifiers;{dca2ec46-8564-5c9c-ba90-2c08455f697b})" ) ;
 }
 unsafe impl ::windows::core::Interface for SpreadsheetItemPatternIdentifiers {
-    type Vtable = ISpreadsheetItemPatternIdentifiers_abi;
+    type Vtable = ISpreadsheetItemPatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xdca2ec46_8564_5c9c_ba90_2c08455f697b);
 }
@@ -7171,7 +7171,7 @@ unsafe impl ::windows::core::RuntimeType for StylesPatternIdentifiers {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Automation.StylesPatternIdentifiers;{13aeca5e-b496-5df5-aea5-330e1f0490eb})" ) ;
 }
 unsafe impl ::windows::core::Interface for StylesPatternIdentifiers {
-    type Vtable = IStylesPatternIdentifiers_abi;
+    type Vtable = IStylesPatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x13aeca5e_b496_5df5_aea5_330e1f0490eb);
 }
@@ -7337,7 +7337,7 @@ unsafe impl ::windows::core::RuntimeType for TableItemPatternIdentifiers {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Automation.TableItemPatternIdentifiers;{b4de5d03-a5b4-5ca1-8715-16c8c6a10fcc})" ) ;
 }
 unsafe impl ::windows::core::Interface for TableItemPatternIdentifiers {
-    type Vtable = ITableItemPatternIdentifiers_abi;
+    type Vtable = ITableItemPatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xb4de5d03_a5b4_5ca1_8715_16c8c6a10fcc);
 }
@@ -7448,7 +7448,7 @@ unsafe impl ::windows::core::RuntimeType for TablePatternIdentifiers {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Automation.TablePatternIdentifiers;{3d7f9c0b-ff8f-50fa-bc01-2cc3c2e06e2c})" ) ;
 }
 unsafe impl ::windows::core::Interface for TablePatternIdentifiers {
-    type Vtable = ITablePatternIdentifiers_abi;
+    type Vtable = ITablePatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x3d7f9c0b_ff8f_50fa_bc01_2cc3c2e06e2c);
 }
@@ -7535,7 +7535,7 @@ unsafe impl ::windows::core::RuntimeType for TogglePatternIdentifiers {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Automation.TogglePatternIdentifiers;{a0d2df4c-ba59-51d9-9c01-034d7941c280})" ) ;
 }
 unsafe impl ::windows::core::Interface for TogglePatternIdentifiers {
-    type Vtable = ITogglePatternIdentifiers_abi;
+    type Vtable = ITogglePatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xa0d2df4c_ba59_51d9_9c01_034d7941c280);
 }
@@ -7687,7 +7687,7 @@ unsafe impl ::windows::core::RuntimeType for TransformPattern2Identifiers {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Automation.TransformPattern2Identifiers;{6ef7595c-db8c-51b0-878b-34b7ef12f4da})" ) ;
 }
 unsafe impl ::windows::core::Interface for TransformPattern2Identifiers {
-    type Vtable = ITransformPattern2Identifiers_abi;
+    type Vtable = ITransformPattern2IdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x6ef7595c_db8c_51b0_878b_34b7ef12f4da);
 }
@@ -7800,7 +7800,7 @@ unsafe impl ::windows::core::RuntimeType for TransformPatternIdentifiers {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Automation.TransformPatternIdentifiers;{2348187b-c50f-5a0e-bc05-305ac71b3b6b})" ) ;
 }
 unsafe impl ::windows::core::Interface for TransformPatternIdentifiers {
-    type Vtable = ITransformPatternIdentifiers_abi;
+    type Vtable = ITransformPatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x2348187b_c50f_5a0e_bc05_305ac71b3b6b);
 }
@@ -7901,7 +7901,7 @@ unsafe impl ::windows::core::RuntimeType for ValuePatternIdentifiers {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Automation.ValuePatternIdentifiers;{fb493395-fb97-59d5-9323-4651ce964b55})" ) ;
 }
 unsafe impl ::windows::core::Interface for ValuePatternIdentifiers {
-    type Vtable = IValuePatternIdentifiers_abi;
+    type Vtable = IValuePatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xfb493395_fb97_59d5_9323_4651ce964b55);
 }
@@ -8071,7 +8071,7 @@ unsafe impl ::windows::core::RuntimeType for WindowPatternIdentifiers {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Automation.WindowPatternIdentifiers;{bec579e1-91be-5d8f-aaca-6ad8839872d2})" ) ;
 }
 unsafe impl ::windows::core::Interface for WindowPatternIdentifiers {
-    type Vtable = IWindowPatternIdentifiers_abi;
+    type Vtable = IWindowPatternIdentifiersVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xbec579e1_91be_5d8f_aaca_6ad8839872d2);
 }

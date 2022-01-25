@@ -11,13 +11,13 @@
 #[doc(hidden)]
 pub struct IXamlControlsXamlMetaDataProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IXamlControlsXamlMetaDataProvider {
-    type Vtable = IXamlControlsXamlMetaDataProvider_abi;
+    type Vtable = IXamlControlsXamlMetaDataProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x17fa3f58_3472_5aa2_a0f8_1ab8a519573d);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IXamlControlsXamlMetaDataProvider_abi(
+pub struct IXamlControlsXamlMetaDataProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -43,13 +43,13 @@ pub struct IXamlControlsXamlMetaDataProvider_abi(
 #[doc(hidden)]
 pub struct IXamlControlsXamlMetaDataProviderStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IXamlControlsXamlMetaDataProviderStatics {
-    type Vtable = IXamlControlsXamlMetaDataProviderStatics_abi;
+    type Vtable = IXamlControlsXamlMetaDataProviderStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x2d7eb3fd_ecdb_5084_b7e0_12f9598381ef);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IXamlControlsXamlMetaDataProviderStatics_abi(
+pub struct IXamlControlsXamlMetaDataProviderStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -178,7 +178,7 @@ unsafe impl ::windows::core::RuntimeType for XamlControlsXamlMetaDataProvider {
 }
 #[cfg(feature = "UI_Xaml_Markup")]
 unsafe impl ::windows::core::Interface for XamlControlsXamlMetaDataProvider {
-    type Vtable = super::Markup::IXamlMetadataProvider_abi;
+    type Vtable = super::Markup::IXamlMetadataProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xa96251f0_2214_5d53_8746_ce99a2593cd7);
 }

@@ -87,7 +87,7 @@ unsafe impl ::windows::core::RuntimeType for AnimatedAcceptVisualSource {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Controls.AnimatedVisuals.AnimatedAcceptVisualSource;{294765c3-70e3-555c-9657-01fc4051169d})" ) ;
 }
 unsafe impl ::windows::core::Interface for AnimatedAcceptVisualSource {
-    type Vtable = super::IAnimatedVisualSource_abi;
+    type Vtable = super::IAnimatedVisualSourceVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x294765c3_70e3_555c_9657_01fc4051169d);
 }
@@ -275,7 +275,7 @@ unsafe impl ::windows::core::RuntimeType for AnimatedBackVisualSource {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Controls.AnimatedVisuals.AnimatedBackVisualSource;{294765c3-70e3-555c-9657-01fc4051169d})" ) ;
 }
 unsafe impl ::windows::core::Interface for AnimatedBackVisualSource {
-    type Vtable = super::IAnimatedVisualSource_abi;
+    type Vtable = super::IAnimatedVisualSourceVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x294765c3_70e3_555c_9657_01fc4051169d);
 }
@@ -461,7 +461,7 @@ unsafe impl ::windows::core::RuntimeType for AnimatedChevronDownSmallVisualSourc
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Controls.AnimatedVisuals.AnimatedChevronDownSmallVisualSource;{294765c3-70e3-555c-9657-01fc4051169d})" ) ;
 }
 unsafe impl ::windows::core::Interface for AnimatedChevronDownSmallVisualSource {
-    type Vtable = super::IAnimatedVisualSource_abi;
+    type Vtable = super::IAnimatedVisualSourceVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x294765c3_70e3_555c_9657_01fc4051169d);
 }
@@ -657,7 +657,7 @@ unsafe impl ::windows::core::RuntimeType for AnimatedChevronRightDownSmallVisual
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Controls.AnimatedVisuals.AnimatedChevronRightDownSmallVisualSource;{294765c3-70e3-555c-9657-01fc4051169d})" ) ;
 }
 unsafe impl ::windows::core::Interface for AnimatedChevronRightDownSmallVisualSource {
-    type Vtable = super::IAnimatedVisualSource_abi;
+    type Vtable = super::IAnimatedVisualSourceVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x294765c3_70e3_555c_9657_01fc4051169d);
 }
@@ -865,7 +865,7 @@ unsafe impl ::windows::core::RuntimeType for AnimatedChevronUpDownSmallVisualSou
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Controls.AnimatedVisuals.AnimatedChevronUpDownSmallVisualSource;{294765c3-70e3-555c-9657-01fc4051169d})" ) ;
 }
 unsafe impl ::windows::core::Interface for AnimatedChevronUpDownSmallVisualSource {
-    type Vtable = super::IAnimatedVisualSource_abi;
+    type Vtable = super::IAnimatedVisualSourceVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x294765c3_70e3_555c_9657_01fc4051169d);
 }
@@ -1067,7 +1067,7 @@ unsafe impl ::windows::core::RuntimeType for AnimatedFindVisualSource {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Controls.AnimatedVisuals.AnimatedFindVisualSource;{294765c3-70e3-555c-9657-01fc4051169d})" ) ;
 }
 unsafe impl ::windows::core::Interface for AnimatedFindVisualSource {
-    type Vtable = super::IAnimatedVisualSource_abi;
+    type Vtable = super::IAnimatedVisualSourceVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x294765c3_70e3_555c_9657_01fc4051169d);
 }
@@ -1253,7 +1253,7 @@ unsafe impl ::windows::core::RuntimeType for AnimatedGlobalNavigationButtonVisua
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Controls.AnimatedVisuals.AnimatedGlobalNavigationButtonVisualSource;{294765c3-70e3-555c-9657-01fc4051169d})" ) ;
 }
 unsafe impl ::windows::core::Interface for AnimatedGlobalNavigationButtonVisualSource {
-    type Vtable = super::IAnimatedVisualSource_abi;
+    type Vtable = super::IAnimatedVisualSourceVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x294765c3_70e3_555c_9657_01fc4051169d);
 }
@@ -1463,7 +1463,7 @@ unsafe impl ::windows::core::RuntimeType for AnimatedSettingsVisualSource {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Controls.AnimatedVisuals.AnimatedSettingsVisualSource;{294765c3-70e3-555c-9657-01fc4051169d})" ) ;
 }
 unsafe impl ::windows::core::Interface for AnimatedSettingsVisualSource {
-    type Vtable = super::IAnimatedVisualSource_abi;
+    type Vtable = super::IAnimatedVisualSourceVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x294765c3_70e3_555c_9657_01fc4051169d);
 }

@@ -538,7 +538,7 @@ unsafe impl ::windows::core::RuntimeType for AcrylicBrush {
     );
 }
 unsafe impl ::windows::core::Interface for AcrylicBrush {
-    type Vtable = IAcrylicBrush_abi;
+    type Vtable = IAcrylicBrushVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x3a8c760a_941f_58bc_a6d4_aa7a0dd1d036);
 }
@@ -1093,7 +1093,7 @@ unsafe impl ::windows::core::RuntimeType for ArcSegment {
     );
 }
 unsafe impl ::windows::core::Interface for ArcSegment {
-    type Vtable = IArcSegment_abi;
+    type Vtable = IArcSegmentVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x6b7ce02b_87be_5acb_9d3b_c9964c6962d0);
 }
@@ -1483,7 +1483,7 @@ unsafe impl ::windows::core::RuntimeType for BezierSegment {
     );
 }
 unsafe impl ::windows::core::Interface for BezierSegment {
-    type Vtable = IBezierSegment_abi;
+    type Vtable = IBezierSegmentVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x0f36bade_892e_51fe_b94a_3875e86feaae);
 }
@@ -1758,7 +1758,7 @@ unsafe impl ::windows::core::RuntimeType for BitmapCache {
     );
 }
 unsafe impl ::windows::core::Interface for BitmapCache {
-    type Vtable = IBitmapCache_abi;
+    type Vtable = IBitmapCacheVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x4b3a8983_27a2_592a_bda4_270431eae038);
 }
@@ -2145,7 +2145,7 @@ unsafe impl ::windows::core::RuntimeType for Brush {
     );
 }
 unsafe impl ::windows::core::Interface for Brush {
-    type Vtable = IBrush_abi;
+    type Vtable = IBrushVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x2de3cb83_1329_5679_88f8_c822bc5442cb);
 }
@@ -2444,7 +2444,7 @@ unsafe impl ::windows::core::RuntimeType for BrushCollection {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Media.BrushCollection;pinterface({913337e9-11a1-4345-a3a2-4e7f956e222d};rc(Microsoft.UI.Xaml.Media.Brush;{2de3cb83-1329-5679-88f8-c822bc5442cb})))" ) ;
 }
 unsafe impl ::windows::core::Interface for BrushCollection {
-    type Vtable = ::windows::Foundation::Collections::IVector_abi<Brush>;
+    type Vtable = ::windows::Foundation::Collections::IVectorVtbl<Brush>;
     const IID : :: windows :: core :: GUID = :: windows :: core :: GUID :: from_signature ( < ::windows::Foundation::Collections:: IVector :: < Brush > as :: windows :: core :: RuntimeType > :: SIGNATURE ) ;
 }
 impl ::windows::core::RuntimeName for BrushCollection {
@@ -2775,7 +2775,7 @@ unsafe impl ::windows::core::RuntimeType for CacheMode {
     );
 }
 unsafe impl ::windows::core::Interface for CacheMode {
-    type Vtable = ICacheMode_abi;
+    type Vtable = ICacheModeVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x2ff1a1cb_0f48_53fd_b1de_e2223dfb2ff6);
 }
@@ -3398,7 +3398,7 @@ unsafe impl ::windows::core::RuntimeType for CompositeTransform {
     );
 }
 unsafe impl ::windows::core::Interface for CompositeTransform {
-    type Vtable = ICompositeTransform_abi;
+    type Vtable = ICompositeTransformVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x55c5f8f3_20e4_5b80_a046_ce4d0f62f2fe);
 }
@@ -3649,7 +3649,7 @@ unsafe impl ::windows::core::RuntimeType for CompositionTarget {
     );
 }
 unsafe impl ::windows::core::Interface for CompositionTarget {
-    type Vtable = ICompositionTarget_abi;
+    type Vtable = ICompositionTargetVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x7d938324_e3ad_597c_93f6_520725410e68);
 }
@@ -3871,7 +3871,7 @@ unsafe impl ::windows::core::RuntimeType for DoubleCollection {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Media.DoubleCollection;pinterface({913337e9-11a1-4345-a3a2-4e7f956e222d};f8))" ) ;
 }
 unsafe impl ::windows::core::Interface for DoubleCollection {
-    type Vtable = ::windows::Foundation::Collections::IVector_abi<f64>;
+    type Vtable = ::windows::Foundation::Collections::IVectorVtbl<f64>;
     const IID : :: windows :: core :: GUID = :: windows :: core :: GUID :: from_signature ( < ::windows::Foundation::Collections:: IVector :: < f64 > as :: windows :: core :: RuntimeType > :: SIGNATURE ) ;
 }
 impl ::windows::core::RuntimeName for DoubleCollection {
@@ -4355,7 +4355,7 @@ unsafe impl ::windows::core::RuntimeType for EllipseGeometry {
     );
 }
 unsafe impl ::windows::core::Interface for EllipseGeometry {
-    type Vtable = IEllipseGeometry_abi;
+    type Vtable = IEllipseGeometryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xababd262_d8e4_5b49_bce9_0108a5209d45);
 }
@@ -4547,7 +4547,7 @@ unsafe impl ::windows::core::RuntimeType for FontFamily {
     );
 }
 unsafe impl ::windows::core::Interface for FontFamily {
-    type Vtable = IFontFamily_abi;
+    type Vtable = IFontFamilyVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x18fa5bc1_7294_527c_bb02_b213e0b3a2a3);
 }
@@ -4830,7 +4830,7 @@ unsafe impl ::windows::core::RuntimeType for GeneralTransform {
     );
 }
 unsafe impl ::windows::core::Interface for GeneralTransform {
-    type Vtable = IGeneralTransform_abi;
+    type Vtable = IGeneralTransformVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x04eedeeb_31e5_54c0_ae3f_8bd06645d339);
 }
@@ -5142,7 +5142,7 @@ unsafe impl ::windows::core::RuntimeType for Geometry {
     );
 }
 unsafe impl ::windows::core::Interface for Geometry {
-    type Vtable = IGeometry_abi;
+    type Vtable = IGeometryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xdc102dcc_3be2_5414_8599_94b6e76ef39b);
 }
@@ -5413,7 +5413,7 @@ unsafe impl ::windows::core::RuntimeType for GeometryCollection {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Media.GeometryCollection;pinterface({913337e9-11a1-4345-a3a2-4e7f956e222d};rc(Microsoft.UI.Xaml.Media.Geometry;{dc102dcc-3be2-5414-8599-94b6e76ef39b})))" ) ;
 }
 unsafe impl ::windows::core::Interface for GeometryCollection {
-    type Vtable = ::windows::Foundation::Collections::IVector_abi<Geometry>;
+    type Vtable = ::windows::Foundation::Collections::IVectorVtbl<Geometry>;
     const IID : :: windows :: core :: GUID = :: windows :: core :: GUID :: from_signature ( < ::windows::Foundation::Collections:: IVector :: < Geometry > as :: windows :: core :: RuntimeType > :: SIGNATURE ) ;
 }
 impl ::windows::core::RuntimeName for GeometryCollection {
@@ -5838,7 +5838,7 @@ unsafe impl ::windows::core::RuntimeType for GeometryGroup {
     );
 }
 unsafe impl ::windows::core::Interface for GeometryGroup {
-    type Vtable = IGeometryGroup_abi;
+    type Vtable = IGeometryGroupVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xb4dde569_ea96_5883_914c_ebb7d818dd3a);
 }
@@ -6322,7 +6322,7 @@ unsafe impl ::windows::core::RuntimeType for GradientBrush {
     );
 }
 unsafe impl ::windows::core::Interface for GradientBrush {
-    type Vtable = IGradientBrush_abi;
+    type Vtable = IGradientBrushVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x77c347fa_c4c4_5174_a945_65cab3aa1c75);
 }
@@ -6734,7 +6734,7 @@ unsafe impl ::windows::core::RuntimeType for GradientStop {
     );
 }
 unsafe impl ::windows::core::Interface for GradientStop {
-    type Vtable = IGradientStop_abi;
+    type Vtable = IGradientStopVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x48bcb039_e8e1_5743_94c3_f766011d3b5d);
 }
@@ -7006,7 +7006,7 @@ unsafe impl ::windows::core::RuntimeType for GradientStopCollection {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Media.GradientStopCollection;pinterface({913337e9-11a1-4345-a3a2-4e7f956e222d};rc(Microsoft.UI.Xaml.Media.GradientStop;{48bcb039-e8e1-5743-94c3-f766011d3b5d})))" ) ;
 }
 unsafe impl ::windows::core::Interface for GradientStopCollection {
-    type Vtable = ::windows::Foundation::Collections::IVector_abi<GradientStop>;
+    type Vtable = ::windows::Foundation::Collections::IVectorVtbl<GradientStop>;
     const IID : :: windows :: core :: GUID = :: windows :: core :: GUID :: from_signature ( < ::windows::Foundation::Collections:: IVector :: < GradientStop > as :: windows :: core :: RuntimeType > :: SIGNATURE ) ;
 }
 impl ::windows::core::RuntimeName for GradientStopCollection {
@@ -7146,13 +7146,13 @@ impl ::core::iter::IntoIterator for &GradientStopCollection {
 #[doc(hidden)]
 pub struct IAcrylicBrush(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IAcrylicBrush {
-    type Vtable = IAcrylicBrush_abi;
+    type Vtable = IAcrylicBrushVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x3a8c760a_941f_58bc_a6d4_aa7a0dd1d036);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IAcrylicBrush_abi(
+pub struct IAcrylicBrushVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -7210,13 +7210,13 @@ pub struct IAcrylicBrush_abi(
 #[doc(hidden)]
 pub struct IAcrylicBrush2(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IAcrylicBrush2 {
-    type Vtable = IAcrylicBrush2_abi;
+    type Vtable = IAcrylicBrush2Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x23fad570_43ed_5a73_9de7_a303553d5414);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IAcrylicBrush2_abi(
+pub struct IAcrylicBrush2Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -7250,13 +7250,13 @@ pub struct IAcrylicBrush2_abi(
 #[doc(hidden)]
 pub struct IAcrylicBrushFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IAcrylicBrushFactory {
-    type Vtable = IAcrylicBrushFactory_abi;
+    type Vtable = IAcrylicBrushFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x80173353_611d_5a02_8864_1aaa279dff1c);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IAcrylicBrushFactory_abi(
+pub struct IAcrylicBrushFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -7290,13 +7290,13 @@ pub struct IAcrylicBrushFactory_abi(
 #[doc(hidden)]
 pub struct IAcrylicBrushStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IAcrylicBrushStatics {
-    type Vtable = IAcrylicBrushStatics_abi;
+    type Vtable = IAcrylicBrushStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x9d9d366b_00a3_5f3e_98b8_1df7fec1828c);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IAcrylicBrushStatics_abi(
+pub struct IAcrylicBrushStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -7346,13 +7346,13 @@ pub struct IAcrylicBrushStatics_abi(
 #[doc(hidden)]
 pub struct IAcrylicBrushStatics2(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IAcrylicBrushStatics2 {
-    type Vtable = IAcrylicBrushStatics2_abi;
+    type Vtable = IAcrylicBrushStatics2Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x6e3eb0bd_20a1_52ea_aede_478061012279);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IAcrylicBrushStatics2_abi(
+pub struct IAcrylicBrushStatics2Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -7384,13 +7384,13 @@ pub struct IAcrylicBrushStatics2_abi(
 #[doc(hidden)]
 pub struct IArcSegment(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IArcSegment {
-    type Vtable = IArcSegment_abi;
+    type Vtable = IArcSegmentVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x6b7ce02b_87be_5acb_9d3b_c9964c6962d0);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IArcSegment_abi(
+pub struct IArcSegmentVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -7456,13 +7456,13 @@ pub struct IArcSegment_abi(
 #[doc(hidden)]
 pub struct IArcSegmentStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IArcSegmentStatics {
-    type Vtable = IArcSegmentStatics_abi;
+    type Vtable = IArcSegmentStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x5ba7ccb3_5bc7_5038_99c5_93dc730230cf);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IArcSegmentStatics_abi(
+pub struct IArcSegmentStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -7518,13 +7518,13 @@ pub struct IArcSegmentStatics_abi(
 #[doc(hidden)]
 pub struct IBezierSegment(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IBezierSegment {
-    type Vtable = IBezierSegment_abi;
+    type Vtable = IBezierSegmentVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x0f36bade_892e_51fe_b94a_3875e86feaae);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IBezierSegment_abi(
+pub struct IBezierSegmentVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -7574,13 +7574,13 @@ pub struct IBezierSegment_abi(
 #[doc(hidden)]
 pub struct IBezierSegmentStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IBezierSegmentStatics {
-    type Vtable = IBezierSegmentStatics_abi;
+    type Vtable = IBezierSegmentStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x98e74d5c_c97a_50b0_ae0e_d436dc9df16d);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IBezierSegmentStatics_abi(
+pub struct IBezierSegmentStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -7624,13 +7624,13 @@ pub struct IBezierSegmentStatics_abi(
 #[doc(hidden)]
 pub struct IBitmapCache(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IBitmapCache {
-    type Vtable = IBitmapCache_abi;
+    type Vtable = IBitmapCacheVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x4b3a8983_27a2_592a_bda4_270431eae038);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IBitmapCache_abi(
+pub struct IBitmapCacheVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -7656,13 +7656,13 @@ pub struct IBitmapCache_abi(
 #[doc(hidden)]
 pub struct IBrush(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IBrush {
-    type Vtable = IBrush_abi;
+    type Vtable = IBrushVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x2de3cb83_1329_5679_88f8_c822bc5442cb);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IBrush_abi(
+pub struct IBrushVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -7712,13 +7712,13 @@ pub struct IBrush_abi(
 #[doc(hidden)]
 pub struct IBrushFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IBrushFactory {
-    type Vtable = IBrushFactory_abi;
+    type Vtable = IBrushFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xb5258717_6c49_5ba5_87fd_35df382647a5);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IBrushFactory_abi(
+pub struct IBrushFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -7752,13 +7752,13 @@ pub struct IBrushFactory_abi(
 #[doc(hidden)]
 pub struct IBrushOverrides(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IBrushOverrides {
-    type Vtable = IBrushOverrides_abi;
+    type Vtable = IBrushOverridesVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xb6b08394_bacf_53db_9ac7_be1c693e3513);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IBrushOverrides_abi(
+pub struct IBrushOverridesVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -7791,13 +7791,13 @@ pub struct IBrushOverrides_abi(
 #[doc(hidden)]
 pub struct IBrushStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IBrushStatics {
-    type Vtable = IBrushStatics_abi;
+    type Vtable = IBrushStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x5b854f50_f818_5f01_91b0_28132d3f5957);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IBrushStatics_abi(
+pub struct IBrushStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -7841,13 +7841,13 @@ pub struct IBrushStatics_abi(
 #[doc(hidden)]
 pub struct ICacheMode(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICacheMode {
-    type Vtable = ICacheMode_abi;
+    type Vtable = ICacheModeVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x2ff1a1cb_0f48_53fd_b1de_e2223dfb2ff6);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICacheMode_abi(
+pub struct ICacheModeVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -7873,13 +7873,13 @@ pub struct ICacheMode_abi(
 #[doc(hidden)]
 pub struct ICacheModeFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICacheModeFactory {
-    type Vtable = ICacheModeFactory_abi;
+    type Vtable = ICacheModeFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xe257811e_dcc5_51d8_829a_3e9400198a41);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICacheModeFactory_abi(
+pub struct ICacheModeFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -7911,13 +7911,13 @@ pub struct ICacheModeFactory_abi(
 #[doc(hidden)]
 pub struct ICompositeTransform(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICompositeTransform {
-    type Vtable = ICompositeTransform_abi;
+    type Vtable = ICompositeTransformVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x55c5f8f3_20e4_5b80_a046_ce4d0f62f2fe);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICompositeTransform_abi(
+pub struct ICompositeTransformVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -8015,13 +8015,13 @@ pub struct ICompositeTransform_abi(
 #[doc(hidden)]
 pub struct ICompositeTransformStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICompositeTransformStatics {
-    type Vtable = ICompositeTransformStatics_abi;
+    type Vtable = ICompositeTransformStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x7701385b_8eab_5071_bfa5_b453e1e52b43);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICompositeTransformStatics_abi(
+pub struct ICompositeTransformStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -8101,13 +8101,13 @@ pub struct ICompositeTransformStatics_abi(
 #[doc(hidden)]
 pub struct ICompositionTarget(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICompositionTarget {
-    type Vtable = ICompositionTarget_abi;
+    type Vtable = ICompositionTargetVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x7d938324_e3ad_597c_93f6_520725410e68);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICompositionTarget_abi(
+pub struct ICompositionTargetVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -8133,13 +8133,13 @@ pub struct ICompositionTarget_abi(
 #[doc(hidden)]
 pub struct ICompositionTargetStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICompositionTargetStatics {
-    type Vtable = ICompositionTargetStatics_abi;
+    type Vtable = ICompositionTargetStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x12a4be6f_6db1_5165_b622_d57ab782745b);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICompositionTargetStatics_abi(
+pub struct ICompositionTargetStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -8198,13 +8198,13 @@ pub struct ICompositionTargetStatics_abi(
 #[doc(hidden)]
 pub struct IEllipseGeometry(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IEllipseGeometry {
-    type Vtable = IEllipseGeometry_abi;
+    type Vtable = IEllipseGeometryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xababd262_d8e4_5b49_bce9_0108a5209d45);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IEllipseGeometry_abi(
+pub struct IEllipseGeometryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -8254,13 +8254,13 @@ pub struct IEllipseGeometry_abi(
 #[doc(hidden)]
 pub struct IEllipseGeometryStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IEllipseGeometryStatics {
-    type Vtable = IEllipseGeometryStatics_abi;
+    type Vtable = IEllipseGeometryStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xe8a33c80_d72f_5248_a71f_4b70a0757f89);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IEllipseGeometryStatics_abi(
+pub struct IEllipseGeometryStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -8304,13 +8304,13 @@ pub struct IEllipseGeometryStatics_abi(
 #[doc(hidden)]
 pub struct IFontFamily(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IFontFamily {
-    type Vtable = IFontFamily_abi;
+    type Vtable = IFontFamilyVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x18fa5bc1_7294_527c_bb02_b213e0b3a2a3);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IFontFamily_abi(
+pub struct IFontFamilyVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -8340,13 +8340,13 @@ pub struct IFontFamily_abi(
 #[doc(hidden)]
 pub struct IFontFamilyFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IFontFamilyFactory {
-    type Vtable = IFontFamilyFactory_abi;
+    type Vtable = IFontFamilyFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x61b88a77_d0f9_5e9e_8c28_eda01fede22e);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IFontFamilyFactory_abi(
+pub struct IFontFamilyFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -8379,13 +8379,13 @@ pub struct IFontFamilyFactory_abi(
 #[doc(hidden)]
 pub struct IFontFamilyStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IFontFamilyStatics {
-    type Vtable = IFontFamilyStatics_abi;
+    type Vtable = IFontFamilyStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xb3eadceb_c471_58fe_93d0_d71b04a7fd54);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IFontFamilyStatics_abi(
+pub struct IFontFamilyStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -8415,13 +8415,13 @@ pub struct IFontFamilyStatics_abi(
 #[doc(hidden)]
 pub struct IGeneralTransform(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IGeneralTransform {
-    type Vtable = IGeneralTransform_abi;
+    type Vtable = IGeneralTransformVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x04eedeeb_31e5_54c0_ae3f_8bd06645d339);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IGeneralTransform_abi(
+pub struct IGeneralTransformVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -8467,13 +8467,13 @@ pub struct IGeneralTransform_abi(
 #[doc(hidden)]
 pub struct IGeneralTransformFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IGeneralTransformFactory {
-    type Vtable = IGeneralTransformFactory_abi;
+    type Vtable = IGeneralTransformFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x2f1025a3_5391_5d1b_8382_3caaa1d26a96);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IGeneralTransformFactory_abi(
+pub struct IGeneralTransformFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -8505,13 +8505,13 @@ pub struct IGeneralTransformFactory_abi(
 #[doc(hidden)]
 pub struct IGeneralTransformOverrides(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IGeneralTransformOverrides {
-    type Vtable = IGeneralTransformOverrides_abi;
+    type Vtable = IGeneralTransformOverridesVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xce8970f1_83f8_543f_9cf5_439c461601f1);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IGeneralTransformOverrides_abi(
+pub struct IGeneralTransformOverridesVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -8552,13 +8552,13 @@ pub struct IGeneralTransformOverrides_abi(
 #[doc(hidden)]
 pub struct IGeometry(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IGeometry {
-    type Vtable = IGeometry_abi;
+    type Vtable = IGeometryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xdc102dcc_3be2_5414_8599_94b6e76ef39b);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IGeometry_abi(
+pub struct IGeometryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -8596,13 +8596,13 @@ pub struct IGeometry_abi(
 #[doc(hidden)]
 pub struct IGeometryFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IGeometryFactory {
-    type Vtable = IGeometryFactory_abi;
+    type Vtable = IGeometryFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x4edcd536_7949_548a_a9b1_6ff03b951cf3);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IGeometryFactory_abi(
+pub struct IGeometryFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -8628,13 +8628,13 @@ pub struct IGeometryFactory_abi(
 #[doc(hidden)]
 pub struct IGeometryGroup(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IGeometryGroup {
-    type Vtable = IGeometryGroup_abi;
+    type Vtable = IGeometryGroupVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xb4dde569_ea96_5883_914c_ebb7d818dd3a);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IGeometryGroup_abi(
+pub struct IGeometryGroupVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -8680,13 +8680,13 @@ pub struct IGeometryGroup_abi(
 #[doc(hidden)]
 pub struct IGeometryGroupStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IGeometryGroupStatics {
-    type Vtable = IGeometryGroupStatics_abi;
+    type Vtable = IGeometryGroupStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x56a23da5_d015_568a_9f8b_11b125cfd9b4);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IGeometryGroupStatics_abi(
+pub struct IGeometryGroupStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -8724,13 +8724,13 @@ pub struct IGeometryGroupStatics_abi(
 #[doc(hidden)]
 pub struct IGeometryStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IGeometryStatics {
-    type Vtable = IGeometryStatics_abi;
+    type Vtable = IGeometryStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x349f78d0_4978_5742_b7d2_b34ea2c95600);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IGeometryStatics_abi(
+pub struct IGeometryStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -8772,13 +8772,13 @@ pub struct IGeometryStatics_abi(
 #[doc(hidden)]
 pub struct IGradientBrush(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IGradientBrush {
-    type Vtable = IGradientBrush_abi;
+    type Vtable = IGradientBrushVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x77c347fa_c4c4_5174_a945_65cab3aa1c75);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IGradientBrush_abi(
+pub struct IGradientBrushVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -8840,13 +8840,13 @@ pub struct IGradientBrush_abi(
 #[doc(hidden)]
 pub struct IGradientBrushFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IGradientBrushFactory {
-    type Vtable = IGradientBrushFactory_abi;
+    type Vtable = IGradientBrushFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x64ff6177_1eda_565b_b7aa_ac50152e3136);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IGradientBrushFactory_abi(
+pub struct IGradientBrushFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -8880,13 +8880,13 @@ pub struct IGradientBrushFactory_abi(
 #[doc(hidden)]
 pub struct IGradientBrushStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IGradientBrushStatics {
-    type Vtable = IGradientBrushStatics_abi;
+    type Vtable = IGradientBrushStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x4d3697d7_c6db_501c_8fa2_da30b8c8ca3b);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IGradientBrushStatics_abi(
+pub struct IGradientBrushStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -8936,13 +8936,13 @@ pub struct IGradientBrushStatics_abi(
 #[doc(hidden)]
 pub struct IGradientStop(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IGradientStop {
-    type Vtable = IGradientStop_abi;
+    type Vtable = IGradientStopVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x48bcb039_e8e1_5743_94c3_f766011d3b5d);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IGradientStop_abi(
+pub struct IGradientStopVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -8984,13 +8984,13 @@ pub struct IGradientStop_abi(
 #[doc(hidden)]
 pub struct IGradientStopStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IGradientStopStatics {
-    type Vtable = IGradientStopStatics_abi;
+    type Vtable = IGradientStopStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x0b566c1b_37de_5bfd_b419_0f7c4c0a0523);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IGradientStopStatics_abi(
+pub struct IGradientStopStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -9028,13 +9028,13 @@ pub struct IGradientStopStatics_abi(
 #[doc(hidden)]
 pub struct IImageBrush(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IImageBrush {
-    type Vtable = IImageBrush_abi;
+    type Vtable = IImageBrushVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xedcd91a3_a868_5ba6_9489_5b12b4c29d85);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IImageBrush_abi(
+pub struct IImageBrushVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -9086,13 +9086,13 @@ pub struct IImageBrush_abi(
 #[doc(hidden)]
 pub struct IImageBrushStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IImageBrushStatics {
-    type Vtable = IImageBrushStatics_abi;
+    type Vtable = IImageBrushStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xce8082dc_a505_5b4f_8861_79630f52c189);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IImageBrushStatics_abi(
+pub struct IImageBrushStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -9124,13 +9124,13 @@ pub struct IImageBrushStatics_abi(
 #[doc(hidden)]
 pub struct IImageSource(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IImageSource {
-    type Vtable = IImageSource_abi;
+    type Vtable = IImageSourceVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x6c2038f6_d6d5_55e9_9b9e_082f12dbff60);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IImageSource_abi(
+pub struct IImageSourceVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -9156,13 +9156,13 @@ pub struct IImageSource_abi(
 #[doc(hidden)]
 pub struct IImageSourceFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IImageSourceFactory {
-    type Vtable = IImageSourceFactory_abi;
+    type Vtable = IImageSourceFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x0b1e64a3_e353_5901_b84b_ae9842aea5cd);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IImageSourceFactory_abi(
+pub struct IImageSourceFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -9188,13 +9188,13 @@ pub struct IImageSourceFactory_abi(
 #[doc(hidden)]
 pub struct ILineGeometry(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ILineGeometry {
-    type Vtable = ILineGeometry_abi;
+    type Vtable = ILineGeometryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x467ef3c5_bc43_50ed_bb23_16be2c63356e);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ILineGeometry_abi(
+pub struct ILineGeometryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -9236,13 +9236,13 @@ pub struct ILineGeometry_abi(
 #[doc(hidden)]
 pub struct ILineGeometryStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ILineGeometryStatics {
-    type Vtable = ILineGeometryStatics_abi;
+    type Vtable = ILineGeometryStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xce0ecbf3_9389_5304_b7c8_5e610902f258);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ILineGeometryStatics_abi(
+pub struct ILineGeometryStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -9280,13 +9280,13 @@ pub struct ILineGeometryStatics_abi(
 #[doc(hidden)]
 pub struct ILineSegment(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ILineSegment {
-    type Vtable = ILineSegment_abi;
+    type Vtable = ILineSegmentVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x0c618e54_d883_588c_8875_bd8dfd6a6a3e);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ILineSegment_abi(
+pub struct ILineSegmentVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -9320,13 +9320,13 @@ pub struct ILineSegment_abi(
 #[doc(hidden)]
 pub struct ILineSegmentStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ILineSegmentStatics {
-    type Vtable = ILineSegmentStatics_abi;
+    type Vtable = ILineSegmentStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc3ec48a9_b9c0_561f_9925_d1d1b2a6bae6);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ILineSegmentStatics_abi(
+pub struct ILineSegmentStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -9358,13 +9358,13 @@ pub struct ILineSegmentStatics_abi(
 #[doc(hidden)]
 pub struct ILinearGradientBrush(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ILinearGradientBrush {
-    type Vtable = ILinearGradientBrush_abi;
+    type Vtable = ILinearGradientBrushVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc0ab9638_1bd9_5fa4_9649_48cfa12f0d1e);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ILinearGradientBrush_abi(
+pub struct ILinearGradientBrushVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -9406,13 +9406,13 @@ pub struct ILinearGradientBrush_abi(
 #[doc(hidden)]
 pub struct ILinearGradientBrushFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ILinearGradientBrushFactory {
-    type Vtable = ILinearGradientBrushFactory_abi;
+    type Vtable = ILinearGradientBrushFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc0ba7de3_ccfd_534c_882f_3ab39ae723f3);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ILinearGradientBrushFactory_abi(
+pub struct ILinearGradientBrushFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -9446,13 +9446,13 @@ pub struct ILinearGradientBrushFactory_abi(
 #[doc(hidden)]
 pub struct ILinearGradientBrushStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ILinearGradientBrushStatics {
-    type Vtable = ILinearGradientBrushStatics_abi;
+    type Vtable = ILinearGradientBrushStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xdf029e84_f6be_5b7e_ba22_3b4e7a6bceee);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ILinearGradientBrushStatics_abi(
+pub struct ILinearGradientBrushStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -9490,13 +9490,13 @@ pub struct ILinearGradientBrushStatics_abi(
 #[doc(hidden)]
 pub struct ILoadedImageSourceLoadCompletedEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ILoadedImageSourceLoadCompletedEventArgs {
-    type Vtable = ILoadedImageSourceLoadCompletedEventArgs_abi;
+    type Vtable = ILoadedImageSourceLoadCompletedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x4121bb7c_48e8_542d_b950_3ea7e709c0d6);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ILoadedImageSourceLoadCompletedEventArgs_abi(
+pub struct ILoadedImageSourceLoadCompletedEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -9526,13 +9526,13 @@ pub struct ILoadedImageSourceLoadCompletedEventArgs_abi(
 #[doc(hidden)]
 pub struct ILoadedImageSurface(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ILoadedImageSurface {
-    type Vtable = ILoadedImageSurface_abi;
+    type Vtable = ILoadedImageSurfaceVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xb5275540_1706_5851_95cc_498ee81fb183);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ILoadedImageSurface_abi(
+pub struct ILoadedImageSurfaceVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -9579,13 +9579,13 @@ pub struct ILoadedImageSurface_abi(
 #[doc(hidden)]
 pub struct ILoadedImageSurfaceStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ILoadedImageSurfaceStatics {
-    type Vtable = ILoadedImageSurfaceStatics_abi;
+    type Vtable = ILoadedImageSurfaceStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x25d390c4_4e32_52c2_868f_f2ede74ee442);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ILoadedImageSurfaceStatics_abi(
+pub struct ILoadedImageSurfaceStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -9633,13 +9633,13 @@ pub struct ILoadedImageSurfaceStatics_abi(
 #[doc(hidden)]
 pub struct IMatrix3DProjection(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IMatrix3DProjection {
-    type Vtable = IMatrix3DProjection_abi;
+    type Vtable = IMatrix3DProjectionVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xfc3338ef_f390_5bb1_932e_3b7c08788187);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IMatrix3DProjection_abi(
+pub struct IMatrix3DProjectionVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -9677,13 +9677,13 @@ pub struct IMatrix3DProjection_abi(
 #[doc(hidden)]
 pub struct IMatrix3DProjectionStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IMatrix3DProjectionStatics {
-    type Vtable = IMatrix3DProjectionStatics_abi;
+    type Vtable = IMatrix3DProjectionStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xa5a7e267_7a5d_58ef_a8cd_b88ebdf82207);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IMatrix3DProjectionStatics_abi(
+pub struct IMatrix3DProjectionStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -9715,13 +9715,13 @@ pub struct IMatrix3DProjectionStatics_abi(
 #[doc(hidden)]
 pub struct IMatrixHelper(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IMatrixHelper {
-    type Vtable = IMatrixHelper_abi;
+    type Vtable = IMatrixHelperVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x9571fd76_cc5c_534d_ac85_cb4ac870c912);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IMatrixHelper_abi(
+pub struct IMatrixHelperVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -9747,13 +9747,13 @@ pub struct IMatrixHelper_abi(
 #[doc(hidden)]
 pub struct IMatrixHelperStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IMatrixHelperStatics {
-    type Vtable = IMatrixHelperStatics_abi;
+    type Vtable = IMatrixHelperStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x5762cf6b_4fb0_532f_8368_de960042701f);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IMatrixHelperStatics_abi(
+pub struct IMatrixHelperStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -9804,13 +9804,13 @@ pub struct IMatrixHelperStatics_abi(
 #[doc(hidden)]
 pub struct IMatrixTransform(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IMatrixTransform {
-    type Vtable = IMatrixTransform_abi;
+    type Vtable = IMatrixTransformVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xf03138e1_addd_59fa_b993_3ea69b888ace);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IMatrixTransform_abi(
+pub struct IMatrixTransformVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -9844,13 +9844,13 @@ pub struct IMatrixTransform_abi(
 #[doc(hidden)]
 pub struct IMatrixTransformStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IMatrixTransformStatics {
-    type Vtable = IMatrixTransformStatics_abi;
+    type Vtable = IMatrixTransformStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xd7db9de3_5071_5115_98fb_ccad2fd46e44);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IMatrixTransformStatics_abi(
+pub struct IMatrixTransformStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -9882,13 +9882,13 @@ pub struct IMatrixTransformStatics_abi(
 #[doc(hidden)]
 pub struct IPathFigure(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IPathFigure {
-    type Vtable = IPathFigure_abi;
+    type Vtable = IPathFigureVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x0ee00712_bf65_5f27_9c06_14abdf6656d7);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IPathFigure_abi(
+pub struct IPathFigureVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -9946,13 +9946,13 @@ pub struct IPathFigure_abi(
 #[doc(hidden)]
 pub struct IPathFigureStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IPathFigureStatics {
-    type Vtable = IPathFigureStatics_abi;
+    type Vtable = IPathFigureStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x93bc33c4_879a_5edb_b8d7_7ecb861a7314);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IPathFigureStatics_abi(
+pub struct IPathFigureStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -10002,13 +10002,13 @@ pub struct IPathFigureStatics_abi(
 #[doc(hidden)]
 pub struct IPathGeometry(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IPathGeometry {
-    type Vtable = IPathGeometry_abi;
+    type Vtable = IPathGeometryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x11b9d95d_d3d9_5337_a05c_73a27a2b5124);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IPathGeometry_abi(
+pub struct IPathGeometryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -10054,13 +10054,13 @@ pub struct IPathGeometry_abi(
 #[doc(hidden)]
 pub struct IPathGeometryStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IPathGeometryStatics {
-    type Vtable = IPathGeometryStatics_abi;
+    type Vtable = IPathGeometryStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xd7f408fe_6c3a_5cce_91cc_c5a95d4b345a);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IPathGeometryStatics_abi(
+pub struct IPathGeometryStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -10098,13 +10098,13 @@ pub struct IPathGeometryStatics_abi(
 #[doc(hidden)]
 pub struct IPathSegment(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IPathSegment {
-    type Vtable = IPathSegment_abi;
+    type Vtable = IPathSegmentVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xb922ebbe_08f0_57e9_8785_7e57097f3bd4);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IPathSegment_abi(
+pub struct IPathSegmentVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -10130,13 +10130,13 @@ pub struct IPathSegment_abi(
 #[doc(hidden)]
 pub struct IPathSegmentFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IPathSegmentFactory {
-    type Vtable = IPathSegmentFactory_abi;
+    type Vtable = IPathSegmentFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x0559a4ff_ac4b_5bb7_b541_d373960e083b);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IPathSegmentFactory_abi(
+pub struct IPathSegmentFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -10162,13 +10162,13 @@ pub struct IPathSegmentFactory_abi(
 #[doc(hidden)]
 pub struct IPlaneProjection(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IPlaneProjection {
-    type Vtable = IPlaneProjection_abi;
+    type Vtable = IPlaneProjectionVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xd3e22836_0322_5d75_941c_a5ffb05192b2);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IPlaneProjection_abi(
+pub struct IPlaneProjectionVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -10296,13 +10296,13 @@ pub struct IPlaneProjection_abi(
 #[doc(hidden)]
 pub struct IPlaneProjectionStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IPlaneProjectionStatics {
-    type Vtable = IPlaneProjectionStatics_abi;
+    type Vtable = IPlaneProjectionStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x96d86c18_90dd_564a_828a_8735e4219b1d);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IPlaneProjectionStatics_abi(
+pub struct IPlaneProjectionStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -10406,13 +10406,13 @@ pub struct IPlaneProjectionStatics_abi(
 #[doc(hidden)]
 pub struct IPolyBezierSegment(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IPolyBezierSegment {
-    type Vtable = IPolyBezierSegment_abi;
+    type Vtable = IPolyBezierSegmentVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xd7f760a0_b93a_562a_8118_6330ed22c307);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IPolyBezierSegment_abi(
+pub struct IPolyBezierSegmentVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -10446,13 +10446,13 @@ pub struct IPolyBezierSegment_abi(
 #[doc(hidden)]
 pub struct IPolyBezierSegmentStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IPolyBezierSegmentStatics {
-    type Vtable = IPolyBezierSegmentStatics_abi;
+    type Vtable = IPolyBezierSegmentStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x738ef089_a80f_53e0_816f_f787a4461907);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IPolyBezierSegmentStatics_abi(
+pub struct IPolyBezierSegmentStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -10484,13 +10484,13 @@ pub struct IPolyBezierSegmentStatics_abi(
 #[doc(hidden)]
 pub struct IPolyLineSegment(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IPolyLineSegment {
-    type Vtable = IPolyLineSegment_abi;
+    type Vtable = IPolyLineSegmentVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x426ef287_0287_536f_ad9e_6a05ecbb323a);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IPolyLineSegment_abi(
+pub struct IPolyLineSegmentVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -10524,13 +10524,13 @@ pub struct IPolyLineSegment_abi(
 #[doc(hidden)]
 pub struct IPolyLineSegmentStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IPolyLineSegmentStatics {
-    type Vtable = IPolyLineSegmentStatics_abi;
+    type Vtable = IPolyLineSegmentStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xcf54e568_101a_5349_9189_6f9a1e7f5280);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IPolyLineSegmentStatics_abi(
+pub struct IPolyLineSegmentStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -10562,13 +10562,13 @@ pub struct IPolyLineSegmentStatics_abi(
 #[doc(hidden)]
 pub struct IPolyQuadraticBezierSegment(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IPolyQuadraticBezierSegment {
-    type Vtable = IPolyQuadraticBezierSegment_abi;
+    type Vtable = IPolyQuadraticBezierSegmentVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x56372f4c_c531_5c3e_b0e0_1645f5a8d872);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IPolyQuadraticBezierSegment_abi(
+pub struct IPolyQuadraticBezierSegmentVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -10602,13 +10602,13 @@ pub struct IPolyQuadraticBezierSegment_abi(
 #[doc(hidden)]
 pub struct IPolyQuadraticBezierSegmentStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IPolyQuadraticBezierSegmentStatics {
-    type Vtable = IPolyQuadraticBezierSegmentStatics_abi;
+    type Vtable = IPolyQuadraticBezierSegmentStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x7eb6374d_cd30_5507_b2ab_c4e3a7dc60bf);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IPolyQuadraticBezierSegmentStatics_abi(
+pub struct IPolyQuadraticBezierSegmentStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -10640,13 +10640,13 @@ pub struct IPolyQuadraticBezierSegmentStatics_abi(
 #[doc(hidden)]
 pub struct IProjection(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IProjection {
-    type Vtable = IProjection_abi;
+    type Vtable = IProjectionVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc95364b3_6058_5ee5_9e28_d38b7679fcd4);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IProjection_abi(
+pub struct IProjectionVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -10672,13 +10672,13 @@ pub struct IProjection_abi(
 #[doc(hidden)]
 pub struct IProjectionFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IProjectionFactory {
-    type Vtable = IProjectionFactory_abi;
+    type Vtable = IProjectionFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x870ea34f_db61_5b75_89ad_e0480c802937);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IProjectionFactory_abi(
+pub struct IProjectionFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -10710,13 +10710,13 @@ pub struct IProjectionFactory_abi(
 #[doc(hidden)]
 pub struct IQuadraticBezierSegment(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IQuadraticBezierSegment {
-    type Vtable = IQuadraticBezierSegment_abi;
+    type Vtable = IQuadraticBezierSegmentVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x6048abe4_7a12_5195_bd61_71dfd0361c38);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IQuadraticBezierSegment_abi(
+pub struct IQuadraticBezierSegmentVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -10758,13 +10758,13 @@ pub struct IQuadraticBezierSegment_abi(
 #[doc(hidden)]
 pub struct IQuadraticBezierSegmentStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IQuadraticBezierSegmentStatics {
-    type Vtable = IQuadraticBezierSegmentStatics_abi;
+    type Vtable = IQuadraticBezierSegmentStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x4d56ea65_0a1a_528a_a5b6_41da03ac71f4);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IQuadraticBezierSegmentStatics_abi(
+pub struct IQuadraticBezierSegmentStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -10802,13 +10802,13 @@ pub struct IQuadraticBezierSegmentStatics_abi(
 #[doc(hidden)]
 pub struct IRadialGradientBrush(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IRadialGradientBrush {
-    type Vtable = IRadialGradientBrush_abi;
+    type Vtable = IRadialGradientBrushVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x5d493ce1_b844_546a_b772_b3bcba7e98ee);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IRadialGradientBrush_abi(
+pub struct IRadialGradientBrushVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -10900,13 +10900,13 @@ pub struct IRadialGradientBrush_abi(
 #[doc(hidden)]
 pub struct IRadialGradientBrushFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IRadialGradientBrushFactory {
-    type Vtable = IRadialGradientBrushFactory_abi;
+    type Vtable = IRadialGradientBrushFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xd90ba26e_9e67_54bd_a2d9_61c8f9f1d433);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IRadialGradientBrushFactory_abi(
+pub struct IRadialGradientBrushFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -10940,13 +10940,13 @@ pub struct IRadialGradientBrushFactory_abi(
 #[doc(hidden)]
 pub struct IRadialGradientBrushStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IRadialGradientBrushStatics {
-    type Vtable = IRadialGradientBrushStatics_abi;
+    type Vtable = IRadialGradientBrushStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xf275a0b8_66f9_5b7d_a415_7eda65fe6dd3);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IRadialGradientBrushStatics_abi(
+pub struct IRadialGradientBrushStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11014,13 +11014,13 @@ pub struct IRadialGradientBrushStatics_abi(
 #[doc(hidden)]
 pub struct IRectangleGeometry(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IRectangleGeometry {
-    type Vtable = IRectangleGeometry_abi;
+    type Vtable = IRectangleGeometryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xb6143890_a5f5_54e0_ab42_d88bab451f04);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IRectangleGeometry_abi(
+pub struct IRectangleGeometryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11054,13 +11054,13 @@ pub struct IRectangleGeometry_abi(
 #[doc(hidden)]
 pub struct IRectangleGeometryStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IRectangleGeometryStatics {
-    type Vtable = IRectangleGeometryStatics_abi;
+    type Vtable = IRectangleGeometryStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x1ae7ac26_8a8b_55a5_b035_586e2b642919);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IRectangleGeometryStatics_abi(
+pub struct IRectangleGeometryStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11092,13 +11092,13 @@ pub struct IRectangleGeometryStatics_abi(
 #[doc(hidden)]
 pub struct IRenderedEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IRenderedEventArgs {
-    type Vtable = IRenderedEventArgs_abi;
+    type Vtable = IRenderedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xb268b885_118d_5b66_8099_3b6bb8644726);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IRenderedEventArgs_abi(
+pub struct IRenderedEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11128,13 +11128,13 @@ pub struct IRenderedEventArgs_abi(
 #[doc(hidden)]
 pub struct IRenderingEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IRenderingEventArgs {
-    type Vtable = IRenderingEventArgs_abi;
+    type Vtable = IRenderingEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xa67c8f8d_1885_5fc9_975c_901224f79b1e);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IRenderingEventArgs_abi(
+pub struct IRenderingEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11164,13 +11164,13 @@ pub struct IRenderingEventArgs_abi(
 #[doc(hidden)]
 pub struct IRotateTransform(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IRotateTransform {
-    type Vtable = IRotateTransform_abi;
+    type Vtable = IRotateTransformVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xd4686e7c_a374_5cac_8927_0ef07c5b254d);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IRotateTransform_abi(
+pub struct IRotateTransformVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11220,13 +11220,13 @@ pub struct IRotateTransform_abi(
 #[doc(hidden)]
 pub struct IRotateTransformStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IRotateTransformStatics {
-    type Vtable = IRotateTransformStatics_abi;
+    type Vtable = IRotateTransformStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x8ec4c662_04f8_51d7_bcb2_17f10c2faa38);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IRotateTransformStatics_abi(
+pub struct IRotateTransformStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11270,13 +11270,13 @@ pub struct IRotateTransformStatics_abi(
 #[doc(hidden)]
 pub struct IScaleTransform(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IScaleTransform {
-    type Vtable = IScaleTransform_abi;
+    type Vtable = IScaleTransformVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x94b064a4_34f0_5ef9_8b67_444f5699f52a);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IScaleTransform_abi(
+pub struct IScaleTransformVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11334,13 +11334,13 @@ pub struct IScaleTransform_abi(
 #[doc(hidden)]
 pub struct IScaleTransformStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IScaleTransformStatics {
-    type Vtable = IScaleTransformStatics_abi;
+    type Vtable = IScaleTransformStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x76485bd5_a5bf_5790_a837_8193c84df353);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IScaleTransformStatics_abi(
+pub struct IScaleTransformStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11390,13 +11390,13 @@ pub struct IScaleTransformStatics_abi(
 #[doc(hidden)]
 pub struct IShadow(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IShadow {
-    type Vtable = IShadow_abi;
+    type Vtable = IShadowVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xcc12fd6a_50aa_5eb3_9a0e_b938b454c439);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IShadow_abi(
+pub struct IShadowVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11422,13 +11422,13 @@ pub struct IShadow_abi(
 #[doc(hidden)]
 pub struct IShadowFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IShadowFactory {
-    type Vtable = IShadowFactory_abi;
+    type Vtable = IShadowFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc9115fbb_fcc3_52bf_b8ee_c348102a46e0);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IShadowFactory_abi(
+pub struct IShadowFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11454,13 +11454,13 @@ pub struct IShadowFactory_abi(
 #[doc(hidden)]
 pub struct ISkewTransform(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISkewTransform {
-    type Vtable = ISkewTransform_abi;
+    type Vtable = ISkewTransformVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x230abaa6_a9b6_5210_873f_36bea29d7c06);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISkewTransform_abi(
+pub struct ISkewTransformVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11518,13 +11518,13 @@ pub struct ISkewTransform_abi(
 #[doc(hidden)]
 pub struct ISkewTransformStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISkewTransformStatics {
-    type Vtable = ISkewTransformStatics_abi;
+    type Vtable = ISkewTransformStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x93265150_53d0_52e3_88a3_3d93e2ed861a);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISkewTransformStatics_abi(
+pub struct ISkewTransformStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11574,13 +11574,13 @@ pub struct ISkewTransformStatics_abi(
 #[doc(hidden)]
 pub struct ISolidColorBrush(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISolidColorBrush {
-    type Vtable = ISolidColorBrush_abi;
+    type Vtable = ISolidColorBrushVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xb3865c31_37c8_55c1_8a72_d41c67642e2a);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISolidColorBrush_abi(
+pub struct ISolidColorBrushVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11614,13 +11614,13 @@ pub struct ISolidColorBrush_abi(
 #[doc(hidden)]
 pub struct ISolidColorBrushFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISolidColorBrushFactory {
-    type Vtable = ISolidColorBrushFactory_abi;
+    type Vtable = ISolidColorBrushFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x7b559384_4daa_54f4_91ef_33a23fd816ca);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISolidColorBrushFactory_abi(
+pub struct ISolidColorBrushFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11653,13 +11653,13 @@ pub struct ISolidColorBrushFactory_abi(
 #[doc(hidden)]
 pub struct ISolidColorBrushStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISolidColorBrushStatics {
-    type Vtable = ISolidColorBrushStatics_abi;
+    type Vtable = ISolidColorBrushStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x6bc16da0_c4e6_59b8_995b_b31e48424c07);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISolidColorBrushStatics_abi(
+pub struct ISolidColorBrushStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11711,7 +11711,7 @@ impl ISurfaceImageSourceManagerNative {
     }
 }
 unsafe impl ::windows::core::Interface for ISurfaceImageSourceManagerNative {
-    type Vtable = ISurfaceImageSourceManagerNative_abi;
+    type Vtable = ISurfaceImageSourceManagerNativeVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x81521d7e_ff74_4a6b_8289_44bfd11cf0cc);
 }
@@ -11741,7 +11741,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISurfaceImageSourceManagerNative_abi(
+pub struct ISurfaceImageSourceManagerNativeVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11798,7 +11798,7 @@ impl ISurfaceImageSourceNative {
     }
 }
 unsafe impl ::windows::core::Interface for ISurfaceImageSourceNative {
-    type Vtable = ISurfaceImageSourceNative_abi;
+    type Vtable = ISurfaceImageSourceNativeVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xe4cecd6c_f14b_4f46_83c3_8bbda27c6504);
 }
@@ -11826,7 +11826,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISurfaceImageSourceNative_abi(
+pub struct ISurfaceImageSourceNativeVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11895,7 +11895,7 @@ impl ISurfaceImageSourceNativeWithD2D {
     }
 }
 unsafe impl ::windows::core::Interface for ISurfaceImageSourceNativeWithD2D {
-    type Vtable = ISurfaceImageSourceNativeWithD2D_abi;
+    type Vtable = ISurfaceImageSourceNativeWithD2DVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xcb833102_d5d1_448b_a31a_52a9509f24e6);
 }
@@ -11925,7 +11925,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISurfaceImageSourceNativeWithD2D_abi(
+pub struct ISurfaceImageSourceNativeWithD2DVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -11972,7 +11972,7 @@ impl ISwapChainBackgroundPanelNative {
     }
 }
 unsafe impl ::windows::core::Interface for ISwapChainBackgroundPanelNative {
-    type Vtable = ISwapChainBackgroundPanelNative_abi;
+    type Vtable = ISwapChainBackgroundPanelNativeVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x24d43d84_4246_4aa7_9774_8604cb73d90d);
 }
@@ -12002,7 +12002,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISwapChainBackgroundPanelNative_abi(
+pub struct ISwapChainBackgroundPanelNativeVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12039,7 +12039,7 @@ impl ISwapChainPanelNative {
     }
 }
 unsafe impl ::windows::core::Interface for ISwapChainPanelNative {
-    type Vtable = ISwapChainPanelNative_abi;
+    type Vtable = ISwapChainPanelNativeVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x63aad0b8_7c24_40ff_85a8_640d944cc325);
 }
@@ -12065,7 +12065,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISwap
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISwapChainPanelNative_abi(
+pub struct ISwapChainPanelNativeVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12115,7 +12115,7 @@ impl ISwapChainPanelNative2 {
     }
 }
 unsafe impl ::windows::core::Interface for ISwapChainPanelNative2 {
-    type Vtable = ISwapChainPanelNative2_abi;
+    type Vtable = ISwapChainPanelNative2Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x88fd8248_10da_4810_bb4c_010dd27faea9);
 }
@@ -12161,7 +12161,7 @@ impl<'a> ::windows::core::IntoParam<'a, ISwapChainPanelNative> for &ISwapChainPa
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISwapChainPanelNative2_abi(
+pub struct ISwapChainPanelNative2Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12182,13 +12182,13 @@ pub struct ISwapChainPanelNative2_abi(
 #[doc(hidden)]
 pub struct IThemeShadow(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IThemeShadow {
-    type Vtable = IThemeShadow_abi;
+    type Vtable = IThemeShadowVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc264208a_d1f4_58ae_8a88_fc59148bee69);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IThemeShadow_abi(
+pub struct IThemeShadowVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12249,13 +12249,13 @@ pub struct IThemeShadow_abi(
 #[doc(hidden)]
 pub struct IThemeShadowFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IThemeShadowFactory {
-    type Vtable = IThemeShadowFactory_abi;
+    type Vtable = IThemeShadowFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x704a9c96_76a0_569e_8ceb_34e92a23fe11);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IThemeShadowFactory_abi(
+pub struct IThemeShadowFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12318,13 +12318,13 @@ pub struct IThemeShadowFactory_abi(
 #[doc(hidden)]
 pub struct ITileBrush(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITileBrush {
-    type Vtable = ITileBrush_abi;
+    type Vtable = ITileBrushVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xee46060d_cabc_505d_883c_75d2e0e45875);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITileBrush_abi(
+pub struct ITileBrushVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12374,13 +12374,13 @@ pub struct ITileBrush_abi(
 #[doc(hidden)]
 pub struct ITileBrushFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITileBrushFactory {
-    type Vtable = ITileBrushFactory_abi;
+    type Vtable = ITileBrushFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x8542e5e6_5177_506f_8a3b_aa7da651f099);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITileBrushFactory_abi(
+pub struct ITileBrushFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12414,13 +12414,13 @@ pub struct ITileBrushFactory_abi(
 #[doc(hidden)]
 pub struct ITileBrushStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITileBrushStatics {
-    type Vtable = ITileBrushStatics_abi;
+    type Vtable = ITileBrushStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xf402197b_9047_5f8a_90bc_6f5d8c748a5f);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITileBrushStatics_abi(
+pub struct ITileBrushStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12464,13 +12464,13 @@ pub struct ITileBrushStatics_abi(
 #[doc(hidden)]
 pub struct ITransform(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITransform {
-    type Vtable = ITransform_abi;
+    type Vtable = ITransformVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x92a8dee5_1413_56b9_8cca_3c46918fde1b);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITransform_abi(
+pub struct ITransformVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12496,13 +12496,13 @@ pub struct ITransform_abi(
 #[doc(hidden)]
 pub struct ITransformFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITransformFactory {
-    type Vtable = ITransformFactory_abi;
+    type Vtable = ITransformFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x7da293f9_b82e_5d15_b623_c08210cbb640);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITransformFactory_abi(
+pub struct ITransformFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12528,13 +12528,13 @@ pub struct ITransformFactory_abi(
 #[doc(hidden)]
 pub struct ITransformGroup(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITransformGroup {
-    type Vtable = ITransformGroup_abi;
+    type Vtable = ITransformGroupVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x17c55f3b_899c_588f_8bd4_40fa3a5fcb04);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITransformGroup_abi(
+pub struct ITransformGroupVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12572,13 +12572,13 @@ pub struct ITransformGroup_abi(
 #[doc(hidden)]
 pub struct ITransformGroupStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITransformGroupStatics {
-    type Vtable = ITransformGroupStatics_abi;
+    type Vtable = ITransformGroupStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x8f1508f6_7dcf_53d5_bbc0_d8fcd96d7399);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITransformGroupStatics_abi(
+pub struct ITransformGroupStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12610,13 +12610,13 @@ pub struct ITransformGroupStatics_abi(
 #[doc(hidden)]
 pub struct ITranslateTransform(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITranslateTransform {
-    type Vtable = ITranslateTransform_abi;
+    type Vtable = ITranslateTransformVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xcfa21ca9_b79f_5450_b459_a96c48cb2c8f);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITranslateTransform_abi(
+pub struct ITranslateTransformVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12658,13 +12658,13 @@ pub struct ITranslateTransform_abi(
 #[doc(hidden)]
 pub struct ITranslateTransformStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITranslateTransformStatics {
-    type Vtable = ITranslateTransformStatics_abi;
+    type Vtable = ITranslateTransformStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x1342eb11_5a6e_5263_ab3e_9b672a86fc0c);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITranslateTransformStatics_abi(
+pub struct ITranslateTransformStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12807,7 +12807,7 @@ impl IVirtualSurfaceImageSourceNative {
     }
 }
 unsafe impl ::windows::core::Interface for IVirtualSurfaceImageSourceNative {
-    type Vtable = IVirtualSurfaceImageSourceNative_abi;
+    type Vtable = IVirtualSurfaceImageSourceNativeVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x9e43c18e_7816_474c_840f_5c9c8b0e2207);
 }
@@ -12861,7 +12861,7 @@ impl<'a> ::windows::core::IntoParam<'a, ISurfaceImageSourceNative>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IVirtualSurfaceImageSourceNative_abi(
+pub struct IVirtualSurfaceImageSourceNativeVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12921,7 +12921,7 @@ impl IVirtualSurfaceUpdatesCallbackNative {
     }
 }
 unsafe impl ::windows::core::Interface for IVirtualSurfaceUpdatesCallbackNative {
-    type Vtable = IVirtualSurfaceUpdatesCallbackNative_abi;
+    type Vtable = IVirtualSurfaceUpdatesCallbackNativeVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xe8e84ac7_b7b8_40f4_b033_f877a756c52b);
 }
@@ -12951,7 +12951,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IVirtualSurfaceUpdatesCallbackNative_abi(
+pub struct IVirtualSurfaceUpdatesCallbackNativeVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12965,13 +12965,13 @@ pub struct IVirtualSurfaceUpdatesCallbackNative_abi(
 #[doc(hidden)]
 pub struct IVisualTreeHelper(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IVisualTreeHelper {
-    type Vtable = IVisualTreeHelper_abi;
+    type Vtable = IVisualTreeHelperVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x5f69ac1e_6504_5e3f_a11c_87684c1db814);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IVisualTreeHelper_abi(
+pub struct IVisualTreeHelperVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -12997,13 +12997,13 @@ pub struct IVisualTreeHelper_abi(
 #[doc(hidden)]
 pub struct IVisualTreeHelperStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IVisualTreeHelperStatics {
-    type Vtable = IVisualTreeHelperStatics_abi;
+    type Vtable = IVisualTreeHelperStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x5aece43c_7651_5bb5_855c_2198496e455e);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IVisualTreeHelperStatics_abi(
+pub struct IVisualTreeHelperStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -13308,13 +13308,13 @@ pub struct IVisualTreeHelperStatics_abi(
 #[doc(hidden)]
 pub struct IXamlCompositionBrushBase(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IXamlCompositionBrushBase {
-    type Vtable = IXamlCompositionBrushBase_abi;
+    type Vtable = IXamlCompositionBrushBaseVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xfeaead28_5cd0_5e58_bcea_8670f832aca9);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IXamlCompositionBrushBase_abi(
+pub struct IXamlCompositionBrushBaseVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -13348,13 +13348,13 @@ pub struct IXamlCompositionBrushBase_abi(
 #[doc(hidden)]
 pub struct IXamlCompositionBrushBaseFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IXamlCompositionBrushBaseFactory {
-    type Vtable = IXamlCompositionBrushBaseFactory_abi;
+    type Vtable = IXamlCompositionBrushBaseFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xb1626d56_0f6f_5416_ada4_5c8105d3f082);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IXamlCompositionBrushBaseFactory_abi(
+pub struct IXamlCompositionBrushBaseFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -13388,13 +13388,13 @@ pub struct IXamlCompositionBrushBaseFactory_abi(
 #[doc(hidden)]
 pub struct IXamlCompositionBrushBaseOverrides(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IXamlCompositionBrushBaseOverrides {
-    type Vtable = IXamlCompositionBrushBaseOverrides_abi;
+    type Vtable = IXamlCompositionBrushBaseOverridesVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x8881b559_54a0_56c4_a79a_135152fb1dfa);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IXamlCompositionBrushBaseOverrides_abi(
+pub struct IXamlCompositionBrushBaseOverridesVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -13422,13 +13422,13 @@ pub struct IXamlCompositionBrushBaseOverrides_abi(
 #[doc(hidden)]
 pub struct IXamlCompositionBrushBaseProtected(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IXamlCompositionBrushBaseProtected {
-    type Vtable = IXamlCompositionBrushBaseProtected_abi;
+    type Vtable = IXamlCompositionBrushBaseProtectedVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x6617e1a5_e27a_5b95_b03e_6758b58f92a0);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IXamlCompositionBrushBaseProtected_abi(
+pub struct IXamlCompositionBrushBaseProtectedVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -13466,13 +13466,13 @@ pub struct IXamlCompositionBrushBaseProtected_abi(
 #[doc(hidden)]
 pub struct IXamlCompositionBrushBaseStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IXamlCompositionBrushBaseStatics {
-    type Vtable = IXamlCompositionBrushBaseStatics_abi;
+    type Vtable = IXamlCompositionBrushBaseStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x3eed6e16_c386_5a1c_b70d_ef1c0015e691);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IXamlCompositionBrushBaseStatics_abi(
+pub struct IXamlCompositionBrushBaseStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -13504,13 +13504,13 @@ pub struct IXamlCompositionBrushBaseStatics_abi(
 #[doc(hidden)]
 pub struct IXamlLight(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IXamlLight {
-    type Vtable = IXamlLight_abi;
+    type Vtable = IXamlLightVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xdcd20139_8cd5_5da5_a25c_2b7b813d8d58);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IXamlLight_abi(
+pub struct IXamlLightVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -13536,13 +13536,13 @@ pub struct IXamlLight_abi(
 #[doc(hidden)]
 pub struct IXamlLightFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IXamlLightFactory {
-    type Vtable = IXamlLightFactory_abi;
+    type Vtable = IXamlLightFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x76da6306_96fc_553e_bb39_9a4801d06f48);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IXamlLightFactory_abi(
+pub struct IXamlLightFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -13605,13 +13605,13 @@ pub struct IXamlLightFactory_abi(
 #[doc(hidden)]
 pub struct IXamlLightOverrides(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IXamlLightOverrides {
-    type Vtable = IXamlLightOverrides_abi;
+    type Vtable = IXamlLightOverridesVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x696d4f30_92ee_540d_ad70_33d4489514d0);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IXamlLightOverrides_abi(
+pub struct IXamlLightOverridesVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -13711,13 +13711,13 @@ pub struct IXamlLightOverrides_abi(
 #[doc(hidden)]
 pub struct IXamlLightProtected(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IXamlLightProtected {
-    type Vtable = IXamlLightProtected_abi;
+    type Vtable = IXamlLightProtectedVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc307bf12_fdaf_54ca_a631_ad0e86263c6e);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IXamlLightProtected_abi(
+pub struct IXamlLightProtectedVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -13755,13 +13755,13 @@ pub struct IXamlLightProtected_abi(
 #[doc(hidden)]
 pub struct IXamlLightStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IXamlLightStatics {
-    type Vtable = IXamlLightStatics_abi;
+    type Vtable = IXamlLightStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xa2d8ea26_26ff_5374_b1dd_f232d5604f6a);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IXamlLightStatics_abi(
+pub struct IXamlLightStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -14299,7 +14299,7 @@ unsafe impl ::windows::core::RuntimeType for ImageBrush {
     );
 }
 unsafe impl ::windows::core::Interface for ImageBrush {
-    type Vtable = IImageBrush_abi;
+    type Vtable = IImageBrushVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xedcd91a3_a868_5ba6_9489_5b12b4c29d85);
 }
@@ -14613,7 +14613,7 @@ unsafe impl ::windows::core::RuntimeType for ImageSource {
     );
 }
 unsafe impl ::windows::core::Interface for ImageSource {
-    type Vtable = IImageSource_abi;
+    type Vtable = IImageSourceVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x6c2038f6_d6d5_55e9_9b9e_082f12dbff60);
 }
@@ -14984,7 +14984,7 @@ unsafe impl ::windows::core::RuntimeType for LineGeometry {
     );
 }
 unsafe impl ::windows::core::Interface for LineGeometry {
-    type Vtable = ILineGeometry_abi;
+    type Vtable = ILineGeometryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x467ef3c5_bc43_50ed_bb23_16be2c63356e);
 }
@@ -15301,7 +15301,7 @@ unsafe impl ::windows::core::RuntimeType for LineSegment {
     );
 }
 unsafe impl ::windows::core::Interface for LineSegment {
-    type Vtable = ILineSegment_abi;
+    type Vtable = ILineSegmentVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x0c618e54_d883_588c_8875_bd8dfd6a6a3e);
 }
@@ -15862,7 +15862,7 @@ unsafe impl ::windows::core::RuntimeType for LinearGradientBrush {
     );
 }
 unsafe impl ::windows::core::Interface for LinearGradientBrush {
-    type Vtable = ILinearGradientBrush_abi;
+    type Vtable = ILinearGradientBrushVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc0ab9638_1bd9_5fa4_9649_48cfa12f0d1e);
 }
@@ -16036,7 +16036,7 @@ unsafe impl ::windows::core::RuntimeType for LoadedImageSourceLoadCompletedEvent
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Media.LoadedImageSourceLoadCompletedEventArgs;{4121bb7c-48e8-542d-b950-3ea7e709c0d6})" ) ;
 }
 unsafe impl ::windows::core::Interface for LoadedImageSourceLoadCompletedEventArgs {
-    type Vtable = ILoadedImageSourceLoadCompletedEventArgs_abi;
+    type Vtable = ILoadedImageSourceLoadCompletedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x4121bb7c_48e8_542d_b950_3ea7e709c0d6);
 }
@@ -16306,7 +16306,7 @@ unsafe impl ::windows::core::RuntimeType for LoadedImageSurface {
     );
 }
 unsafe impl ::windows::core::Interface for LoadedImageSurface {
-    type Vtable = ILoadedImageSurface_abi;
+    type Vtable = ILoadedImageSurfaceVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xb5275540_1706_5851_95cc_498ee81fb183);
 }
@@ -16700,7 +16700,7 @@ unsafe impl ::windows::core::RuntimeType for Matrix3DProjection {
     );
 }
 unsafe impl ::windows::core::Interface for Matrix3DProjection {
-    type Vtable = IMatrix3DProjection_abi;
+    type Vtable = IMatrix3DProjectionVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xfc3338ef_f390_5bb1_932e_3b7c08788187);
 }
@@ -16884,7 +16884,7 @@ unsafe impl ::windows::core::RuntimeType for MatrixHelper {
     );
 }
 unsafe impl ::windows::core::Interface for MatrixHelper {
-    type Vtable = IMatrixHelper_abi;
+    type Vtable = IMatrixHelperVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x9571fd76_cc5c_534d_ac85_cb4ac870c912);
 }
@@ -17227,7 +17227,7 @@ unsafe impl ::windows::core::RuntimeType for MatrixTransform {
     );
 }
 unsafe impl ::windows::core::Interface for MatrixTransform {
-    type Vtable = IMatrixTransform_abi;
+    type Vtable = IMatrixTransformVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xf03138e1_addd_59fa_b993_3ea69b888ace);
 }
@@ -17662,7 +17662,7 @@ unsafe impl ::windows::core::RuntimeType for PathFigure {
     );
 }
 unsafe impl ::windows::core::Interface for PathFigure {
-    type Vtable = IPathFigure_abi;
+    type Vtable = IPathFigureVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x0ee00712_bf65_5f27_9c06_14abdf6656d7);
 }
@@ -17933,7 +17933,7 @@ unsafe impl ::windows::core::RuntimeType for PathFigureCollection {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Media.PathFigureCollection;pinterface({913337e9-11a1-4345-a3a2-4e7f956e222d};rc(Microsoft.UI.Xaml.Media.PathFigure;{0ee00712-bf65-5f27-9c06-14abdf6656d7})))" ) ;
 }
 unsafe impl ::windows::core::Interface for PathFigureCollection {
-    type Vtable = ::windows::Foundation::Collections::IVector_abi<PathFigure>;
+    type Vtable = ::windows::Foundation::Collections::IVectorVtbl<PathFigure>;
     const IID : :: windows :: core :: GUID = :: windows :: core :: GUID :: from_signature ( < ::windows::Foundation::Collections:: IVector :: < PathFigure > as :: windows :: core :: RuntimeType > :: SIGNATURE ) ;
 }
 impl ::windows::core::RuntimeName for PathFigureCollection {
@@ -18360,7 +18360,7 @@ unsafe impl ::windows::core::RuntimeType for PathGeometry {
     );
 }
 unsafe impl ::windows::core::Interface for PathGeometry {
-    type Vtable = IPathGeometry_abi;
+    type Vtable = IPathGeometryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x11b9d95d_d3d9_5337_a05c_73a27a2b5124);
 }
@@ -18620,7 +18620,7 @@ unsafe impl ::windows::core::RuntimeType for PathSegment {
     );
 }
 unsafe impl ::windows::core::Interface for PathSegment {
-    type Vtable = IPathSegment_abi;
+    type Vtable = IPathSegmentVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xb922ebbe_08f0_57e9_8785_7e57097f3bd4);
 }
@@ -18882,7 +18882,7 @@ unsafe impl ::windows::core::RuntimeType for PathSegmentCollection {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Media.PathSegmentCollection;pinterface({913337e9-11a1-4345-a3a2-4e7f956e222d};rc(Microsoft.UI.Xaml.Media.PathSegment;{b922ebbe-08f0-57e9-8785-7e57097f3bd4})))" ) ;
 }
 unsafe impl ::windows::core::Interface for PathSegmentCollection {
-    type Vtable = ::windows::Foundation::Collections::IVector_abi<PathSegment>;
+    type Vtable = ::windows::Foundation::Collections::IVectorVtbl<PathSegment>;
     const IID : :: windows :: core :: GUID = :: windows :: core :: GUID :: from_signature ( < ::windows::Foundation::Collections:: IVector :: < PathSegment > as :: windows :: core :: RuntimeType > :: SIGNATURE ) ;
 }
 impl ::windows::core::RuntimeName for PathSegmentCollection {
@@ -19642,7 +19642,7 @@ unsafe impl ::windows::core::RuntimeType for PlaneProjection {
     );
 }
 unsafe impl ::windows::core::Interface for PlaneProjection {
-    type Vtable = IPlaneProjection_abi;
+    type Vtable = IPlaneProjectionVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xd3e22836_0322_5d75_941c_a5ffb05192b2);
 }
@@ -19928,7 +19928,7 @@ unsafe impl ::windows::core::RuntimeType for PointCollection {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Media.PointCollection;pinterface({913337e9-11a1-4345-a3a2-4e7f956e222d};struct(Windows.Foundation.Point;f4;f4)))" ) ;
 }
 unsafe impl ::windows::core::Interface for PointCollection {
-    type Vtable = ::windows::Foundation::Collections::IVector_abi<::windows::Foundation::Point>;
+    type Vtable = ::windows::Foundation::Collections::IVectorVtbl<::windows::Foundation::Point>;
     const IID : :: windows :: core :: GUID = :: windows :: core :: GUID :: from_signature ( < ::windows::Foundation::Collections:: IVector :: < ::windows::Foundation:: Point > as :: windows :: core :: RuntimeType > :: SIGNATURE ) ;
 }
 impl ::windows::core::RuntimeName for PointCollection {
@@ -20317,7 +20317,7 @@ unsafe impl ::windows::core::RuntimeType for PolyBezierSegment {
     );
 }
 unsafe impl ::windows::core::Interface for PolyBezierSegment {
-    type Vtable = IPolyBezierSegment_abi;
+    type Vtable = IPolyBezierSegmentVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xd7f760a0_b93a_562a_8118_6330ed22c307);
 }
@@ -20637,7 +20637,7 @@ unsafe impl ::windows::core::RuntimeType for PolyLineSegment {
     );
 }
 unsafe impl ::windows::core::Interface for PolyLineSegment {
-    type Vtable = IPolyLineSegment_abi;
+    type Vtable = IPolyLineSegmentVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x426ef287_0287_536f_ad9e_6a05ecbb323a);
 }
@@ -20957,7 +20957,7 @@ unsafe impl ::windows::core::RuntimeType for PolyQuadraticBezierSegment {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Media.PolyQuadraticBezierSegment;{56372f4c-c531-5c3e-b0e0-1645f5a8d872})" ) ;
 }
 unsafe impl ::windows::core::Interface for PolyQuadraticBezierSegment {
-    type Vtable = IPolyQuadraticBezierSegment_abi;
+    type Vtable = IPolyQuadraticBezierSegmentVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x56372f4c_c531_5c3e_b0e0_1645f5a8d872);
 }
@@ -21223,7 +21223,7 @@ unsafe impl ::windows::core::RuntimeType for Projection {
     );
 }
 unsafe impl ::windows::core::Interface for Projection {
-    type Vtable = IProjection_abi;
+    type Vtable = IProjectionVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc95364b3_6058_5ee5_9e28_d38b7679fcd4);
 }
@@ -21556,7 +21556,7 @@ unsafe impl ::windows::core::RuntimeType for QuadraticBezierSegment {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Media.QuadraticBezierSegment;{6048abe4-7a12-5195-bd61-71dfd0361c38})" ) ;
 }
 unsafe impl ::windows::core::Interface for QuadraticBezierSegment {
-    type Vtable = IQuadraticBezierSegment_abi;
+    type Vtable = IQuadraticBezierSegmentVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x6048abe4_7a12_5195_bd61_71dfd0361c38);
 }
@@ -22240,7 +22240,7 @@ unsafe impl ::windows::core::RuntimeType for RadialGradientBrush {
     );
 }
 unsafe impl ::windows::core::Interface for RadialGradientBrush {
-    type Vtable = IRadialGradientBrush_abi;
+    type Vtable = IRadialGradientBrushVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x5d493ce1_b844_546a_b772_b3bcba7e98ee);
 }
@@ -22655,7 +22655,7 @@ unsafe impl ::windows::core::RuntimeType for RectangleGeometry {
     );
 }
 unsafe impl ::windows::core::Interface for RectangleGeometry {
-    type Vtable = IRectangleGeometry_abi;
+    type Vtable = IRectangleGeometryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xb6143890_a5f5_54e0_ab42_d88bab451f04);
 }
@@ -22775,7 +22775,7 @@ unsafe impl ::windows::core::RuntimeType for RenderedEventArgs {
     );
 }
 unsafe impl ::windows::core::Interface for RenderedEventArgs {
-    type Vtable = IRenderedEventArgs_abi;
+    type Vtable = IRenderedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xb268b885_118d_5b66_8099_3b6bb8644726);
 }
@@ -22851,7 +22851,7 @@ unsafe impl ::windows::core::RuntimeType for RenderingEventArgs {
     );
 }
 unsafe impl ::windows::core::Interface for RenderingEventArgs {
-    type Vtable = IRenderingEventArgs_abi;
+    type Vtable = IRenderingEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xa67c8f8d_1885_5fc9_975c_901224f79b1e);
 }
@@ -23246,7 +23246,7 @@ unsafe impl ::windows::core::RuntimeType for RotateTransform {
     );
 }
 unsafe impl ::windows::core::Interface for RotateTransform {
-    type Vtable = IRotateTransform_abi;
+    type Vtable = IRotateTransformVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xd4686e7c_a374_5cac_8927_0ef07c5b254d);
 }
@@ -23736,7 +23736,7 @@ unsafe impl ::windows::core::RuntimeType for ScaleTransform {
     );
 }
 unsafe impl ::windows::core::Interface for ScaleTransform {
-    type Vtable = IScaleTransform_abi;
+    type Vtable = IScaleTransformVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x94b064a4_34f0_5ef9_8b67_444f5699f52a);
 }
@@ -24018,7 +24018,7 @@ unsafe impl ::windows::core::RuntimeType for Shadow {
     );
 }
 unsafe impl ::windows::core::Interface for Shadow {
-    type Vtable = IShadow_abi;
+    type Vtable = IShadowVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xcc12fd6a_50aa_5eb3_9a0e_b938b454c439);
 }
@@ -24464,7 +24464,7 @@ unsafe impl ::windows::core::RuntimeType for SkewTransform {
     );
 }
 unsafe impl ::windows::core::Interface for SkewTransform {
-    type Vtable = ISkewTransform_abi;
+    type Vtable = ISkewTransformVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x230abaa6_a9b6_5210_873f_36bea29d7c06);
 }
@@ -24920,7 +24920,7 @@ unsafe impl ::windows::core::RuntimeType for SolidColorBrush {
     );
 }
 unsafe impl ::windows::core::Interface for SolidColorBrush {
-    type Vtable = ISolidColorBrush_abi;
+    type Vtable = ISolidColorBrushVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xb3865c31_37c8_55c1_8a72_d41c67642e2a);
 }
@@ -25365,7 +25365,7 @@ unsafe impl ::windows::core::RuntimeType for ThemeShadow {
     );
 }
 unsafe impl ::windows::core::Interface for ThemeShadow {
-    type Vtable = IThemeShadow_abi;
+    type Vtable = IThemeShadowVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc264208a_d1f4_58ae_8a88_fc59148bee69);
 }
@@ -25806,7 +25806,7 @@ unsafe impl ::windows::core::RuntimeType for TileBrush {
     );
 }
 unsafe impl ::windows::core::Interface for TileBrush {
-    type Vtable = ITileBrush_abi;
+    type Vtable = ITileBrushVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xee46060d_cabc_505d_883c_75d2e0e45875);
 }
@@ -26163,7 +26163,7 @@ unsafe impl ::windows::core::RuntimeType for Transform {
     );
 }
 unsafe impl ::windows::core::Interface for Transform {
-    type Vtable = ITransform_abi;
+    type Vtable = ITransformVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x92a8dee5_1413_56b9_8cca_3c46918fde1b);
 }
@@ -26447,7 +26447,7 @@ unsafe impl ::windows::core::RuntimeType for TransformCollection {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Media.TransformCollection;pinterface({913337e9-11a1-4345-a3a2-4e7f956e222d};rc(Microsoft.UI.Xaml.Media.Transform;{92a8dee5-1413-56b9-8cca-3c46918fde1b})))" ) ;
 }
 unsafe impl ::windows::core::Interface for TransformCollection {
-    type Vtable = ::windows::Foundation::Collections::IVector_abi<Transform>;
+    type Vtable = ::windows::Foundation::Collections::IVectorVtbl<Transform>;
     const IID : :: windows :: core :: GUID = :: windows :: core :: GUID :: from_signature ( < ::windows::Foundation::Collections:: IVector :: < Transform > as :: windows :: core :: RuntimeType > :: SIGNATURE ) ;
 }
 impl ::windows::core::RuntimeName for TransformCollection {
@@ -26884,7 +26884,7 @@ unsafe impl ::windows::core::RuntimeType for TransformGroup {
     );
 }
 unsafe impl ::windows::core::Interface for TransformGroup {
-    type Vtable = ITransformGroup_abi;
+    type Vtable = ITransformGroupVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x17c55f3b_899c_588f_8bd4_40fa3a5fcb04);
 }
@@ -27318,7 +27318,7 @@ unsafe impl ::windows::core::RuntimeType for TranslateTransform {
     );
 }
 unsafe impl ::windows::core::Interface for TranslateTransform {
-    type Vtable = ITranslateTransform_abi;
+    type Vtable = ITranslateTransformVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xcfa21ca9_b79f_5450_b459_a96c48cb2c8f);
 }
@@ -27742,7 +27742,7 @@ unsafe impl ::windows::core::RuntimeType for VisualTreeHelper {
     );
 }
 unsafe impl ::windows::core::Interface for VisualTreeHelper {
-    type Vtable = IVisualTreeHelper_abi;
+    type Vtable = IVisualTreeHelperVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x5f69ac1e_6504_5e3f_a11c_87684c1db814);
 }
@@ -28121,7 +28121,7 @@ unsafe impl ::windows::core::RuntimeType for XamlCompositionBrushBase {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Media.XamlCompositionBrushBase;{feaead28-5cd0-5e58-bcea-8670f832aca9})" ) ;
 }
 unsafe impl ::windows::core::Interface for XamlCompositionBrushBase {
-    type Vtable = IXamlCompositionBrushBase_abi;
+    type Vtable = IXamlCompositionBrushBaseVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xfeaead28_5cd0_5e58_bcea_8670f832aca9);
 }
@@ -28595,7 +28595,7 @@ unsafe impl ::windows::core::RuntimeType for XamlLight {
     );
 }
 unsafe impl ::windows::core::Interface for XamlLight {
-    type Vtable = IXamlLight_abi;
+    type Vtable = IXamlLightVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xdcd20139_8cd5_5da5_a25c_2b7b813d8d58);
 }

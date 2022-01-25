@@ -109,7 +109,7 @@ unsafe impl ::windows::core::RuntimeType for DeploymentResult {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Windows.ApplicationModel.WindowsAppRuntime.DeploymentResult;{27203f62-463d-587a-8eb7-870098901078})" ) ;
 }
 unsafe impl ::windows::core::Interface for DeploymentResult {
-    type Vtable = IDeploymentResult_abi;
+    type Vtable = IDeploymentResultVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x27203f62_463d_587a_8eb7_870098901078);
 }
@@ -195,13 +195,13 @@ impl ::windows::core::DefaultType for DeploymentStatus {
 #[doc(hidden)]
 pub struct IDeploymentManagerStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IDeploymentManagerStatics {
-    type Vtable = IDeploymentManagerStatics_abi;
+    type Vtable = IDeploymentManagerStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x6782a9d0_bfd0_50ea_81b0_32e9ed37cdf0);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IDeploymentManagerStatics_abi(
+pub struct IDeploymentManagerStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -235,13 +235,13 @@ pub struct IDeploymentManagerStatics_abi(
 #[doc(hidden)]
 pub struct IDeploymentResult(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IDeploymentResult {
-    type Vtable = IDeploymentResult_abi;
+    type Vtable = IDeploymentResultVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x27203f62_463d_587a_8eb7_870098901078);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IDeploymentResult_abi(
+pub struct IDeploymentResultVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -275,13 +275,13 @@ pub struct IDeploymentResult_abi(
 #[doc(hidden)]
 pub struct IDeploymentResultFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IDeploymentResultFactory {
-    type Vtable = IDeploymentResultFactory_abi;
+    type Vtable = IDeploymentResultFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xacd7bdae_4ae6_5cac_8205_1e8c305f953b);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IDeploymentResultFactory_abi(
+pub struct IDeploymentResultFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,

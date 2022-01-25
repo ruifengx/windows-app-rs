@@ -190,7 +190,7 @@ unsafe impl ::windows::core::RuntimeType for DesktopAcrylicController {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.SystemBackdrops.DesktopAcrylicController;{7c20a6af-8eb3-5f08-bdfc-6d35e35dfe45})" ) ;
 }
 unsafe impl ::windows::core::Interface for DesktopAcrylicController {
-    type Vtable = IDesktopAcrylicController_abi;
+    type Vtable = IDesktopAcrylicControllerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x7c20a6af_8eb3_5f08_bdfc_6d35e35dfe45);
 }
@@ -301,13 +301,13 @@ unsafe impl ::core::marker::Sync for DesktopAcrylicController {}
 #[doc(hidden)]
 pub struct IDesktopAcrylicController(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IDesktopAcrylicController {
-    type Vtable = IDesktopAcrylicController_abi;
+    type Vtable = IDesktopAcrylicControllerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x7c20a6af_8eb3_5f08_bdfc_6d35e35dfe45);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IDesktopAcrylicController_abi(
+pub struct IDesktopAcrylicControllerVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -365,13 +365,13 @@ pub struct IDesktopAcrylicController_abi(
 #[doc(hidden)]
 pub struct IDesktopAcrylicControllerStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IDesktopAcrylicControllerStatics {
-    type Vtable = IDesktopAcrylicControllerStatics_abi;
+    type Vtable = IDesktopAcrylicControllerStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xa9e8f790_79ef_5416_9b67_6bcfe867c8b7);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IDesktopAcrylicControllerStatics_abi(
+pub struct IDesktopAcrylicControllerStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -401,13 +401,13 @@ pub struct IDesktopAcrylicControllerStatics_abi(
 #[doc(hidden)]
 pub struct IMicaController(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IMicaController {
-    type Vtable = IMicaController_abi;
+    type Vtable = IMicaControllerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x2de996a9_0a2a_5889_a89c_1f84060a8cab);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IMicaController_abi(
+pub struct IMicaControllerVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -465,13 +465,13 @@ pub struct IMicaController_abi(
 #[doc(hidden)]
 pub struct IMicaControllerStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IMicaControllerStatics {
-    type Vtable = IMicaControllerStatics_abi;
+    type Vtable = IMicaControllerStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x7d85d834_d514_5250_b7c4_0b7850d1efdc);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IMicaControllerStatics_abi(
+pub struct IMicaControllerStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -506,7 +506,7 @@ pub struct IMicaControllerStatics_abi(
 )]
 pub struct ISystemBackdropController(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISystemBackdropController {
-    type Vtable = ISystemBackdropController_abi;
+    type Vtable = ISystemBackdropControllerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x5632d76c_0b74_5b52_aa33_80262068aeb2);
 }
@@ -640,7 +640,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::Foundation::IClosable>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISystemBackdropController_abi(
+pub struct ISystemBackdropControllerVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -855,7 +855,7 @@ unsafe impl ::windows::core::RuntimeType for MicaController {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.SystemBackdrops.MicaController;{2de996a9-0a2a-5889-a89c-1f84060a8cab})" ) ;
 }
 unsafe impl ::windows::core::Interface for MicaController {
-    type Vtable = IMicaController_abi;
+    type Vtable = IMicaControllerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x2de996a9_0a2a_5889_a89c_1f84060a8cab);
 }

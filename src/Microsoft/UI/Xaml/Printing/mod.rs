@@ -51,7 +51,7 @@ unsafe impl ::windows::core::RuntimeType for AddPagesEventArgs {
     );
 }
 unsafe impl ::windows::core::Interface for AddPagesEventArgs {
-    type Vtable = IAddPagesEventArgs_abi;
+    type Vtable = IAddPagesEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xa69f3cb3_6b74_5ee8_b034_188098a98c5d);
 }
@@ -151,13 +151,13 @@ unsafe impl ::windows::core::RuntimeType for AddPagesEventHandler {
     );
 }
 unsafe impl ::windows::core::Interface for AddPagesEventHandler {
-    type Vtable = AddPagesEventHandler_abi;
+    type Vtable = AddPagesEventHandlerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xed77566a_bd03_5118_b7c3_d9cea64307dd);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct AddPagesEventHandler_abi(
+pub struct AddPagesEventHandlerVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -179,7 +179,7 @@ struct AddPagesEventHandler_box<
         ) -> ::windows::core::Result<()>
         + 'static,
 > {
-    vtable: *const AddPagesEventHandler_abi,
+    vtable: *const AddPagesEventHandlerVtbl,
     invoke: F,
     count: ::windows::core::RefCount,
 }
@@ -191,7 +191,7 @@ impl<
             + 'static,
     > AddPagesEventHandler_box<F>
 {
-    const VTABLE: AddPagesEventHandler_abi = AddPagesEventHandler_abi(
+    const VTABLE: AddPagesEventHandlerVtbl = AddPagesEventHandlerVtbl(
         Self::QueryInterface,
         Self::AddRef,
         Self::Release,
@@ -279,7 +279,7 @@ unsafe impl ::windows::core::RuntimeType for GetPreviewPageEventArgs {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Printing.GetPreviewPageEventArgs;{a68fbe17-f577-597f-b3ab-b379447149e6})" ) ;
 }
 unsafe impl ::windows::core::Interface for GetPreviewPageEventArgs {
-    type Vtable = IGetPreviewPageEventArgs_abi;
+    type Vtable = IGetPreviewPageEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xa68fbe17_f577_597f_b3ab_b379447149e6);
 }
@@ -381,13 +381,13 @@ unsafe impl ::windows::core::RuntimeType for GetPreviewPageEventHandler {
     );
 }
 unsafe impl ::windows::core::Interface for GetPreviewPageEventHandler {
-    type Vtable = GetPreviewPageEventHandler_abi;
+    type Vtable = GetPreviewPageEventHandlerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x1c801689_a018_5574_9109_bcef62176da2);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct GetPreviewPageEventHandler_abi(
+pub struct GetPreviewPageEventHandlerVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -409,7 +409,7 @@ struct GetPreviewPageEventHandler_box<
         ) -> ::windows::core::Result<()>
         + 'static,
 > {
-    vtable: *const GetPreviewPageEventHandler_abi,
+    vtable: *const GetPreviewPageEventHandlerVtbl,
     invoke: F,
     count: ::windows::core::RefCount,
 }
@@ -421,7 +421,7 @@ impl<
             + 'static,
     > GetPreviewPageEventHandler_box<F>
 {
-    const VTABLE: GetPreviewPageEventHandler_abi = GetPreviewPageEventHandler_abi(
+    const VTABLE: GetPreviewPageEventHandlerVtbl = GetPreviewPageEventHandlerVtbl(
         Self::QueryInterface,
         Self::AddRef,
         Self::Release,
@@ -473,13 +473,13 @@ impl<
 #[doc(hidden)]
 pub struct IAddPagesEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IAddPagesEventArgs {
-    type Vtable = IAddPagesEventArgs_abi;
+    type Vtable = IAddPagesEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xa69f3cb3_6b74_5ee8_b034_188098a98c5d);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IAddPagesEventArgs_abi(
+pub struct IAddPagesEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -509,13 +509,13 @@ pub struct IAddPagesEventArgs_abi(
 #[doc(hidden)]
 pub struct IGetPreviewPageEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IGetPreviewPageEventArgs {
-    type Vtable = IGetPreviewPageEventArgs_abi;
+    type Vtable = IGetPreviewPageEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xa68fbe17_f577_597f_b3ab_b379447149e6);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IGetPreviewPageEventArgs_abi(
+pub struct IGetPreviewPageEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -545,13 +545,13 @@ pub struct IGetPreviewPageEventArgs_abi(
 #[doc(hidden)]
 pub struct IPaginateEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IPaginateEventArgs {
-    type Vtable = IPaginateEventArgs_abi;
+    type Vtable = IPaginateEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x6499c196_11a9_5ef8_91cb_52fb963bf172);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IPaginateEventArgs_abi(
+pub struct IPaginateEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -585,13 +585,13 @@ pub struct IPaginateEventArgs_abi(
 #[doc(hidden)]
 pub struct IPrintDocument(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IPrintDocument {
-    type Vtable = IPrintDocument_abi;
+    type Vtable = IPrintDocumentVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x1e40f1fc_5d33_5fe9_ba3e_954c0d161524);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IPrintDocument_abi(
+pub struct IPrintDocumentVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -730,13 +730,13 @@ pub struct IPrintDocument_abi(
 #[doc(hidden)]
 pub struct IPrintDocumentFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IPrintDocumentFactory {
-    type Vtable = IPrintDocumentFactory_abi;
+    type Vtable = IPrintDocumentFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc4c1bc12_84d1_539c_b416_d7e54c45ab58);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IPrintDocumentFactory_abi(
+pub struct IPrintDocumentFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -801,13 +801,13 @@ pub struct IPrintDocumentFactory_abi(
 #[doc(hidden)]
 pub struct IPrintDocumentStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IPrintDocumentStatics {
-    type Vtable = IPrintDocumentStatics_abi;
+    type Vtable = IPrintDocumentStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x8975e4bc_8fc8_5e8f_a55a_bf71b9a827b7);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IPrintDocumentStatics_abi(
+pub struct IPrintDocumentStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -890,7 +890,7 @@ unsafe impl ::windows::core::RuntimeType for PaginateEventArgs {
     );
 }
 unsafe impl ::windows::core::Interface for PaginateEventArgs {
-    type Vtable = IPaginateEventArgs_abi;
+    type Vtable = IPaginateEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x6499c196_11a9_5ef8_91cb_52fb963bf172);
 }
@@ -990,13 +990,13 @@ unsafe impl ::windows::core::RuntimeType for PaginateEventHandler {
     );
 }
 unsafe impl ::windows::core::Interface for PaginateEventHandler {
-    type Vtable = PaginateEventHandler_abi;
+    type Vtable = PaginateEventHandlerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc291876c_343a_5b9b_a36c_8415ba4cd9dd);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct PaginateEventHandler_abi(
+pub struct PaginateEventHandlerVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1018,7 +1018,7 @@ struct PaginateEventHandler_box<
         ) -> ::windows::core::Result<()>
         + 'static,
 > {
-    vtable: *const PaginateEventHandler_abi,
+    vtable: *const PaginateEventHandlerVtbl,
     invoke: F,
     count: ::windows::core::RefCount,
 }
@@ -1030,7 +1030,7 @@ impl<
             + 'static,
     > PaginateEventHandler_box<F>
 {
-    const VTABLE: PaginateEventHandler_abi = PaginateEventHandler_abi(
+    const VTABLE: PaginateEventHandlerVtbl = PaginateEventHandlerVtbl(
         Self::QueryInterface,
         Self::AddRef,
         Self::Release,
@@ -1530,7 +1530,7 @@ unsafe impl ::windows::core::RuntimeType for PrintDocument {
     );
 }
 unsafe impl ::windows::core::Interface for PrintDocument {
-    type Vtable = IPrintDocument_abi;
+    type Vtable = IPrintDocumentVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x1e40f1fc_5d33_5fe9_ba3e_954c0d161524);
 }

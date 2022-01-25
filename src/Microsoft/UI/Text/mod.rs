@@ -227,7 +227,7 @@ unsafe impl ::windows::core::RuntimeType for FontWeights {
     );
 }
 unsafe impl ::windows::core::Interface for FontWeights {
-    type Vtable = IFontWeights_abi;
+    type Vtable = IFontWeightsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x386cd040_5404_5a8d_8bc7_2ca989f5c065);
 }
@@ -342,13 +342,13 @@ impl ::windows::core::DefaultType for HorizontalCharacterAlignment {
 #[doc(hidden)]
 pub struct IFontWeights(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IFontWeights {
-    type Vtable = IFontWeights_abi;
+    type Vtable = IFontWeightsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x386cd040_5404_5a8d_8bc7_2ca989f5c065);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IFontWeights_abi(
+pub struct IFontWeightsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -374,13 +374,13 @@ pub struct IFontWeights_abi(
 #[doc(hidden)]
 pub struct IFontWeightsStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IFontWeightsStatics {
-    type Vtable = IFontWeightsStatics_abi;
+    type Vtable = IFontWeightsStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xcc390df6_76b0_5807_8b9d_e949a4e623ae);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IFontWeightsStatics_abi(
+pub struct IFontWeightsStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -455,7 +455,7 @@ pub struct IFontWeightsStatics_abi(
 )]
 pub struct ITextCharacterFormat(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITextCharacterFormat {
-    type Vtable = ITextCharacterFormat_abi;
+    type Vtable = ITextCharacterFormatVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xf5710050_98e5_5788_b1e3_32191eebf94d);
 }
@@ -1005,7 +1005,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITextCharacterFormat_abi(
+pub struct ITextCharacterFormatVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1232,13 +1232,13 @@ pub struct ITextCharacterFormat_abi(
 #[doc(hidden)]
 pub struct ITextConstantsStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITextConstantsStatics {
-    type Vtable = ITextConstantsStatics_abi;
+    type Vtable = ITextConstantsStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xcd353b3c_af63_5cfb_918c_0f9c8931a161);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITextConstantsStatics_abi(
+pub struct ITextConstantsStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1296,13 +1296,13 @@ pub struct ITextConstantsStatics_abi(
 #[doc(hidden)]
 pub struct ITextDocument(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITextDocument {
-    type Vtable = ITextDocument_abi;
+    type Vtable = ITextDocumentVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x1149d57d_86a6_59dd_88d9_196f27bc5c85);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITextDocument_abi(
+pub struct ITextDocumentVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1454,7 +1454,7 @@ pub struct ITextDocument_abi(
 )]
 pub struct ITextParagraphFormat(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITextParagraphFormat {
-    type Vtable = ITextParagraphFormat_abi;
+    type Vtable = ITextParagraphFormatVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x219b6cdf_0d0b_5701_b8a1_6c906b3ebbe1);
 }
@@ -1987,7 +1987,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITextParagraphFormat_abi(
+pub struct ITextParagraphFormatVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2216,7 +2216,7 @@ pub struct ITextParagraphFormat_abi(
 )]
 pub struct ITextRange(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITextRange {
-    type Vtable = ITextRange_abi;
+    type Vtable = ITextRangeVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x06d4abcf_0c06_5d12_a743_85537efd09ea);
 }
@@ -2904,7 +2904,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITextRange_abi(
+pub struct ITextRangeVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -3175,7 +3175,7 @@ pub struct ITextRange_abi(
 )]
 pub struct ITextSelection(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ITextSelection {
-    type Vtable = ITextSelection_abi;
+    type Vtable = ITextSelectionVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x8f5e6cb1_2b04_589f_bd24_54e5cd8dd399);
 }
@@ -4031,7 +4031,7 @@ impl<'a> ::windows::core::IntoParam<'a, ITextRange> for &ITextSelection {
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITextSelection_abi(
+pub struct ITextSelectionVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -4894,7 +4894,7 @@ unsafe impl ::windows::core::RuntimeType for RichEditTextDocument {
     );
 }
 unsafe impl ::windows::core::Interface for RichEditTextDocument {
-    type Vtable = ITextDocument_abi;
+    type Vtable = ITextDocumentVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x1149d57d_86a6_59dd_88d9_196f27bc5c85);
 }
@@ -5597,7 +5597,7 @@ unsafe impl ::windows::core::RuntimeType for RichEditTextRange {
     );
 }
 unsafe impl ::windows::core::Interface for RichEditTextRange {
-    type Vtable = ITextRange_abi;
+    type Vtable = ITextRangeVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x06d4abcf_0c06_5d12_a743_85537efd09ea);
 }

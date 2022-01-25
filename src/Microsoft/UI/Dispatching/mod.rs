@@ -180,7 +180,7 @@ unsafe impl ::windows::core::RuntimeType for DispatcherQueue {
     );
 }
 unsafe impl ::windows::core::Interface for DispatcherQueue {
-    type Vtable = IDispatcherQueue_abi;
+    type Vtable = IDispatcherQueueVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xf6ebf8fa_be1c_5bf6_a467_73da28738ae8);
 }
@@ -299,7 +299,7 @@ unsafe impl ::windows::core::RuntimeType for DispatcherQueueController {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Dispatching.DispatcherQueueController;{bce8178d-2183-584c-9e5b-f9366f6ae484})" ) ;
 }
 unsafe impl ::windows::core::Interface for DispatcherQueueController {
-    type Vtable = IDispatcherQueueController_abi;
+    type Vtable = IDispatcherQueueControllerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xbce8178d_2183_584c_9e5b_f9366f6ae484);
 }
@@ -384,13 +384,13 @@ unsafe impl ::windows::core::RuntimeType for DispatcherQueueHandler {
     );
 }
 unsafe impl ::windows::core::Interface for DispatcherQueueHandler {
-    type Vtable = DispatcherQueueHandler_abi;
+    type Vtable = DispatcherQueueHandlerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x2e0872a9_4e29_5f14_b688_fb96d5f9d5f8);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct DispatcherQueueHandler_abi(
+pub struct DispatcherQueueHandlerVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -402,12 +402,12 @@ pub struct DispatcherQueueHandler_abi(
 );
 #[repr(C)]
 struct DispatcherQueueHandler_box<F: FnMut() -> ::windows::core::Result<()> + 'static> {
-    vtable: *const DispatcherQueueHandler_abi,
+    vtable: *const DispatcherQueueHandlerVtbl,
     invoke: F,
     count: ::windows::core::RefCount,
 }
 impl<F: FnMut() -> ::windows::core::Result<()> + 'static> DispatcherQueueHandler_box<F> {
-    const VTABLE: DispatcherQueueHandler_abi = DispatcherQueueHandler_abi(
+    const VTABLE: DispatcherQueueHandlerVtbl = DispatcherQueueHandlerVtbl(
         Self::QueryInterface,
         Self::AddRef,
         Self::Release,
@@ -507,7 +507,7 @@ unsafe impl ::windows::core::RuntimeType for DispatcherQueueShutdownStartingEven
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Dispatching.DispatcherQueueShutdownStartingEventArgs;{32519be5-072b-5660-a70e-8835c9b8157d})" ) ;
 }
 unsafe impl ::windows::core::Interface for DispatcherQueueShutdownStartingEventArgs {
-    type Vtable = IDispatcherQueueShutdownStartingEventArgs_abi;
+    type Vtable = IDispatcherQueueShutdownStartingEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x32519be5_072b_5660_a70e_8835c9b8157d);
 }
@@ -694,7 +694,7 @@ unsafe impl ::windows::core::RuntimeType for DispatcherQueueTimer {
     );
 }
 unsafe impl ::windows::core::Interface for DispatcherQueueTimer {
-    type Vtable = IDispatcherQueueTimer_abi;
+    type Vtable = IDispatcherQueueTimerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xad4d63fd_88fe_541f_ac11_bf2dc1ed2ce5);
 }
@@ -749,13 +749,13 @@ unsafe impl ::core::marker::Sync for DispatcherQueueTimer {}
 #[doc(hidden)]
 pub struct IDispatcherQueue(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IDispatcherQueue {
-    type Vtable = IDispatcherQueue_abi;
+    type Vtable = IDispatcherQueueVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xf6ebf8fa_be1c_5bf6_a467_73da28738ae8);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IDispatcherQueue_abi(
+pub struct IDispatcherQueueVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -814,13 +814,13 @@ pub struct IDispatcherQueue_abi(
 #[doc(hidden)]
 pub struct IDispatcherQueue2(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IDispatcherQueue2 {
-    type Vtable = IDispatcherQueue2_abi;
+    type Vtable = IDispatcherQueue2Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x0cf48751_f1ac_59b8_ba52_6ce7a1444d6f);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IDispatcherQueue2_abi(
+pub struct IDispatcherQueue2Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -850,13 +850,13 @@ pub struct IDispatcherQueue2_abi(
 #[doc(hidden)]
 pub struct IDispatcherQueueController(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IDispatcherQueueController {
-    type Vtable = IDispatcherQueueController_abi;
+    type Vtable = IDispatcherQueueControllerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xbce8178d_2183_584c_9e5b_f9366f6ae484);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IDispatcherQueueController_abi(
+pub struct IDispatcherQueueControllerVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -890,13 +890,13 @@ pub struct IDispatcherQueueController_abi(
 #[doc(hidden)]
 pub struct IDispatcherQueueControllerStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IDispatcherQueueControllerStatics {
-    type Vtable = IDispatcherQueueControllerStatics_abi;
+    type Vtable = IDispatcherQueueControllerStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xf18d6145_722b_593d_bcf2_a61e713f0037);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IDispatcherQueueControllerStatics_abi(
+pub struct IDispatcherQueueControllerStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -930,13 +930,13 @@ pub struct IDispatcherQueueControllerStatics_abi(
 #[doc(hidden)]
 pub struct IDispatcherQueueShutdownStartingEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IDispatcherQueueShutdownStartingEventArgs {
-    type Vtable = IDispatcherQueueShutdownStartingEventArgs_abi;
+    type Vtable = IDispatcherQueueShutdownStartingEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x32519be5_072b_5660_a70e_8835c9b8157d);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IDispatcherQueueShutdownStartingEventArgs_abi(
+pub struct IDispatcherQueueShutdownStartingEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -966,13 +966,13 @@ pub struct IDispatcherQueueShutdownStartingEventArgs_abi(
 #[doc(hidden)]
 pub struct IDispatcherQueueStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IDispatcherQueueStatics {
-    type Vtable = IDispatcherQueueStatics_abi;
+    type Vtable = IDispatcherQueueStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xcd3382ea_a455_5124_b63a_ca40d34ca23c);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IDispatcherQueueStatics_abi(
+pub struct IDispatcherQueueStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1002,13 +1002,13 @@ pub struct IDispatcherQueueStatics_abi(
 #[doc(hidden)]
 pub struct IDispatcherQueueTimer(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IDispatcherQueueTimer {
-    type Vtable = IDispatcherQueueTimer_abi;
+    type Vtable = IDispatcherQueueTimerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xad4d63fd_88fe_541f_ac11_bf2dc1ed2ce5);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IDispatcherQueueTimer_abi(
+pub struct IDispatcherQueueTimerVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,

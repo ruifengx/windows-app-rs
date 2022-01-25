@@ -11,13 +11,13 @@
 #[doc(hidden)]
 pub struct ISceneLightingEffect(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISceneLightingEffect {
-    type Vtable = ISceneLightingEffect_abi;
+    type Vtable = ISceneLightingEffectVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xeb1e7316_114c_5950_8480_20a29a3bb1ee);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISceneLightingEffect_abi(
+pub struct ISceneLightingEffectVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -83,13 +83,13 @@ pub struct ISceneLightingEffect_abi(
 #[doc(hidden)]
 pub struct ISceneLightingEffect2(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISceneLightingEffect2 {
-    type Vtable = ISceneLightingEffect2_abi;
+    type Vtable = ISceneLightingEffect2Vtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x6b6496b2_468d_50d1_bbe9_593b8263ad80);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISceneLightingEffect2_abi(
+pub struct ISceneLightingEffect2Vtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -299,7 +299,7 @@ unsafe impl ::windows::core::RuntimeType for SceneLightingEffect {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Composition.Effects.SceneLightingEffect;{eb1e7316-114c-5950-8480-20a29a3bb1ee})" ) ;
 }
 unsafe impl ::windows::core::Interface for SceneLightingEffect {
-    type Vtable = ISceneLightingEffect_abi;
+    type Vtable = ISceneLightingEffectVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xeb1e7316_114c_5950_8480_20a29a3bb1ee);
 }

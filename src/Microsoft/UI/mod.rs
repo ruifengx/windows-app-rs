@@ -56,7 +56,7 @@ unsafe impl ::windows::core::RuntimeType for ColorHelper {
     );
 }
 unsafe impl ::windows::core::Interface for ColorHelper {
-    type Vtable = IColorHelper_abi;
+    type Vtable = IColorHelperVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x3adddccd_3949_585b_a566_ccb8350dd221);
 }
@@ -1538,7 +1538,7 @@ unsafe impl ::windows::core::RuntimeType for Colors {
     );
 }
 unsafe impl ::windows::core::Interface for Colors {
-    type Vtable = IColors_abi;
+    type Vtable = IColorsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x8cf15863_8411_5afd_946c_328e04da2f2f);
 }
@@ -1625,13 +1625,13 @@ impl ::windows::core::DefaultType for DisplayId {
 #[doc(hidden)]
 pub struct IColorHelper(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IColorHelper {
-    type Vtable = IColorHelper_abi;
+    type Vtable = IColorHelperVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x3adddccd_3949_585b_a566_ccb8350dd221);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IColorHelper_abi(
+pub struct IColorHelperVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1657,13 +1657,13 @@ pub struct IColorHelper_abi(
 #[doc(hidden)]
 pub struct IColorHelperStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IColorHelperStatics {
-    type Vtable = IColorHelperStatics_abi;
+    type Vtable = IColorHelperStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x1d1d85a1_eb63_538a_84f0_019210bc406b);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IColorHelperStatics_abi(
+pub struct IColorHelperStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1697,13 +1697,13 @@ pub struct IColorHelperStatics_abi(
 #[doc(hidden)]
 pub struct IColors(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IColors {
-    type Vtable = IColors_abi;
+    type Vtable = IColorsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x8cf15863_8411_5afd_946c_328e04da2f2f);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IColors_abi(
+pub struct IColorsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1729,13 +1729,13 @@ pub struct IColors_abi(
 #[doc(hidden)]
 pub struct IColorsStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IColorsStatics {
-    type Vtable = IColorsStatics_abi;
+    type Vtable = IColorsStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x8620a5b0_015a_57ac_a3f3_895d0b1269ae);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IColorsStatics_abi(
+pub struct IColorsStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,

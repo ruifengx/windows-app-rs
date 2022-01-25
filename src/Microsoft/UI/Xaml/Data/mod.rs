@@ -462,7 +462,7 @@ unsafe impl ::windows::core::RuntimeType for Binding {
     );
 }
 unsafe impl ::windows::core::Interface for Binding {
-    type Vtable = IBinding_abi;
+    type Vtable = IBindingVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x501ea0e8_edd4_59de_8845_76af2eabbe00);
 }
@@ -741,7 +741,7 @@ unsafe impl ::windows::core::RuntimeType for BindingBase {
     );
 }
 unsafe impl ::windows::core::Interface for BindingBase {
-    type Vtable = IBindingBase_abi;
+    type Vtable = IBindingBaseVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x91ddd141_5944_50ef_b85e_218e463f7a73);
 }
@@ -856,7 +856,7 @@ unsafe impl ::windows::core::RuntimeType for BindingExpression {
     );
 }
 unsafe impl ::windows::core::Interface for BindingExpression {
-    type Vtable = IBindingExpression_abi;
+    type Vtable = IBindingExpressionVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x4c023916_37bc_5b07_bc9d_15c547bd9b26);
 }
@@ -942,7 +942,7 @@ unsafe impl ::windows::core::RuntimeType for BindingExpressionBase {
     );
 }
 unsafe impl ::windows::core::Interface for BindingExpressionBase {
-    type Vtable = IBindingExpressionBase_abi;
+    type Vtable = IBindingExpressionBaseVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x8825e5a9_d9a3_5e87_bcd8_c63133d29029);
 }
@@ -1072,7 +1072,7 @@ unsafe impl ::windows::core::RuntimeType for BindingOperations {
     );
 }
 unsafe impl ::windows::core::Interface for BindingOperations {
-    type Vtable = IBindingOperations_abi;
+    type Vtable = IBindingOperationsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x9a319b95_aabe_5075_b227_8eb07e443d8b);
 }
@@ -1436,7 +1436,7 @@ unsafe impl ::windows::core::RuntimeType for CollectionViewSource {
     );
 }
 unsafe impl ::windows::core::Interface for CollectionViewSource {
-    type Vtable = ICollectionViewSource_abi;
+    type Vtable = ICollectionViewSourceVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xa45e3b3a_f31e_5bbb_8a7c_70cf5c64bc3f);
 }
@@ -1591,7 +1591,7 @@ unsafe impl ::windows::core::RuntimeType for CurrentChangingEventArgs {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Data.CurrentChangingEventArgs;{63e42ed6-e14a-51ea-9cb1-72f9c907dc80})" ) ;
 }
 unsafe impl ::windows::core::Interface for CurrentChangingEventArgs {
-    type Vtable = ICurrentChangingEventArgs_abi;
+    type Vtable = ICurrentChangingEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x63e42ed6_e14a_51ea_9cb1_72f9c907dc80);
 }
@@ -1697,13 +1697,13 @@ unsafe impl ::windows::core::RuntimeType for CurrentChangingEventHandler {
     );
 }
 unsafe impl ::windows::core::Interface for CurrentChangingEventHandler {
-    type Vtable = CurrentChangingEventHandler_abi;
+    type Vtable = CurrentChangingEventHandlerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x3d2a98dd_95b3_5fd5_93b4_a1a2599f225c);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct CurrentChangingEventHandler_abi(
+pub struct CurrentChangingEventHandlerVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1725,7 +1725,7 @@ struct CurrentChangingEventHandler_box<
         ) -> ::windows::core::Result<()>
         + 'static,
 > {
-    vtable: *const CurrentChangingEventHandler_abi,
+    vtable: *const CurrentChangingEventHandlerVtbl,
     invoke: F,
     count: ::windows::core::RefCount,
 }
@@ -1737,7 +1737,7 @@ impl<
             + 'static,
     > CurrentChangingEventHandler_box<F>
 {
-    const VTABLE: CurrentChangingEventHandler_abi = CurrentChangingEventHandler_abi(
+    const VTABLE: CurrentChangingEventHandlerVtbl = CurrentChangingEventHandlerVtbl(
         Self::QueryInterface,
         Self::AddRef,
         Self::Release,
@@ -1849,7 +1849,7 @@ unsafe impl ::windows::core::RuntimeType for DataErrorsChangedEventArgs {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Data.DataErrorsChangedEventArgs;{d026dd64-5f26-5f15-a86a-0dec8a431796})" ) ;
 }
 unsafe impl ::windows::core::Interface for DataErrorsChangedEventArgs {
-    type Vtable = IDataErrorsChangedEventArgs_abi;
+    type Vtable = IDataErrorsChangedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xd026dd64_5f26_5f15_a86a_0dec8a431796);
 }
@@ -1908,13 +1908,13 @@ unsafe impl ::core::marker::Sync for DataErrorsChangedEventArgs {}
 #[doc(hidden)]
 pub struct IBinding(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IBinding {
-    type Vtable = IBinding_abi;
+    type Vtable = IBindingVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x501ea0e8_edd4_59de_8845_76af2eabbe00);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IBinding_abi(
+pub struct IBindingVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2028,13 +2028,13 @@ pub struct IBinding_abi(
 #[doc(hidden)]
 pub struct IBindingBase(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IBindingBase {
-    type Vtable = IBindingBase_abi;
+    type Vtable = IBindingBaseVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x91ddd141_5944_50ef_b85e_218e463f7a73);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IBindingBase_abi(
+pub struct IBindingBaseVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2060,13 +2060,13 @@ pub struct IBindingBase_abi(
 #[doc(hidden)]
 pub struct IBindingBaseFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IBindingBaseFactory {
-    type Vtable = IBindingBaseFactory_abi;
+    type Vtable = IBindingBaseFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc8a866c5_f6f3_5f7a_9592_d385af48bd8f);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IBindingBaseFactory_abi(
+pub struct IBindingBaseFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2098,13 +2098,13 @@ pub struct IBindingBaseFactory_abi(
 #[doc(hidden)]
 pub struct IBindingExpression(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IBindingExpression {
-    type Vtable = IBindingExpression_abi;
+    type Vtable = IBindingExpressionVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x4c023916_37bc_5b07_bc9d_15c547bd9b26);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IBindingExpression_abi(
+pub struct IBindingExpressionVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2139,13 +2139,13 @@ pub struct IBindingExpression_abi(
 #[doc(hidden)]
 pub struct IBindingExpressionBase(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IBindingExpressionBase {
-    type Vtable = IBindingExpressionBase_abi;
+    type Vtable = IBindingExpressionBaseVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x8825e5a9_d9a3_5e87_bcd8_c63133d29029);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IBindingExpressionBase_abi(
+pub struct IBindingExpressionBaseVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2171,13 +2171,13 @@ pub struct IBindingExpressionBase_abi(
 #[doc(hidden)]
 pub struct IBindingExpressionBaseFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IBindingExpressionBaseFactory {
-    type Vtable = IBindingExpressionBaseFactory_abi;
+    type Vtable = IBindingExpressionBaseFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x41d643b9_2629_5451_a716_596c0848b5dc);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IBindingExpressionBaseFactory_abi(
+pub struct IBindingExpressionBaseFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2203,13 +2203,13 @@ pub struct IBindingExpressionBaseFactory_abi(
 #[doc(hidden)]
 pub struct IBindingExpressionFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IBindingExpressionFactory {
-    type Vtable = IBindingExpressionFactory_abi;
+    type Vtable = IBindingExpressionFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x086cae14_81a1_588b_b619_05ee84c0f089);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IBindingExpressionFactory_abi(
+pub struct IBindingExpressionFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2235,13 +2235,13 @@ pub struct IBindingExpressionFactory_abi(
 #[doc(hidden)]
 pub struct IBindingFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IBindingFactory {
-    type Vtable = IBindingFactory_abi;
+    type Vtable = IBindingFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xcb2de749_b115_5f67_b64a_797d54885d5c);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IBindingFactory_abi(
+pub struct IBindingFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2273,13 +2273,13 @@ pub struct IBindingFactory_abi(
 #[doc(hidden)]
 pub struct IBindingOperations(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IBindingOperations {
-    type Vtable = IBindingOperations_abi;
+    type Vtable = IBindingOperationsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x9a319b95_aabe_5075_b227_8eb07e443d8b);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IBindingOperations_abi(
+pub struct IBindingOperationsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2305,13 +2305,13 @@ pub struct IBindingOperations_abi(
 #[doc(hidden)]
 pub struct IBindingOperationsStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IBindingOperationsStatics {
-    type Vtable = IBindingOperationsStatics_abi;
+    type Vtable = IBindingOperationsStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x1e1bdbd3_fca5_5c85_b87d_b504cd8fa8ac);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IBindingOperationsStatics_abi(
+pub struct IBindingOperationsStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -2350,7 +2350,7 @@ pub struct IBindingOperationsStatics_abi(
 )]
 pub struct ICollectionView(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICollectionView {
-    type Vtable = ICollectionView_abi;
+    type Vtable = ICollectionViewVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xf8bb90d8_e008_5d65_8c97_7bb790a4230c);
 }
@@ -3039,7 +3039,7 @@ impl ::core::iter::IntoIterator for &ICollectionView {
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICollectionView_abi(
+pub struct ICollectionViewVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -3143,7 +3143,7 @@ pub struct ICollectionView_abi(
 )]
 pub struct ICollectionViewFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICollectionViewFactory {
-    type Vtable = ICollectionViewFactory_abi;
+    type Vtable = ICollectionViewFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xd971f795_5728_5bef_9602_43f2c4250e56);
 }
@@ -3208,7 +3208,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICollectionViewFactory_abi(
+pub struct ICollectionViewFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -3243,7 +3243,7 @@ pub struct ICollectionViewFactory_abi(
 )]
 pub struct ICollectionViewGroup(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICollectionViewGroup {
-    type Vtable = ICollectionViewGroup_abi;
+    type Vtable = ICollectionViewGroupVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x96a08da8_be38_5ae0_903d_6fb6111e61f5);
 }
@@ -3325,7 +3325,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICollectionViewGroup_abi(
+pub struct ICollectionViewGroupVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -3359,13 +3359,13 @@ pub struct ICollectionViewGroup_abi(
 #[doc(hidden)]
 pub struct ICollectionViewSource(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICollectionViewSource {
-    type Vtable = ICollectionViewSource_abi;
+    type Vtable = ICollectionViewSourceVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xa45e3b3a_f31e_5bbb_8a7c_70cf5c64bc3f);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICollectionViewSource_abi(
+pub struct ICollectionViewSourceVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -3419,13 +3419,13 @@ pub struct ICollectionViewSource_abi(
 #[doc(hidden)]
 pub struct ICollectionViewSourceStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICollectionViewSourceStatics {
-    type Vtable = ICollectionViewSourceStatics_abi;
+    type Vtable = ICollectionViewSourceStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xe282f10f_d4b1_5769_8a11_30f739e6113b);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICollectionViewSourceStatics_abi(
+pub struct ICollectionViewSourceStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -3475,13 +3475,13 @@ pub struct ICollectionViewSourceStatics_abi(
 #[doc(hidden)]
 pub struct ICurrentChangingEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICurrentChangingEventArgs {
-    type Vtable = ICurrentChangingEventArgs_abi;
+    type Vtable = ICurrentChangingEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x63e42ed6_e14a_51ea_9cb1_72f9c907dc80);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICurrentChangingEventArgs_abi(
+pub struct ICurrentChangingEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -3519,13 +3519,13 @@ pub struct ICurrentChangingEventArgs_abi(
 #[doc(hidden)]
 pub struct ICurrentChangingEventArgsFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICurrentChangingEventArgsFactory {
-    type Vtable = ICurrentChangingEventArgsFactory_abi;
+    type Vtable = ICurrentChangingEventArgsFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x3670f48a_ac2c_5352_8a4b_6b977a08e5f8);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICurrentChangingEventArgsFactory_abi(
+pub struct ICurrentChangingEventArgsFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -3569,7 +3569,7 @@ pub struct ICurrentChangingEventArgsFactory_abi(
 )]
 pub struct ICustomProperty(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICustomProperty {
-    type Vtable = ICustomProperty_abi;
+    type Vtable = ICustomPropertyVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x30da92c0_23e8_42a0_ae7c_734a0e5d2782);
 }
@@ -3744,7 +3744,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICustomProperty_abi(
+pub struct ICustomPropertyVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -3813,7 +3813,7 @@ pub struct ICustomProperty_abi(
 )]
 pub struct ICustomPropertyProvider(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ICustomPropertyProvider {
-    type Vtable = ICustomPropertyProvider_abi;
+    type Vtable = ICustomPropertyProviderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x7c925755_3e48_42b4_8677_76372267033f);
 }
@@ -3930,7 +3930,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ICustomPropertyProvider_abi(
+pub struct ICustomPropertyProviderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -3975,13 +3975,13 @@ pub struct ICustomPropertyProvider_abi(
 #[doc(hidden)]
 pub struct IDataErrorsChangedEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IDataErrorsChangedEventArgs {
-    type Vtable = IDataErrorsChangedEventArgs_abi;
+    type Vtable = IDataErrorsChangedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xd026dd64_5f26_5f15_a86a_0dec8a431796);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IDataErrorsChangedEventArgs_abi(
+pub struct IDataErrorsChangedEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -4015,13 +4015,13 @@ pub struct IDataErrorsChangedEventArgs_abi(
 #[doc(hidden)]
 pub struct IDataErrorsChangedEventArgsFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IDataErrorsChangedEventArgsFactory {
-    type Vtable = IDataErrorsChangedEventArgsFactory_abi;
+    type Vtable = IDataErrorsChangedEventArgsFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x62d0bd1e_b85f_5fcc_842a_7cb0dda37fe5);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IDataErrorsChangedEventArgsFactory_abi(
+pub struct IDataErrorsChangedEventArgsFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -4052,13 +4052,13 @@ pub struct IDataErrorsChangedEventArgsFactory_abi(
 #[doc(hidden)]
 pub struct IItemIndexRange(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IItemIndexRange {
-    type Vtable = IItemIndexRange_abi;
+    type Vtable = IItemIndexRangeVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xeba09846_2554_5b86_ac17_614f05105fa2);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IItemIndexRange_abi(
+pub struct IItemIndexRangeVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -4096,13 +4096,13 @@ pub struct IItemIndexRange_abi(
 #[doc(hidden)]
 pub struct IItemIndexRangeFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IItemIndexRangeFactory {
-    type Vtable = IItemIndexRangeFactory_abi;
+    type Vtable = IItemIndexRangeFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x9fc73213_eda0_5238_aa2c_401c9921f0f9);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IItemIndexRangeFactory_abi(
+pub struct IItemIndexRangeFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -4141,7 +4141,7 @@ pub struct IItemIndexRangeFactory_abi(
 )]
 pub struct IItemsRangeInfo(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IItemsRangeInfo {
-    type Vtable = IItemsRangeInfo_abi;
+    type Vtable = IItemsRangeInfoVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xb8376d08_85fb_563b_8273_39ef2d138256);
 }
@@ -4245,7 +4245,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::Foundation::IClosable> for &I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IItemsRangeInfo_abi(
+pub struct IItemsRangeInfoVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -4281,7 +4281,7 @@ pub struct IItemsRangeInfo_abi(
 )]
 pub struct INotifyDataErrorInfo(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for INotifyDataErrorInfo {
-    type Vtable = INotifyDataErrorInfo_abi;
+    type Vtable = INotifyDataErrorInfoVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x0ee6c2cc_273e_567d_bc0a_1dd87ee51eba);
 }
@@ -4402,7 +4402,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct INotifyDataErrorInfo_abi(
+pub struct INotifyDataErrorInfoVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -4451,7 +4451,7 @@ pub struct INotifyDataErrorInfo_abi(
 )]
 pub struct INotifyPropertyChanged(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for INotifyPropertyChanged {
-    type Vtable = INotifyPropertyChanged_abi;
+    type Vtable = INotifyPropertyChangedVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x90b17601_b065_586e_83d9_9adc3a695284);
 }
@@ -4539,7 +4539,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct INotifyPropertyChanged_abi(
+pub struct INotifyPropertyChangedVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -4574,13 +4574,13 @@ pub struct INotifyPropertyChanged_abi(
 #[doc(hidden)]
 pub struct IPropertyChangedEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IPropertyChangedEventArgs {
-    type Vtable = IPropertyChangedEventArgs_abi;
+    type Vtable = IPropertyChangedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x63d0c952_396b_54f4_af8c_ba8724a427bf);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IPropertyChangedEventArgs_abi(
+pub struct IPropertyChangedEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -4610,13 +4610,13 @@ pub struct IPropertyChangedEventArgs_abi(
 #[doc(hidden)]
 pub struct IPropertyChangedEventArgsFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IPropertyChangedEventArgsFactory {
-    type Vtable = IPropertyChangedEventArgsFactory_abi;
+    type Vtable = IPropertyChangedEventArgsFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x7c0c27a8_0b41_5070_b160_fc9ae960a36c);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IPropertyChangedEventArgsFactory_abi(
+pub struct IPropertyChangedEventArgsFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -4649,13 +4649,13 @@ pub struct IPropertyChangedEventArgsFactory_abi(
 #[doc(hidden)]
 pub struct IRelativeSource(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IRelativeSource {
-    type Vtable = IRelativeSource_abi;
+    type Vtable = IRelativeSourceVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x7ffc8126_5dd8_58bb_b686_c71eddea07b2);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IRelativeSource_abi(
+pub struct IRelativeSourceVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -4689,13 +4689,13 @@ pub struct IRelativeSource_abi(
 #[doc(hidden)]
 pub struct IRelativeSourceFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IRelativeSourceFactory {
-    type Vtable = IRelativeSourceFactory_abi;
+    type Vtable = IRelativeSourceFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x8518522c_85e3_5ae1_b9e9_28ea43c2051e);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IRelativeSourceFactory_abi(
+pub struct IRelativeSourceFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -4732,7 +4732,7 @@ pub struct IRelativeSourceFactory_abi(
 )]
 pub struct ISelectionInfo(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISelectionInfo {
-    type Vtable = ISelectionInfo_abi;
+    type Vtable = ISelectionInfoVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x1b84c26b_9532_5803_935b_a03bf7e875dc);
 }
@@ -4836,7 +4836,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISelectionInfo_abi(
+pub struct ISelectionInfoVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -4884,7 +4884,7 @@ pub struct ISelectionInfo_abi(
 )]
 pub struct ISupportIncrementalLoading(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for ISupportIncrementalLoading {
-    type Vtable = ISupportIncrementalLoading_abi;
+    type Vtable = ISupportIncrementalLoadingVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xd8f9b586_a64a_5ff8_868e_204e144f2cf4);
 }
@@ -4968,7 +4968,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ISupportIncrementalLoading_abi(
+pub struct ISupportIncrementalLoadingVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5008,7 +5008,7 @@ pub struct ISupportIncrementalLoading_abi(
 )]
 pub struct IValueConverter(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IValueConverter {
-    type Vtable = IValueConverter_abi;
+    type Vtable = IValueConverterVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xafdd2bff_10f5_5173_b7c0_3590bd96cb35);
 }
@@ -5114,7 +5114,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IValueConverter_abi(
+pub struct IValueConverterVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5225,7 +5225,7 @@ unsafe impl ::windows::core::RuntimeType for ItemIndexRange {
     );
 }
 unsafe impl ::windows::core::Interface for ItemIndexRange {
-    type Vtable = IItemIndexRange_abi;
+    type Vtable = IItemIndexRangeVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xeba09846_2554_5b86_ac17_614f05105fa2);
 }
@@ -5362,7 +5362,7 @@ unsafe impl ::windows::core::RuntimeType for PropertyChangedEventArgs {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Data.PropertyChangedEventArgs;{63d0c952-396b-54f4-af8c-ba8724a427bf})" ) ;
 }
 unsafe impl ::windows::core::Interface for PropertyChangedEventArgs {
-    type Vtable = IPropertyChangedEventArgs_abi;
+    type Vtable = IPropertyChangedEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x63d0c952_396b_54f4_af8c_ba8724a427bf);
 }
@@ -5468,13 +5468,13 @@ unsafe impl ::windows::core::RuntimeType for PropertyChangedEventHandler {
     );
 }
 unsafe impl ::windows::core::Interface for PropertyChangedEventHandler {
-    type Vtable = PropertyChangedEventHandler_abi;
+    type Vtable = PropertyChangedEventHandlerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xe3de52f6_1e32_5da6_bb2d_b5b6096c962d);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct PropertyChangedEventHandler_abi(
+pub struct PropertyChangedEventHandlerVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -5496,7 +5496,7 @@ struct PropertyChangedEventHandler_box<
         ) -> ::windows::core::Result<()>
         + 'static,
 > {
-    vtable: *const PropertyChangedEventHandler_abi,
+    vtable: *const PropertyChangedEventHandlerVtbl,
     invoke: F,
     count: ::windows::core::RefCount,
 }
@@ -5508,7 +5508,7 @@ impl<
             + 'static,
     > PropertyChangedEventHandler_box<F>
 {
-    const VTABLE: PropertyChangedEventHandler_abi = PropertyChangedEventHandler_abi(
+    const VTABLE: PropertyChangedEventHandlerVtbl = PropertyChangedEventHandlerVtbl(
         Self::QueryInterface,
         Self::AddRef,
         Self::Release,
@@ -5763,7 +5763,7 @@ unsafe impl ::windows::core::RuntimeType for RelativeSource {
     );
 }
 unsafe impl ::windows::core::Interface for RelativeSource {
-    type Vtable = IRelativeSource_abi;
+    type Vtable = IRelativeSourceVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x7ffc8126_5dd8_58bb_b686_c71eddea07b2);
 }

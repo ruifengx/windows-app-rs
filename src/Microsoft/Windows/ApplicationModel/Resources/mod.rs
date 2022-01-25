@@ -11,13 +11,13 @@
 #[doc(hidden)]
 pub struct IKnownResourceQualifierNameStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IKnownResourceQualifierNameStatics {
-    type Vtable = IKnownResourceQualifierNameStatics_abi;
+    type Vtable = IKnownResourceQualifierNameStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xdd6cdedc_559b_50c8_ac53_82fe21f915f3);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IKnownResourceQualifierNameStatics_abi(
+pub struct IKnownResourceQualifierNameStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -79,13 +79,13 @@ pub struct IKnownResourceQualifierNameStatics_abi(
 #[doc(hidden)]
 pub struct IResourceCandidate(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IResourceCandidate {
-    type Vtable = IResourceCandidate_abi;
+    type Vtable = IResourceCandidateVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x6c54bc0c_ef1e_57b8_b478_34fece737356);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IResourceCandidate_abi(
+pub struct IResourceCandidateVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -128,13 +128,13 @@ pub struct IResourceCandidate_abi(
 #[doc(hidden)]
 pub struct IResourceCandidateFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IResourceCandidateFactory {
-    type Vtable = IResourceCandidateFactory_abi;
+    type Vtable = IResourceCandidateFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xbb2b30f8_c19b_5f43_88d9_69ad728a32f4);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IResourceCandidateFactory_abi(
+pub struct IResourceCandidateFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -172,13 +172,13 @@ pub struct IResourceCandidateFactory_abi(
 #[doc(hidden)]
 pub struct IResourceContext(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IResourceContext {
-    type Vtable = IResourceContext_abi;
+    type Vtable = IResourceContextVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x96fb48dc_f77d_55ff_af12_34861e3d4939);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IResourceContext_abi(
+pub struct IResourceContextVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -208,13 +208,13 @@ pub struct IResourceContext_abi(
 #[doc(hidden)]
 pub struct IResourceLoader(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IResourceLoader {
-    type Vtable = IResourceLoader_abi;
+    type Vtable = IResourceLoaderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xbc3f76bf_da46_54cd_8715_8b8aaf16eaac);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IResourceLoader_abi(
+pub struct IResourceLoaderVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -250,13 +250,13 @@ pub struct IResourceLoader_abi(
 #[doc(hidden)]
 pub struct IResourceLoaderFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IResourceLoaderFactory {
-    type Vtable = IResourceLoaderFactory_abi;
+    type Vtable = IResourceLoaderFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x871f83aa_fb34_50d6_b9b9_2c35f3ffc004);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IResourceLoaderFactory_abi(
+pub struct IResourceLoaderFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -293,13 +293,13 @@ pub struct IResourceLoaderFactory_abi(
 #[doc(hidden)]
 pub struct IResourceLoaderStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IResourceLoaderStatics {
-    type Vtable = IResourceLoaderStatics_abi;
+    type Vtable = IResourceLoaderStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xec9c894a_1466_5f2f_8eee_a70cbd2b51bb);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IResourceLoaderStatics_abi(
+pub struct IResourceLoaderStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -329,13 +329,13 @@ pub struct IResourceLoaderStatics_abi(
 #[doc(hidden)]
 pub struct IResourceManager(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IResourceManager {
-    type Vtable = IResourceManager_abi;
+    type Vtable = IResourceManagerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xac2291ef_81be_5c99_a0ae_bcee0180b8a8);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IResourceManager_abi(
+pub struct IResourceManagerVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -378,13 +378,13 @@ pub struct IResourceManager_abi(
 #[doc(hidden)]
 pub struct IResourceManagerFactory(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IResourceManagerFactory {
-    type Vtable = IResourceManagerFactory_abi;
+    type Vtable = IResourceManagerFactoryVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xd6acf18f_458a_535b_a5c4_ac2dc4e49099);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IResourceManagerFactory_abi(
+pub struct IResourceManagerFactoryVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -415,13 +415,13 @@ pub struct IResourceManagerFactory_abi(
 #[doc(hidden)]
 pub struct IResourceMap(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IResourceMap {
-    type Vtable = IResourceMap_abi;
+    type Vtable = IResourceMapVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x4abbd9bc_df4e_5c7b_812c_7e7bb0c22377);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IResourceMap_abi(
+pub struct IResourceMapVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -494,13 +494,13 @@ pub struct IResourceMap_abi(
 #[doc(hidden)]
 pub struct IResourceNotFoundEventArgs(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IResourceNotFoundEventArgs {
-    type Vtable = IResourceNotFoundEventArgs_abi;
+    type Vtable = IResourceNotFoundEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x64abb08b_e77d_5b26_830f_15941e0e8200);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IResourceNotFoundEventArgs_abi(
+pub struct IResourceNotFoundEventArgsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -763,7 +763,7 @@ unsafe impl ::windows::core::RuntimeType for ResourceCandidate {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate;{6c54bc0c-ef1e-57b8-b478-34fece737356})" ) ;
 }
 unsafe impl ::windows::core::Interface for ResourceCandidate {
-    type Vtable = IResourceCandidate_abi;
+    type Vtable = IResourceCandidateVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x6c54bc0c_ef1e_57b8_b478_34fece737356);
 }
@@ -879,7 +879,7 @@ unsafe impl ::windows::core::RuntimeType for ResourceContext {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Windows.ApplicationModel.Resources.ResourceContext;{96fb48dc-f77d-55ff-af12-34861e3d4939})" ) ;
 }
 unsafe impl ::windows::core::Interface for ResourceContext {
-    type Vtable = IResourceContext_abi;
+    type Vtable = IResourceContextVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x96fb48dc_f77d_55ff_af12_34861e3d4939);
 }
@@ -1055,7 +1055,7 @@ unsafe impl ::windows::core::RuntimeType for ResourceLoader {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Windows.ApplicationModel.Resources.ResourceLoader;{bc3f76bf-da46-54cd-8715-8b8aaf16eaac})" ) ;
 }
 unsafe impl ::windows::core::Interface for ResourceLoader {
-    type Vtable = IResourceLoader_abi;
+    type Vtable = IResourceLoaderVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xbc3f76bf_da46_54cd_8715_8b8aaf16eaac);
 }
@@ -1215,7 +1215,7 @@ unsafe impl ::windows::core::RuntimeType for ResourceManager {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Windows.ApplicationModel.Resources.ResourceManager;{ac2291ef-81be-5c99-a0ae-bcee0180b8a8})" ) ;
 }
 unsafe impl ::windows::core::Interface for ResourceManager {
-    type Vtable = IResourceManager_abi;
+    type Vtable = IResourceManagerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xac2291ef_81be_5c99_a0ae_bcee0180b8a8);
 }
@@ -1442,7 +1442,7 @@ unsafe impl ::windows::core::RuntimeType for ResourceMap {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Windows.ApplicationModel.Resources.ResourceMap;{4abbd9bc-df4e-5c7b-812c-7e7bb0c22377})" ) ;
 }
 unsafe impl ::windows::core::Interface for ResourceMap {
-    type Vtable = IResourceMap_abi;
+    type Vtable = IResourceMapVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x4abbd9bc_df4e_5c7b_812c_7e7bb0c22377);
 }
@@ -1541,7 +1541,7 @@ unsafe impl ::windows::core::RuntimeType for ResourceNotFoundEventArgs {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.Windows.ApplicationModel.Resources.ResourceNotFoundEventArgs;{64abb08b-e77d-5b26-830f-15941e0e8200})" ) ;
 }
 unsafe impl ::windows::core::Interface for ResourceNotFoundEventArgs {
-    type Vtable = IResourceNotFoundEventArgs_abi;
+    type Vtable = IResourceNotFoundEventArgsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x64abb08b_e77d_5b26_830f_15941e0e8200);
 }

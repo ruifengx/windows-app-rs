@@ -283,7 +283,7 @@ unsafe impl ::windows::core::RuntimeType for ElementCompositionPreview {
     const SIGNATURE : :: windows :: core :: ConstBuffer = :: windows :: core :: ConstBuffer :: from_slice ( b"rc(Microsoft.UI.Xaml.Hosting.ElementCompositionPreview;{c8ad1ef4-a93f-5a25-85bd-7c498d9856d3})" ) ;
 }
 unsafe impl ::windows::core::Interface for ElementCompositionPreview {
-    type Vtable = IElementCompositionPreview_abi;
+    type Vtable = IElementCompositionPreviewVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc8ad1ef4_a93f_5a25_85bd_7c498d9856d3);
 }
@@ -384,7 +384,7 @@ impl IDesktopWindowXamlSourceNative {
     }
 }
 unsafe impl ::windows::core::Interface for IDesktopWindowXamlSourceNative {
-    type Vtable = IDesktopWindowXamlSourceNative_abi;
+    type Vtable = IDesktopWindowXamlSourceNativeVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x0aea2f26_facf_4588_8cf4_34555124db32);
 }
@@ -414,7 +414,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IDesktopWindowXamlSourceNative_abi(
+pub struct IDesktopWindowXamlSourceNativeVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -440,13 +440,13 @@ pub struct IDesktopWindowXamlSourceNative_abi(
 #[doc(hidden)]
 pub struct IElementCompositionPreview(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IElementCompositionPreview {
-    type Vtable = IElementCompositionPreview_abi;
+    type Vtable = IElementCompositionPreviewVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xc8ad1ef4_a93f_5a25_85bd_7c498d9856d3);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IElementCompositionPreview_abi(
+pub struct IElementCompositionPreviewVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -472,13 +472,13 @@ pub struct IElementCompositionPreview_abi(
 #[doc(hidden)]
 pub struct IElementCompositionPreviewStatics(pub ::windows::core::IInspectable);
 unsafe impl ::windows::core::Interface for IElementCompositionPreviewStatics {
-    type Vtable = IElementCompositionPreviewStatics_abi;
+    type Vtable = IElementCompositionPreviewStaticsVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x84da5a6c_0cfa_532b_9b15_ccd986374342);
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IElementCompositionPreviewStatics_abi(
+pub struct IElementCompositionPreviewStaticsVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -828,7 +828,7 @@ impl IFindReferenceTargetsCallback {
     }
 }
 unsafe impl ::windows::core::Interface for IFindReferenceTargetsCallback {
-    type Vtable = IFindReferenceTargetsCallback_abi;
+    type Vtable = IFindReferenceTargetsCallbackVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x04b3486c_4687_4229_8d14_505ab584dd88);
 }
@@ -858,7 +858,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IFindReferenceTargetsCallback_abi(
+pub struct IFindReferenceTargetsCallbackVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -921,7 +921,7 @@ impl IReferenceTracker {
     }
 }
 unsafe impl ::windows::core::Interface for IReferenceTracker {
-    type Vtable = IReferenceTracker_abi;
+    type Vtable = IReferenceTrackerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x11d3b13a_180e_4789_a8be_7712882893e6);
 }
@@ -947,7 +947,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRefe
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IReferenceTracker_abi(
+pub struct IReferenceTrackerVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -979,7 +979,7 @@ pub struct IReferenceTracker_abi(
 pub struct IReferenceTrackerExtension(pub ::windows::core::IUnknown);
 impl IReferenceTrackerExtension {}
 unsafe impl ::windows::core::Interface for IReferenceTrackerExtension {
-    type Vtable = IReferenceTrackerExtension_abi;
+    type Vtable = IReferenceTrackerExtensionVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x4e897caa_59d5_4613_8f8c_f7ebd1f399b0);
 }
@@ -1007,7 +1007,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IReferenceTrackerExtension_abi(
+pub struct IReferenceTrackerExtensionVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1073,7 +1073,7 @@ impl IReferenceTrackerHost {
     }
 }
 unsafe impl ::windows::core::Interface for IReferenceTrackerHost {
-    type Vtable = IReferenceTrackerHost_abi;
+    type Vtable = IReferenceTrackerHostVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x29a71c6a_3c42_4416_a39d_e2825a07a773);
 }
@@ -1099,7 +1099,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRefe
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IReferenceTrackerHost_abi(
+pub struct IReferenceTrackerHostVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1167,7 +1167,7 @@ impl IReferenceTrackerManager {
     }
 }
 unsafe impl ::windows::core::Interface for IReferenceTrackerManager {
-    type Vtable = IReferenceTrackerManager_abi;
+    type Vtable = IReferenceTrackerManagerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x3cf184b4_7ccb_4dda_8455_7e6ce99a3298);
 }
@@ -1195,7 +1195,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown>
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IReferenceTrackerManager_abi(
+pub struct IReferenceTrackerManagerVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1241,7 +1241,7 @@ impl IReferenceTrackerTarget {
     }
 }
 unsafe impl ::windows::core::Interface for IReferenceTrackerTarget {
-    type Vtable = IReferenceTrackerTarget_abi;
+    type Vtable = IReferenceTrackerTargetVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0x64bd43f8_bfee_4ec4_b7eb_2935158dae21);
 }
@@ -1267,7 +1267,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRefe
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct IReferenceTrackerTarget_abi(
+pub struct IReferenceTrackerTargetVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
@@ -1337,7 +1337,7 @@ impl ITrackerOwner {
     }
 }
 unsafe impl ::windows::core::Interface for ITrackerOwner {
-    type Vtable = ITrackerOwner_abi;
+    type Vtable = ITrackerOwnerVtbl;
     const IID: ::windows::core::GUID =
         ::windows::core::GUID::from_u128(0xeb24c20b_9816_4ac7_8cff_36f67a118f4e);
 }
@@ -1363,7 +1363,7 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITrac
 }
 #[repr(C)]
 #[doc(hidden)]
-pub struct ITrackerOwner_abi(
+pub struct ITrackerOwnerVtbl(
     pub  unsafe extern "system" fn(
         this: ::windows::core::RawPtr,
         iid: &::windows::core::GUID,
